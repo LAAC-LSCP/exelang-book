@@ -1,0 +1,41 @@
+# Software {#software}
+
+In this videow, we are only goint to discuss the LENA software. We discuss alternatives to the LENA software in another dedicated video \@ref(nonlena).
+
+Let us start with how the procedure goes for LENA. Once you have done your recording, you can connect the device to a computer with access to LENA-licensed software, that automatically extracts and analyzes the recording. There are two licenses allowing you to keep a copy of the recordings: “Pro” and “SP”. I really do not recommend buying the licenses that do not allow you to keep a copy of the recordings, because, as we discuss later, LENA is no longer state of the art, and the metrics that can be extracted are limited. So I won't be discussing other alternatives.
+
+So on to these two alternatives:
+
+a) The Pro system does all speech processing in the local machine, which needs to be running Windows 7 or 10; typically, you can only install the software in one machine.
+b) The SP license accesses LENA’s software via an Internet connection, which may be an important advantage for studies spread over multiple locations, since you would be able to securely upload, process and inspect results from any Internet-connected computer. 
+
+Through this step, you extract the audiorecording from the recording device to "clean it" and allow another recording to take place. In addition, this automatically launches the analysis of the data through the LENA software.
+
+Once the analysis is complete, the LENA software provides several types of automated annotations. You will be given a file in which the audio signal has been classified into different types of classes (for example you will have: key child, adults, TV, etc.). 
+
+Also, the segments tagged as belonging to the key child, will have an estimate of what portions are vegetative (e.g., burps) or crying, as opposed to speech. 
+
+Finally, for each stretch of speech tagged as being produced by an adult, there will be an estimate of the number of words spoken in that stretch.
+
+
+At a second level, the LENA software also derives a few descriptive statistics that are averaged over five minutes, one hour, and the whole day. 
+
+In addition, the system also provides an estimate of child vocal maturity compared to other children of the same age and sex using a standardized score called Automatic Vocalization Assessment (AVA).
+<!-- ac stopped here -->
+
+If you are interested in collecting language properties such as measures of lexical diversity, syntactic complexity, and who is being talked to, you need to know that the LENA system doesn’t provide automated analysis for that.
+
+Also, the LENA software is most accurate for children learning American English aged between 2 months and 3 years, which is the population used to train and test the analysis software As with any tool, if you deviate from the population on which the tool was developed and validated,you should take care to test the extent to which the measurements are still reliable.
+
+1. In particular When you are deciding which recording device to use, you need to take into consideration the kinds of analysis you will be performing and the language spoken by the population you are studying. For example, the LENA software can only be used with LENA devices 
+    
+    a) also, the LENA software was trained on children 0-3 years learning American English
+    
+    
+2. We'll see in a different video how well the LENA software fares with other languages but in a nutshell: pretty well in many, very poorly for some speaker types in some languages.
+
+    a) so if you are working with a population that speaks one of these languages, the LENA software might provide you with inaccurate or inappropriate measurements 
+    b) and if you are working with a language speaking population that hasn't been validated, then you need to do the validation yourself -- we cover all of this in later videos 
+
+The LENA system’s automated estimates are most reliable if the wearer is recorded for 12 or more consecutive hours within a single day, though the device can accommodate recordings being split over several days.
+

@@ -1,0 +1,9 @@
+# IRB {#irb}
+
+When you are considering doing research involving children, you will need the approval of the Institutional Review Board (IRB) of your institution. The IRB is in charge of applying research ethics by reviewing your research methods and ensuring they are ethical. 
+
+In order to be approved by your IRB, you need to specify the following main points:
+
+1) The aim of the project (thus collecting infant speech), the methods (by using a tool which is attached to the child’s clothes and provides a first automated annotation), the setting (thus specifying you are collecting speech produced in the child’s home).
+2) When talking about annotation, you need to specify that the (LENA) tool is providing you only with the first automated annotation, 
+3) Add a section where you describe the consent form you are going to give to parents (plus add it in the Annex) and the conditions under which data will be used. This is a very important part because your IRB will need to check the laws in force in the country you are collecting data and modify the conditions if necessary.

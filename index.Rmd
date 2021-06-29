@@ -1,0 +1,42 @@
+--- 
+title: "Long-form recordings: From A to Z"
+author: 
+  - name          : "Sara Pisani"
+  - name          : "Alejandrina Cristia"
+    affiliation   : "Ecole Normale Supérieure, PSL Research University, Departement d'etudes cognitives, Laboratoire de Sciences Cognitives et Psycholinguistique (ENS, EHESS, CNRS)"
+    corresponding : yes    # Define only one corresponding author
+    address       : "LSCP 29 rue d'Ulm, Paris, France "
+    email         : "alejandrina.cristia@ens.fr"
+date: "`r Sys.Date()`"
+site: bookdown::bookdown_site
+output: bookdown::gitbook
+documentclass: book
+bibliography: [book.bib, packages.bib]
+biblio-style: apalike
+link-citations: yes
+description: "This bookdown contains the scripts of instructional videos created in the context of the ExELang Project (exelang.fr)."
+---
+
+# Preface {-}
+
+This bookdown contains the scripts of instructional videos created in the context of the ExELang Project (exelang.fr). 
+
+Alejandrina Cristia is grateful for the funding and institutional support from Agence Nationale de la Recherche (ANR-17-CE28-0007 LangAge, ANR-16-DATA-0004 ACLEW, ANR-14-CE30-0003 MechELex, ANR-17-EURE-0017);  a J. S. McDonnell Foundation Understanding Human Cognition Scholar Award; and an ERC Consolidator grant (ExELang, 2021-2026). The funders had no role in the production of this bookdown or the associated videos. 
+
+We are also grateful to people who contributed to the contents:
+
+- Camila Scaff, on whose EMLAR class some of the visuals and content organization are based
+- Emmanuel Dupoux and Xuan Nga Cao, for their expertise on the babyloggers
+- Marvin Lavechin, for contributions on the explanation of the automated analysis software
+- Lucas Gautheron, on the ChildProject tutorial sections
+- Clementine Fourrier, for contacts with the ENS Audiovisual department
+- Catherine Urban, for administrative support
+
+
+
+```{r include=FALSE}
+# automatically create a bib database for R packages
+knitr::write_bib(c(
+  .packages(), 'bookdown', 'knitr', 'rmarkdown'
+), 'packages.bib')
+```

@@ -1,0 +1,44 @@
+# Non-Lena Softwares {#nonlena}
+
+In this video we're going to explain how to use software that is not Lena in order to do your analysis. One important point I want to make right off the bat is that you need to know a little bit of coding to use this software so if you have never used a terminal and if you don't know what bash or Python are then you probably want to get some training on that first.  we provide some links for this in the further resources section of this video. We are going to base our explanations on the software that was developed in the ACLEW project, where the analysis was broken down into several phases. The first phase involves deciding who speaks when. For this phase you need to use VTC short for voice type classifier. VTC was trained on a large corpus of over 200 hours of child-centred recordings that were put together by combining some data that we had in our lab with data available on CHILDES. most of the data actually came from CHILDES, in particular from the Tsay corpus that contains samples from a Chinese language. The rest of the data comes from several different languages including English French and other languages from Oceania, America, and Africa.  so one big difference compared to Lena is that he was not trained solely and exclusively on children learning English. 
+The second phase of analysis applies only to sections that the voice type classifier identified as being adult speech. For this but we use another piece of software that's called Alice short for automatic linguistic units counter.  Alice was also trained with multiple languages although much of the data was English from the US and from the UK.  both of these are open source that means that you can download them and reuse them -- you can even change them anytime as you think best, since both of them can be retrained. Even if both of them can be retrained, you can also use them out of the box. 
+
+Both of these tools have been benchmarked  against Lena and both of them are competitive.  Let's look at some data on their accuracy.
+
+
+First let's start with the voice type of classifier. We checked performance in a few ways.
+
+Let me start with results in a completely held out set:  the algorithm had never seen data from those corpora. We used data from the English portion of ACLEW, which matches the language on which LENA was trained -- but not our Voice Type Classifier, which was trained with multiple languages. The fact that LENA got to see more data in this language could lead LENA to have better performance than the Voice Type Classifier. 
+
+<!--insert table-->
+
+Here is the performance for each talker type -- in machine-learning terms, we call these "classes". KCHI is the class corresponding to the key child, chi that corresponding to other children, fem to adult females, mal to adult males. You can ignore speech (a class that is activated whenever anyone talks), and AVE (the average). 
+The first two columns show precision and recall. Precision means: when the algorithm said that something was a given talker what proportion of the time it actually was that talker? Recall means: what proportion of sounds or segments that were originally described as being a given speaker by human annotators were actually classified into that class by the algorithm? 
+You can combine both of these types of information together into a measure that's called f-score -- shown here in the last column.  In all three measures, higher is better. For recall, higher performance means that the algorithm successfully identified more of that class. For precision, higher precision means that more of the audio identified as a given class truly WAS that class. And finally, higher F-score can be obtained either because the algorithm found more of what it was looking for (so higher recall) and/or because it was more accurate (higher precision).  
+You can see here that in this test set (only English learning infants, recorded with a LENA device) we find pretty good scores for the key child and female adult, lower for male adult, and lower for other children. 
+How does the LENA software fare on the same data?
+Here is the Table for LENA performance on the exact same data:
+
+<!--insert table-->
+
+And here are both tables side by side
+(or even better, plot the data into a bar plot)
+
+We find better fscores for the voice type classifier than in LENA for all the classes.  The increase in performance is particularly salient for key child and female adult, which also tend to be the most common classes. This is great news because it means overall better performance.
+
+
+That is the performance in a completely held out set, which is great because  the algorithm had never seen data from those corpora and it allowed us to benchmark against LENA. But you may be interested in how good performance is across languages. For this, we are going to show you results from our "test set" -- this is a set of data that was drawn from the same corpora as the training set. But note that the test set is "new", since we didn't use it for training. That said, generalization here is smaller in terms of the fact that these data come from the same corpora that were used for training. One advantage of this evaluation is that it covers more languages -- remember that the corpora we used included English, French, a Chinese language, and many more. Moreover, the data were collected with a wide array of recording devices: LENA devices weren't even the majority of the data. 
+In this case, we see here that performance is also quite good for KCHI (the key child) and FEM (female adult), lower for MAL (male adults), and relatively low for other children (CHI). 
+
+<!--insert table-->
+
+However, please note that, as in the LENA case, performance for male speech and other children's speech is not very good -- so if you are interested in those classes, there is currently no algorithm that is perfect for them. That said, one of the goals of the exelang project is to improve performance on those classes so -- stay tuned!
+
+Let us now discuss performance of our word counting open source alternative, ALICE.
+
+<!--insert table-->
+
+In this chart we're showing you the evaluation for Alice: the y axis shows correlations between the word count estimation according to an algorithm and the human -- higher is better because it means the two agree more. Each one of the bars shows a different estimation, using different algorithms. We are going to focus only on two of these bars:
+ The bars for ALICE's word count estimation are yellow whereas those for LENA are purple. We didn't have LENA performance for all of the corpora because some of them were gathered with an olympus device, and as explained in the hardware video, you cannot annotate data with LENA unless you use a LENA device. In this evaluation, we only looked at languages that were represented in the training set, and also we retrained each language separately.  The corpora used contained mostly English, with some Spanish, Tseltal, and a little bit of French. In terms of recording devices, it was mostly LENA, with some data collected using olympus and other similar devices. Notice that in general performance is quite good, and certainly comparable to LENA: it's much better than LENA in two cases (the bergelson corpus, which is English-spoken and the LUCID 0-5 corpus, which is also English spoken), LENA is quite a bit better in one case (the McDivitt corpus, which is mainly English spoken) and just a little better in the last case having results for both (the Warlaumont corpus, mostly English). As for differences across languages and devices, it does not appear to be the case that the bars are always higher (ie correlations are always better) for English spoken corpora collected using LENA (BER, MCD, WAR, L05) than for corpora collected in other languages and with non-LENA devices (Tseltal, the Rosemberg corpus of Argentinean Spanish, and Yélî Dnye).
+
+Members of the ACLEW project also developed software to classify adult speech into child- versus adult-directed, but we feel performance of that algorithm is still not good enough to make a public release. We also developed a system for classifying the key child's sections into different vocalization types (crying, canonical, and non-canonical). This software is open source and available via a virtual machine, which we found in the past is a little hard to install and use. So for these two things, please stay tuned -- there will be developments in the future!

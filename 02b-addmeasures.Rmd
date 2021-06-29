@@ -1,0 +1,23 @@
+# Additional measures {#add}
+
+As we said in our introduction video, we are not going to talk into detail about how to collect and analyse data that are not audio, but we do want to have some reference for people interested in this work. There are some people who already have added other measures:
+
+## Movement
+
+One case where another measure is integrated in the device is the BABYLOGGER, which has an accelerometer. I (Alex) personally haven’t analysed those data, but in theory this could be useful if you want to look at changes in how children move (i.e. if you want to identify walking or crawling). To my knowledge, there aren't yet automated algorithms to do this, so you may need to do some manual annotation and algorithm development.
+
+## Visual information: Snapshots
+
+If you are interested in visual information, Marisa Casillas has used photo logging, so she used a device that is not longer purchasable, that is called LIFELOGGER and this took pictures every some numbers of seconds and Marisa has published two papers where she shows pictures taken by the device, so you can check them out -- see links in the resources. She also added a fish-eye lens, because she wanted to get more of the visual environment and, to my knowledge, she has quite a lot of hand annotations of this, also she has some explanatory work on how to automatise the analysis, but it is still to be done in the future. 
+
+
+## Visual information: Continuous recordings
+
+Some of you want to have videos to capture gestures and other things that cannot be captured by pictures. I know that many people are really really interested in this, but this can also be really really challenging. Why? Collecting videos requires a lot of energy and, as we briefly mentioned in the introduction, batteries make the hardware heavier. In the case of videos, the battery just runs out very quickly, so it’s not something that you can collect over an extended period of time -- i.e., hours at a time. So it's technically impossible to collect 10h of video with a device that is wearable by the child. 
+
+That said, what people are doing is that they are collecting videos separately, for a short period of time. An example would be the work of Elika Bergelson: she collected daylong audio recordings for a month for each child, and on a separate day she went back to the children’s homes, set up a tripod and had the kids wear a cap on which she had mounted two video cameras. This way, for each child, she has some video data and some audio data. So if you are interested in that approach, you can check out her work from the references. 
+
+## Other information
+
+There is another set of analysis and possibilities that come from Kaya de Barbaro's work. She has a few papers describing a technology that she and her team are developing and it’s really interesting because it contains many psycho-physiological measurements including for instance children’s heart rates. She also uses parental questionnaires on a phone app, which asks parents questions throughout the day and so this is another type of work that it’s beginning to be explored and so I encourage you to check out Kaya de Barbaros’s work for more information on that.
+

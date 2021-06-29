@@ -1,0 +1,8 @@
+# Evaluating your automated analyses {#evaluating}
+
+Regardless of whether you are using LENA or the ACLEW tools, it's always a good idea to check how accurate automated analyses are in your dataset. Here's a demonstration of this:
+<!--insert table-->
+
+This graph shows the correlation between human and automated word counts for several corpora, all of which were collected from English-speaking families with infants between roughly 1 and 3 years of age. The correlations, however, vary quite a bit, particularly in the ACLEW tool called ALICE (yellow bars).
+
+Here's another example from LENA: Accuracy on detecting the key child has been reported to be as low as 

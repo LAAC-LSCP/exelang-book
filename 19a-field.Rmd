@@ -1,0 +1,16 @@
+# Tips for field workers {#field}
+
+A possibility is that a key feature of your research is that it’s being done in a low resource environment: so you are a field researcher and you are going very far away to collect your data, maybe to a place where you don’t have access to electricity and you don’t have a lot of technical support there. In that case, what I would suggest, as we mentioned in the hardware video, is that you use USB devices. This is because they are very cheap and don’t look very fancy, so the chances you get them stolen are very low. But most importantly, they don’t require much energy. You can charge them with a simple solar panel, for instance. 
+
+This setting is optimal if you are going to work in a place where you and your team are the only ones around who use a computer, because, as we mentioned in the other video, USB don’t have any encryption, and they have a low bar for people  to steal data if they come across one of these devices. So, they are risky, for instance, in an urban setting, where people could think of making a copy of the data, should they find a device like that.
+
+
+Regarding clothing, we also want to point out something, because in our experience, communities have very strong ideas about how they feel about clothing. Some communities really want the clothing that the child is wearing to alert the people around that the child is being recorded, so they will be happy with you having them wear this funny-looking t-shirt or vests and they would choose that. This way, if you are working in a village, everybody in that village would know that they could be recorder and could easily avoid it. 
+
+It may also happen that everybody in the village already knows that the child is going to be recorded, so there is no point in having funny-looking vests. They might actually feel that if the kid was wearing something funny-looking, the other kids would mock him/her, so they don’t want that for their child. This is something you really want to talk to the communities about and have their feedback about it. 
+
+When we are working with these communities, we can decide to make the t-shirts, so something that we might offer to the families that participate is to keep the t-shirt. In fact, when you make the t-shirts, they are often not so easy to wash but quite cheap to make. 
+So, for instance, if you use a regular t-shirt you might spend maybe 4 US$, and use a paperclip to attach the device to the t-shirt. This way, the family can keep the t-shirt and it’s only worth 4 US\$ for you. 
+    
+
+
