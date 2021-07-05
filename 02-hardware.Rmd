@@ -37,7 +37,7 @@ For each recording device type, we'll discuss also any specific or special featu
 
 Let’s start with the most common device used, which is the LENA Foundation's DLP. 
 
-The LENA Foundation’s hardware (like its software) is durable, stable, and simple to use by all participants involved in developmental language studies (researcher, practitioner, parent, and child). At present it costs about 400 US$ a piece and you get a discount if you buy several of them. It allows you to record 24h straight and then the battery runs out. You can also ask the family who is doing the recording to recharge it, which will allow them to record 3 times. When the recording goes up to 72h, the memory is full, and then you need to extract the data before you can use it again. It is perfectly child-proof.
+The LENA Foundation’s hardware (like its software) is durable, stable, and simple to use by all participants involved in developmental language studies (researcher, practitioner, parent, and child). At present it costs about 400 US$ a piece and you get a discount if you buy several of them. It allows you to record 24h straight and then the battery runs out. You can also ask the family who is doing the recording to recharge it, which will allow them to record 3 times. When the recording goes up to 72h, the memory is full, and then you need to extract the data before you can use it again. It is perfectly childproof.
 
 Regarding special features, please note that you need to pay for the LENA software separately - they have several licenses, and you can ask for a quote, but just to give you an idea, you probably need about 5000 US$ to get started. One unique feature of LENA is that they have an accurate internal clock, that allows you to more easily know when recording was started and stopped.
 
@@ -86,7 +86,7 @@ The technical audio quality is comparable to those of the other devices, and alt
 
 Our team is currently turning to the BABYLOGGER. The Babylogger is being developed in France, and at present it is still in the piloting stage. We have bought quite a few because we think it is very promising.
 
-In our view, it has a few features that makes it more interesting than the LENA device: in fact, it has been molded on the LENA device with the goal of improving it. While it has about the same size, weight, sturdiness, and ease of use for the families as the LENA, the Babylogger has 4 microphones instead of just 1, it contains an accelerometer, which is interesting if you want to analyze movement data.
+In our view, it has a few features that makes it more interesting than the LENA device: in fact, it has been molded on the LENA device with the goal of improving it. While it has about the same size, weight, sturdiness, and ease of use for the families as the LENA, the Babylogger has 4 microphones instead of just 1, and it contains an accelerometer, which is interesting if you want to analyze movement data.
 
 But in our opinion, the very best features of the Babylogger are the length of the recording bout and of the total storage, and the fact that recordings are encrypted. Let me explain this.
 
@@ -134,28 +134,30 @@ If you are studying **social interactions** and want to make sure you capture in
 
 ## Summary
 
-```{r, echo=FALSE} 
+\tiny
+
+```{r, echo=FALSE, size = 'tiny'} 
 
 tab=NULL
 
 tab$hardware<-c("LENA", "iPods", "Olympus", "USB", "Babylogger", "Wireless systems")
-tab$ease<-c("easy for everybody", "not so easy, especially for families", "not easy for researchers and parents", "easy for everybody", "easy for everybody", "It depends")
+tab$ease<-c("easy", "not easy", "not easy for parents", "easy", "easy", "it depends")
 tab$cost<-c("400US$", "?", "200/300US$", "10/20US$", "600€", "?")
 tab$lenght<-c("24h", "?", "22h", "15h", "24h", "quite long")
-tab$storage<-c("72h", "?", "?", "depends on the brand", "72h", "?")
+tab$storage<-c("72h", "?", "?", "depends on the brand", "a week", "?")
 tab$childproof<-c("yes", "no", "no", "not completely: caps could be choking hazards", "yes", "not necessarily")
 tab$pros<-c("accurate internal clock", "collect data intermittently, recordings are time-stamped", "better audio quality than LENA, higher sampling frequency and a flat frequency response rate", "technical audio quality is comparable to those of the other devices, cheapest device", "molded on LENA but has 4 microphones instead of 1 and an accelerometer, encrypted recordings, best storage", "Quite cheap, can be easy to use, causes less privacy problems beacuse it doesn't record outside the child's home, has better audio quality")
 tab$cons<-c("/", "pricey", "heavy, data could be easily stolen, not accurately time-stamped", "sometimes recording fails, data could be stolen", "still in piloting stage: expensive and sometimes has issues", "you need to set up quite a bit of equipment in the child's home, ")
 tab$best<-c("For most people", "/", "If you are interested in phonetic or acoustic studies", "If you are doing field work in remote sites, or large-scale studies", "If you have some programming knowledge, and like tinkering with tech, or if you are doing a longitudinal study with a small number of families", "If you are interested in phonetic or acoustic studies, or if you are studying social interactions")
 tab=data.frame(tab)
-
-knitr::kable(tab, "pipe", col.name=c("Hardware", "Ease of use", "Cost", "Length of one bout", "Storage capacity", "Childproof", "Pros", "Cons", "Best choice for"), align=c("l", "l", "l", "l", "l", "l", "l", "l", "l"))
-
 library(kableExtra)
-kable(cbind(tab, tab)) %>%
-  kable_styling() %>%
-  scroll_box(width = "100%", box_css = "border: 0px;")
 
+kable(tab, "html", "pipe", col.name=c("Hardware", "Ease of use", "Cost", "Length of one bout", "Storage capacity", "Childproof", "Pros", "Cons", "Best choice for"), align=c("l", "l", "l", "l", "l", "l", "l", "l", "l"))  %>%
+ kable_styling(font_size = 8)
+
+#kable(cbind(tab, tab)) %>%
+#  kable_styling(font_size = 8) %>%
+#  scroll_box(width = "100%", box_css = "border: 0px;")
 
 ```
-
+\normalsize

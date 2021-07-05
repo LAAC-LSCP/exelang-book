@@ -15,6 +15,7 @@ bibliography: [book.bib, packages.bib]
 biblio-style: apalike
 link-citations: yes
 description: "This bookdown contains the scripts of instructional videos created in the context of the ExELang Project (exelang.fr)."
+
 ---
 
 # Preface {-}
@@ -23,14 +24,18 @@ This bookdown contains the scripts of instructional videos created in the contex
 
 Alejandrina Cristia is grateful for the funding and institutional support from Agence Nationale de la Recherche (ANR-17-CE28-0007 LangAge, ANR-16-DATA-0004 ACLEW, ANR-14-CE30-0003 MechELex, ANR-17-EURE-0017);  a J. S. McDonnell Foundation Understanding Human Cognition Scholar Award; and an ERC Consolidator grant (ExELang, 2021-2026). The funders had no role in the production of this bookdown or the associated videos. 
 
-We are also grateful to people who contributed to the contents:
+Alejandrina Cristia assumes full responsibility for the contents. Nonetheless, we are  grateful to people who contributed to the contents more or less directly:
 
 - Camila Scaff, on whose EMLAR class some of the visuals and content organization are based
-- Emmanuel Dupoux and Xuan Nga Cao, for their expertise on the babyloggers
+- Emmanuel Dupoux, Xuan Nga Cao, and Manel Khentout for their expertise on the babyloggers
 - Marvin Lavechin, for contributions on the explanation of the automated analysis software
 - Lucas Gautheron, on the ChildProject tutorial sections
 - Clementine Fourrier, for contacts with the ENS Audiovisual department
 - Catherine Urban, for administrative support
+- and particularly, to our collaborators in related projects, from whom we have learned tremendously 
+
+<!-- saliently Marisa Casillas, Elika Bergelson, Florencia Lopez Boo, Sarah Walker, Pauline Grosjean, Heidi Colleran, Jonathan Stieglitz, Gandhi Yetish. -->
+
 
 
 

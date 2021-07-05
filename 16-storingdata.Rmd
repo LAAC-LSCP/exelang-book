@@ -1,2 +1,13 @@
 # Storing your data {#storingdata}
 
+These data are precious and should be handled carefully, both to protect access and to make sure it is not lost. This will typically mean that once you have extracted data from the device, you should create a back-up. In our experience, it gets messy if you do a back-up by hand (through copy-pasting to another location), because you can make a mistake and replace a file, or forget to replace a file, and then you have copies that seem duplicates but you are not sure whether they are or not. Also, it is good practice for the back-up not to be in the same physical place as the main copy, as in case of fire, flood, or theft they may all disappear at once.
+
+Also, you should make sure people who do not have ethical clearance do not gain access to the data. Therefore, do not put the data in a cloud server (like Dropbox or Drive) with a link whereby anyone with the link can access it, since it means that if the link is found by someone, then they gain access to the data.
+
+Taking all of this into account, we believe a good solution is to use a system like Dropbox, Drive, or AWS because they keep a record of versions and do the back-up in the background, without you needing to do anything. Note that in some locations, those services may not be allowed because they are not specifically meant for sensitive data. 
+
+The solution we use in our lab is a little bit more technically involved, but it is HIPAA and GDPR-compliant. You can read more about it in Gautheron et al. (2021), in the Resources section.
+
+## Resources
+
+Gautheron, L., Rochat, N., & Cristia, A. (2021). Managing, storing, and sharing long-form recordings and their annotations. [pdf](https://psyarxiv.com/w8trm/download?format=pdf)

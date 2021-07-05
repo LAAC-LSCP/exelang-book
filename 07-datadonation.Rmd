@@ -12,7 +12,7 @@ In this case, we'll typically need to sign a bilateral agreement. This is ideal 
 
 - you'll always keep ownership (and main responsibility) over the data,
 - what you get from us can include expertise hours, equipment, data processing, and funding for logistics,
-- what we would like to get is the possibility to re-analyze your data within the scope of ExELang
+- what we would like to get is the possibility to re-analyze your data within the scope of [ExELang](https://drive.google.com/file/d/1k52yK1FYI76MlXtF4iWzuTlXFlETo6nu/view).
 
 Please note that in the agreement, we'll agree on an appropriate scope for *intellectual property*. At ExELang, we are specifically interested in relating children's experiences with how they talk, so we will ask for the ability to analyze and publish about this one point. If that covers your own research goals, we will discuss how to frame intellectual property so that it is ideal for both of us. 
 
@@ -44,6 +44,7 @@ tab$what<-c("Needs to create an account, use any format you want", "Needs to get
 tab$reusers<-c("Needs to create an account & get access from a curator", "Needs to get institution approved, create an account & get access from a curator", "Needs to create an account & get access from a curator (by signing a license)")
 tab=data.frame(tab)
 knitr::kable(tab, "pipe", col.name=c("Repository", "Ease of use", "What you, as curator, need to do", "What re-users need to do"), align=c("l", "l", "l", "l"))
+
 ```
 
 ### You don’t want to upload your data on a scientific repository but you are willing to create a license
@@ -54,15 +55,15 @@ This option allows you to make the effort of establishing rules for potential co
 When you create your license, you make the rules, so you can specify whatever you feel is best. You probably want to look at some examples:
 
 - https://www.ldc.upenn.edu/data-management/using/licensing
-- License for BabyTrain Corpus
-<!-- add link -->
+- [License for BabyTrain Corpus](https://docs.google.com/document/d/1RdR3c-LPkhBSqRoH1Wapf_G26v82LkOr47puQhTQqYU/edit)
+
 
 You can also use open source licences, but you need to know that they allow for re-distribution (i.e., the people who get hands on your corpus can re-distribute it). Just in case, we made a list of the most commonly used ones:
  
-- GNU: The GNU General Public Licence (GPL) is probably one of the most commonly used licenses for open-source projects. The GPL grants and guarantees a wide range of rights to developers who work on open-source projects. Basically, it allows users to legally copy, distribute and modify software. It’s a copyleft license: it means that the derived works need to have the same type of license.
-- MIT: The MIT License is the least restrictive license out there. It basically says that anyone can do whatever they want with the licensed material, as long as it’s accompanied by the license.
-- APACHE: The Apache License, Version 2.0, grants a number of rights to users. These rights can be applied to both copyrights and patents. 1) Rights are perpetual, 2) Rights are worldwide, 3) Rights are granted for no fee or royalty, 4) Rights are non-exclusive, 5) Rights are irrevocable, 6) Redistributing code also has special requirements, mostly pertaining to giving proper credit to those who have worked on the code and to maintaining the same license. It’s a non copyleft license: it means that the works derived can have a different type of license. 
-- CREATIVE COMMONS : Creative Commons (CC) licenses aren’t quite open-source licenses, but they are commonly used for design projects. A wide variety of CC licenses is available, each granting certain rights. A CC license has four basic parts, which can be enacted individually or in combination.
+- **GNU**: The GNU General Public Licence (GPL) is probably one of the most commonly used licenses for open-source projects. The GPL grants and guarantees a wide range of rights to developers who work on open-source projects. Basically, it allows users to legally copy, distribute and modify software. It’s a copyleft license: it means that the derived works need to have the same type of license.
+- **MIT**: The MIT License is the least restrictive license out there. It basically says that anyone can do whatever they want with the licensed material, as long as it’s accompanied by the license.
+- **APACHE**: The Apache License, Version 2.0, grants a number of rights to users. These rights can be applied to both copyrights and patents. 1) Rights are perpetual, 2) Rights are worldwide, 3) Rights are granted for no fee or royalty, 4) Rights are non-exclusive, 5) Rights are irrevocable, 6) Redistributing code also has special requirements, mostly pertaining to giving proper credit to those who have worked on the code and to maintaining the same license. It’s a non copyleft license: it means that the works derived can have a different type of license. 
+- **CREATIVE COMMONS**: Creative Commons (CC) licenses aren’t quite open-source licenses, but they are commonly used for design projects. A wide variety of CC licenses is available, each granting certain rights. A CC license has four basic parts, which can be enacted individually or in combination.
     
     - Attribution. The author must be attributed as the creator of the work. Beyond that, the work can be modified, distributed, copied and otherwise used.
     - Share Alike. The work can be modified, distributed and so forth, but only under the same CC license.

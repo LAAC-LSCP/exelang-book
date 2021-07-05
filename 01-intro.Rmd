@@ -2,10 +2,10 @@
 
 Hello, I'm Alex Cristia, principal investigator of the ExELang Project. For this Project, we are creating a series of videos to help researchers everywhere use long-form recordings to collect data on early language development.
 
-Long-form recordings are recordings made over an extended period of time, for instance, one whole day or even several days. 
+Longform recordings are recordings made over an extended period of time, for instance, one whole day or even several days. 
 They are often made using a wearable device, for instance, a recorder that is clipped on the child's clothing.
 
-Since each recording lasts several hours, often 10 or more, you will have many hours of audio for each child, and often hundreds or thousands across all children in your sample. So you cannot analyze this audio manually, by listening to it and transcribing what you hear, but instead you will need to use some kind of automated system, at least as a first pass. 
+Since each recording lasts several hours (often 10 or more) you will have many hours of audio for each child, and often hundreds or thousands across all children in your sample. So you cannot analyze this audio manually, by listening to it and transcribing what you hear, but instead you will need to use some kind of automated system, at least as a first pass. 
 
 Longform recordings are good if you want to look for broad phenomena that happen frequently, for example how frequently the child vocalizes or cries; you can get estimates and reasons why. 
 

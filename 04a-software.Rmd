@@ -1,6 +1,6 @@
 # Software {#software}
 
-In this videow, we are only goint to discuss the LENA software. We discuss alternatives to the LENA software in another dedicated video \@ref(nonlena).
+In this video, we are only going to discuss the LENA software. We discuss alternatives to the LENA software in another dedicated video \@ref(nonlena).
 
 Let us start with how the procedure goes for LENA. Once you have done your recording, you can connect the device to a computer with access to LENA-licensed software, that automatically extracts and analyzes the recording. There are two licenses allowing you to keep a copy of the recordings: “Pro” and “SP”. I really do not recommend buying the licenses that do not allow you to keep a copy of the recordings, because, as we discuss later, LENA is no longer state of the art, and the metrics that can be extracted are limited. So I won't be discussing other alternatives.
 
@@ -25,17 +25,19 @@ In addition, the system also provides an estimate of child vocal maturity compar
 
 If you are interested in collecting language properties such as measures of lexical diversity, syntactic complexity, and who is being talked to, you need to know that the LENA system doesn’t provide automated analysis for that.
 
-Also, the LENA software is most accurate for children learning American English aged between 2 months and 3 years, which is the population used to train and test the analysis software As with any tool, if you deviate from the population on which the tool was developed and validated,you should take care to test the extent to which the measurements are still reliable.
+Also, the LENA software is most accurate for children learning American English aged between 2 months and 3 years, which is the population used to train and test the analysis software. As with any tool, if you deviate from the population on which the tool was developed and validated,you should take care to test the extent to which the measurements are still reliable.
 
-1. In particular When you are deciding which recording device to use, you need to take into consideration the kinds of analysis you will be performing and the language spoken by the population you are studying. For example, the LENA software can only be used with LENA devices 
+In particular When you are deciding which recording device to use, you need to take into consideration the kinds of analysis you will be performing and the language spoken by the population you are studying. For example, the LENA software can only be used with LENA devices. 
     
-    a) also, the LENA software was trained on children 0-3 years learning American English
+Also, the LENA software was trained on children 0-3 years learning American English.
     
+    <!-- ac stopped here -->
     
-2. We'll see in a different video how well the LENA software fares with other languages but in a nutshell: pretty well in many, very poorly for some speaker types in some languages.
+We'll see in a different video how well the LENA software fares with other languages but in a nutshell: pretty well in many, very poorly for some speaker types in some languages.
 
-    a) so if you are working with a population that speaks one of these languages, the LENA software might provide you with inaccurate or inappropriate measurements 
-    b) and if you are working with a language speaking population that hasn't been validated, then you need to do the validation yourself -- we cover all of this in later videos 
+So:
+a) if you are working with a population that speaks one of these languages, the LENA software might provide you with inaccurate or inappropriate measurements; 
+b) if you are working with a language speaking population that hasn't been validated, then you need to do the validation yourself -- we cover all of this in later videos .
 
 The LENA system’s automated estimates are most reliable if the wearer is recorded for 12 or more consecutive hours within a single day, though the device can accommodate recordings being split over several days.
 

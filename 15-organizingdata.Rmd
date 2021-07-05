@@ -1,2 +1,45 @@
 # Organizing your data {#organizingdata}
 
+Long-form recordings are rich data -- but things can get messy if you don't keep your files organized correctly. We strongly recommend following a file organization that will allow you to use the ChildProject package -- we will explain the package in a dedicated video (\@ref{childproject}). More detailed explanations about this structure are available from the ChildProject documentation, but we provide here a brief and practical overview.
+
+There are at least three folders:
+
+- recordings
+- metadata
+- annotations
+
+You can have more folders, and you can extend the logic of these three once you understand the underlying principles, which we will explain next.
+
+First, the `recordings` folder contains at least one folder, called `raw`. Inside it, if you are using USBs or other such devices, where the file names are not meaningful nor unique, we recommend having one folder per child per recording day, so that you don't accidentally overwrite files or mix up which files belong to which children. If you are using LENA or Babylogger, file names are unique, so the danger is smaller, but you may find it useful to have one folder per child. We strongly discourage you from renaming files by hand, as errors can seep in.
+
+Second, the `annotations` folder contains one folder for each set of annotations. For instance, for LENA, you'll generate an .its file for each recording bout; for vtc, an .rttm file for each recording file.
+
+Finally, the `metadata` folder contains tabulated data (excel or csv) that contains the list of children and their properties (e.g., age). There is another file that relates each file inside `recordings` to a child. And another that relates annotations to recordings -- but this one is typically generated when you import annotation data, so you don't need to worry about it.
+
+So what is most important for you to do is to keep a good record of all the features of children and recordings as well as of which file inside `recordings` corresponds to which child. 
+
+## What information to collect about the children
+
+Collect at least:
+
+- date of birth
+- sex
+
+Many of our datasets also contain other information -- you can read the list [here](https://childproject.readthedocs.io/en/latest/format.html#children-notebook).
+
+## What information to collect about the recordings
+
+- date of recording
+- local time in which the recording was started
+- recording file name
+- child ID
+
+Many of our datasets also contain other information -- you can read the list [here](https://childproject.readthedocs.io/en/latest/format.html#recordings-notebook).
+
+
+
+## Resources
+
+[ChildProject documentation on datasets structure](https://childproject.readthedocs.io/en/latest/format.html)
+
+Gautheron, L., Rochat, N., & Cristia, A. (2021). Managing, storing, and sharing long-form recordings and their annotations. [pdf](https://psyarxiv.com/w8trm/download?format=pdf)

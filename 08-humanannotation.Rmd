@@ -1,8 +1,57 @@
 # Human annotation {#humanannotation}
 
-How to do validation: 
-First, we recommend a literature search [starting from Cristia et al. (2019)’s a systematic review], to determine whether there exists reliability data for a similar sample. If no reliability studies exist, draw 10 x 2 minutes randomly from 10 children. This is about 3h20min of data, which takes roughly 90h to annotate, in our experience. We recommend training annotators using the ACLEW Annotation Scheme https://osf.io/b2jep/, which has an online test annotators can go through to ensure reliability. Once the manual annotations are complete, the LENA® annotations can be extracted and compared against the human annotation using the code we provide in supplementary materials
-(https://github.com/jsalt-coml/lena_eval). This will allow researchers to extract the classification accuracy measures used here (false alarm rate, miss rate, confusion rate and the derived identification error rate), as well as CVC, CTC, and AWC comparing LENA® and human annotations. We note re-using our code is only possible “off the shelf” for manual annotations made using the ACLEW Annotation Scheme, though in principle, it is adaptable to other schemata by adept programmers.
-One issue that may arise is whether data should be sampled differently to, for example, make sure every class is represented the same amount of time and/or a minimum of time. Our understanding is that class imbalance and data scarceness is an important issue for training, and directly affects algorithm accuracy (this is a general problem, but to cite just one example on GMMs, Garcia-Moral, Solera-Urena, Pelaez-Moreno, & Diaz-de-Maria, 2011). However, it does not pose the same kind of problem for evaluation. That is, if there are no
-samples of a given category, then accuracy cannot be evaluated; if there are only a few, then it is possible that these are special in some way and accuracy estimates may not generalize well to others. Thus, it would indeed be desirable to have enough samples of a given label to reduce the impact of each individual instance, in case they are outliers. That said, almost any strategy that attempts to boost the frequency of specific categories risks worsening non-generalizability concerns. For instance, if one were to over-sample regions tagged by LENA® as MAN in the hopes of having more male samples, one may only be capturing certain types of male speech or acoustic properties. To take this example further, notice that male speech is our smallest category, representing 3% of the data. Since we sampled randomly or periodically, this represents the prevalence of male speech and the samples that are included are unlikely to be acoustically biased.
-Separately, researchers should reflect on the accuracy needed for their question of interest. For instance, suppose we have an evaluation of an intervention where we expect treatment children to hear 20% more speech than controls, or an individual difference study where we expect that the lower fifth of the children hear 20% less speech than the top fifth. If the intended measure used to compare groups has an error rate larger than the effect predicted (such as the the CTC error rate we find here), a different algorithm or outcome metric would be wise.
+Automated analyses are great because they can capture patterns over all of the data for each child, but you may consider also doing some annotations by humans. We see three purposes for human annotation:
+
+1. To check accuracy of automated analyses
+2. To do things that automated analyses don't yet do
+3. To complement with more qualitative data
+
+We provide some pointers for each of the three goals.
+
+## Checking accuracy
+
+If you are working with a population for which automated tools' accuracy has not been checked against a human standard, it is a good idea to do some annotation to this end. We provide you with information about how to do this here. Note that if you are working with English-speaking or bilingual children in North America, there have been several validation studies, so it is probably not a good use of your resources to do yet another validation study.
+
+Before you start, we recommend a literature search starting from Cristia, Bulgarelli, & Bergelson (2020)’s a systematic review (in this video's References), to make sure that there really is no  reliability data for a similar sample. If no reliability studies exist, then you can use the data you have collected in a pilot or your study. Do not collect data in a different environment from the one you are aiming to use the recorder in. In particular, do not record yourself reading a book next to the recording device in a sound-proof booth. The accuracy in such a setting will tell you very little about the accuracy of the algorithms in your spontaneous, naturalistic, child-centered sample.
+
+Draw 10 clips x 2 minutes randomly from each of 10 children. This is about 3h20min of data, which takes roughly 90h to annotate, in our experience. We recommend training annotators using the ACLEW Annotation Scheme https://osf.io/b2jep/, which has an online test annotators can go through to ensure accuracy of their own annotations. 
+
+Once the manual annotations are complete, the machine annotations can be extracted and compared against the human annotations easily, provided you are using ChildProject to organize your data. We have a separate video where we introduce you to ChildProject.
+
+In a nutshell, this will allow you to extract key classification accuracy measures used here (false alarm rate, miss rate, confusion rate and the derived identification error rate), as well as CVC, CTC, and AWC comparing LENA® and human annotations. We explain all of these terms in the video about Reliability and Validity.
+
+We insist that re-using our code is only possible “off the shelf” for manual annotations made using the ACLEW Annotation Scheme for the annotations, and ChildProject for organizing your data, although if you know how to program you can also  adapt it to other schemata.
+
+### FAQs
+
+Some people ask us whether it shouldn't be better to sample regions where we know the child to be talking a lot, or where there are lots of conversational exchanges between adults and the key child. A similar question is whether you cannot use annotations that you have sampled like that, for qualitative analyses, to have an idea of accuracy. If you have a limited annotation budget, of course re-using your annotations this way is better than nothing at all, but do note that if you sample your recording non-randomly, it is less certain that your conclusions based on such clips will generalize to the whole of the recording. 
+
+For instance, imagine that you were trying to decide whether the child little or a lot based on sections that have been selected because the child talks -- that would make it difficult to know because you've purposefully selected regions where they are talking, giving you a sort of ceiling effect. 
+
+Of course, if there are no samples of a given category, then accuracy of that category cannot be evaluated; and if there are only a few, then it is possible that these are special in some way and accuracy estimates may not generalize well to others. So if the sections you end up with have no "other child" or "male" speech, then perhaps you'll be uncertain of how well the algorithm picks up these voices. 
+
+
+
+## Doing things automated analyses could do but don't do quite well yet
+
+You may be interested in quantifying speech addressed to the key child versus to others, to separate child-directed from overheard speech; or perhaps you want to estimate the complexity of the child's vocalizations in terms of the sounds the child produces. Both of these goals are almost within reach of automated analyses. It is likely that both can be done with fairly local information -- that is, by listening to a sentence, you may be able to tell who it is spoken to. You may not need to know the whole context of the conversation.
+
+If that describes the kind of information you are hoping to extract, we strongly recommend considering to rely on citizen scientists -- see the Video on \@ref{IRB} for information on seeking IRB approval for this, and Zooniverse for an excellent citizen science platform. There are ways of processing your data so that it can be hosted in such a platform without revealing participants' identity or personal information.
+
+In some cases, you do need a little context -- at the very least to decide whether a child vocalization is meaningful or not. At this point, this is not a task that can be solved by a machine, and in fact it takes quite some training for humans to do it reliably and replicably. If this is the kind of thing you were thinking of, we recommend looking at Mendoza and Fausey's and Soderstrom et al's papers in the Resources section for more ideas.
+
+## Getting complementary information
+
+You may want to get ideas of the warmth of the interactions, or the contexts in which different languages are used in a multilingual household. In this case, we recommend the work of Cychosz, Villanueva, & Weisleder for more ideas.
+
+## Resources
+
+Cristia, A., Lavechin, M., Scaff, C., Soderstrom, M., Rowland, C., Räsänen, O., Bunce, J., & Bergelson, E. (2020) A thorough evaluation of the Language Environment Analysis (LENA) system. Behavior Research Methods. [preprint](https://osf.io/mxr8s) [online resource](https://osf.io/zdg6s/)
+
+Cristia, A., Bulgarelli, F., & Bergelson, E. (2020). Accuracy of the Language Environment Analysis (LENATM) system segmentation and metrics: A systematic review. Journal of Speech, Language, and Hearing Research. [online resources, including pdf](https://osf.io/4nhms/)
+
+Cychosz, M., Villanueva, A., & Weisleder, A. (2020). Efficient estimation of children's language exposure in two bilingual communities. [pdf](https://psyarxiv.com/dy6v2/download?format=pdf)
+
+Mendoza, J. K., & Fausey, C. M. (2021). Quantifying everyday ecologies: Principles for manual annotation of many hours of infants' lives. [pdf](https://psyarxiv.com/79vwe/download?format=pdf)
+
+Soderstrom, M., Casillas, M., Bergelson, E., Rosemberg, C., Alam, F., Warlaumont, A. S., & Bunce, J. (2021). Developing A Cross-Cultural Annotation System and MetaCorpus for Studying Infants’ Real World Language Experience. Collabra: Psychology, 7(1), 23445. [pdf](https://psyarxiv.com/bf63y/download?format=pdf)

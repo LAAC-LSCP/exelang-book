@@ -1,16 +1,42 @@
 # Tips for field workers {#field}
 
-A possibility is that a key feature of your research is that it’s being done in a low resource environment: so you are a field researcher and you are going very far away to collect your data, maybe to a place where you don’t have access to electricity and you don’t have a lot of technical support there. In that case, what I would suggest, as we mentioned in the hardware video, is that you use USB devices. This is because they are very cheap and don’t look very fancy, so the chances you get them stolen are very low. But most importantly, they don’t require much energy. You can charge them with a simple solar panel, for instance. 
+This video will focus on how to adapt data collection specifically to field conditions. First of all, by field conditions we mean cases in which you work far away from your usual lab, sometimes you won’t have a lot of access to water or to electricity (or both of them), and you don’t have a lot of technical support. The water is important when you need to wash your t-shirts, or any other kind of clothing you want to use for the hardware while electricity is fundamental for sure to recharge the devices used for data collection but also if you have some kind of in-the-field data annotation, this is also something to bear in mind.
 
-This setting is optimal if you are going to work in a place where you and your team are the only ones around who use a computer, because, as we mentioned in the other video, USB don’t have any encryption, and they have a low bar for people  to steal data if they come across one of these devices. So, they are risky, for instance, in an urban setting, where people could think of making a copy of the data, should they find a device like that.
+## Devices
 
+In field sites, we recommend USB devices. This is because they are very cheap and don’t look very fancy, so the chances you get them stolen are very low. But most importantly, they don’t require much energy. You can charge them with a simple solar panel, for instance. 
 
-Regarding clothing, we also want to point out something, because in our experience, communities have very strong ideas about how they feel about clothing. Some communities really want the clothing that the child is wearing to alert the people around that the child is being recorded, so they will be happy with you having them wear this funny-looking t-shirt or vests and they would choose that. This way, if you are working in a village, everybody in that village would know that they could be recorder and could easily avoid it. 
+USBs are optimal if you are going to work in a place where you and your team are the only ones around who use a computer, because, as we mentioned in the hardware video, USBs don’t have any encryption, and they have a low bar for people  to steal or copy the data from them if they come across one of these devices. 
 
-It may also happen that everybody in the village already knows that the child is going to be recorded, so there is no point in having funny-looking vests. They might actually feel that if the kid was wearing something funny-looking, the other kids would mock him/her, so they don’t want that for their child. This is something you really want to talk to the communities about and have their feedback about it. 
+You may still be thinking of LENA. Another issue we have come across with using LENA in the field is that it requires quite a bit of energy to be recharged, even if it is recharged from a USB port. Moreover, transferring the data is not that fast, and you need to do something special in your computer to extract the recording, which will not be immediately available to you. That is, even with a PRO License (which allows you to use the software in a portable computer), you don't extract the recording directly, but instead, first need to extract the data, then analyze it (which takes several hours of processing), and only then can you export the audio data. In our experience, we do not take all of these steps because the field sites we work in are not on the grid. Instead, we only take the step of transferring data from the device to the computer, and leave the processing and export for when we are back on the grid.
 
-When we are working with these communities, we can decide to make the t-shirts, so something that we might offer to the families that participate is to keep the t-shirt. In fact, when you make the t-shirts, they are often not so easy to wash but quite cheap to make. 
-So, for instance, if you use a regular t-shirt you might spend maybe 4 US$, and use a paperclip to attach the device to the t-shirt. This way, the family can keep the t-shirt and it’s only worth 4 US\$ for you. 
+## Clothing
+
+Regarding clothing, using paper or money clips to attach the device to the child's clothing is probably your top option. That said, if the regular clothing is loose, then we don't recommend using a money clip. As explained in the Clothing video, this will result in relatively poor data quality.
+
+Before you make your final clothing decision, we encourage you to talk to members of the community and get their opinion. In our experience, communities have very strong ideas about how they feel about clothing. Some communities really want the clothing that the child is wearing to alert everyone that the child is being recorded, so they will be happy with you having the child wear a funny-looking t-shirt or vests and they would choose that over alternatives. This way, if you are working in a village, everybody in that village would know that they could be recorded if they come close to the child, and can easily avoid it. 
+
+It may also happen that everybody in the village already knows that the child is going to be recorded, so there is no point in having funny-looking vests. They might actually feel that if the child was wearing something funny-looking, the other kids would mock him/her, so they don’t want that for their child. 
+
+In short, clothing is something you really want to talk to the communities about and have their feedback about it. 
+
+When we are working with similar communities, we typically decide to have one t-shirt made for each family, so something that we might offer to the families that participate is to keep the t-shirt. In fact, when you make the t-shirts, they are often not so easy to wash but quite cheap to make. So, for instance, if you use a regular t-shirt you might spend maybe 4 US$, and use a paper clip to attach the device to the t-shirt. This way, the family can keep the t-shirt and it only costs 4 US\$ for you. 
     
+In contrast, if you buy LENA t-shirts, each one costs 25 US\$, so you may want to buy fewer and wash them. This also adds to the work you need to do for each family that is recorded, of course.
+
+## Logistics
+
+The other thing to bear in mind is how you are going to get the devices to and from different places. If you are using LENA, typically you will have set the time to the local time, so that’s fantastic because you will have the times of the recordings. If you are not using Lena, and you are using an USB or Olympus instead, often you won’t have a correct time stamp for when the recording started. We discuss this in the context of data collection because in the past sometimes we have given this task to local research assistants and they have provided the parents with a recording device and asked them to start the device at some point in the following day. This means you cannot have a specific record of when the recording was started and so that’s tricky because very often we do need to know the time samp in order to be able to interpret. Let me give you an example: it may happen that the parents forget to turn on the device and they actually only turn it on 1pm when you are in a place where the sun sets at 6pm and this means you’ll get 5 hours of daytime and then the rest of your recording will technically be at nightime and so, if you see lower levels of talking at that time it could just be that the family recorded at this time. 
+
+The other thing to bear in mind with the USB is that the family can turn it on and off at any point in time and sometimes we have found that the USB do seem to have multiple files for reasons we haven’t understood, which could be families turning them on and off but it could also be for technical reasons that are beyond anyone’s control, and you can’t be sure what is the scope of the recording itself. 
+
+Ideally you would want to deliver the recording device and write down what the time is. so one thing that you could do perhaps is the following:if you must leave the USB with the family, you can leave them a watch or some kind of clock and have them keep a record of when they started and stopped the recording. So, when you have these two edges, you can for instance non only know when the recording took place and adjust it to your quantitative estimates but also check whether there are any gaps in the recording based on if you are used to produce multiple files you can put them all together and make sure that this adds up to the same and if not, have an idea of how much time is missing between each of the files. 
+
+## Storage
+
+One last piece of advice, which is pretty obvious if you have done field work in the past: Make sure you have several devices on which you can make encrypted copies of your data, in case one or two of them fail or are stolen. Foresee about 2G per audio recording, so if you plan on making 100 recordings, then you're probably better off with a couple of hard drives with 1T of space in each.
 
 
+## Resources
+
+[Example USB](https://www.amazon.fr/SMARTEX-Enregistreur-vocal-heures-Audio/dp/B018U60YYM/)

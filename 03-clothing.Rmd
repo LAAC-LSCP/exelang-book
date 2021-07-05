@@ -14,11 +14,11 @@ If you don’t buy LENA t-shirts, you have a few other options.
 
 ### Non-LENA t-shirts
 
-First, you can try and replicate what LENA's decide, meaning having t-shirts with a pocket sewed on them. In our experience, buying 100% cotton t-shirts and having pockets sown on them is going to cost you more or less the same as buying LENA t-shirts, with a lot more hassle, since you need to find someone for the sowing, send them a prototype, etc. If you are using LENA or Babylogger as your device, then you're probably better off buying t-shirts from LENA. 
+First, you can try and replicate what LENA decided, meaning having t-shirts with a pocket sewed on them. In our experience, buying 100% cotton t-shirts and having pockets sewn on them is going to cost you more or less the same as buying LENA t-shirts, with a lot more hassle, since you need to find someone for the sewing, send them a prototype, etc. If you are using LENA or Babylogger as your device, then you're probably better off buying t-shirts from LENA. 
 
 However, you may have no choice than custom-made clothing. This may happen because you work in conditions where t-shirts are not ideal - perhaps it is too cold, with children outside most of the time wearing several other layers of clothing, in which case the recording will be muffled. Or if you have chosen a wireless system, one or two USBs, or a hand-held recorder -- all of these devices require pockets that are a different size from LENA's device (and pocket). 
 
-In this case what we suggest is that you make pockets where the device can fit perfectly snuggly, so that it doesn’t move while recording and this avoids recording too much noise. The pocket must be really very very tight, so that there is absolutely no friction between the clothing and the recording device. Additionally, the t-shirt itself should be tight against the child's body, and not hanging loose.
+In this case what we suggest is that you make pockets where the device can fit perfectly snuggly, so that it doesn’t move while recording and this avoids recording too much noise. The pocket must be really very, very tight, so that there is absolutely no friction between the clothing and the recording device. Additionally, the t-shirt itself should be tight against the child's body, and not hanging loose.
 
 Second, you can buy a t-shirt that already has a pocket, even if the pocket is not the right size, as long as you stuff something in so that the device itself doesn't move. You can use fabric, or cotton -- whatever you use, just consider that the family should be able to retrieve the device to turn it off and put it back in after turning it on, without causing bad quality data (e.g., by putting the stuffing on top of the device rather than behind it). Also, ask yourself whether the stuffing may present any kind of hazard to the child.
 
@@ -40,11 +40,11 @@ For example, if you are going to work with populations where t-shirts are just t
 
 An excellent alternative are vests. LENA does not sell them anymore, but you can ask around and see if someone still has them because they are really terrific: the child can wear them as inner or outer layers of clothing, so they can be a good solution both for places that are very hot or very cold. This will probably mean that you need to custom-design a vest, and a pocket.
 
-If you don’t find anybody who can sew pockets on your t-shirts, or if you cannot afford to buy regular t-shirts with pockets you might want to consider an alternative. 
+If you don’t find anybody who can sew pockets on your t-shirts, or if you cannot afford to buy regular t-shirts with pockets you might want to consider this alternative. 
 
 ### Bras
 
-A possibility is that you create a system of straps that kind of looks like a bra. One researcher that uses them is Marisa Casillas, so you can check her papers in the references, where she has a picture of this: it has a pocket on the front where you can put the device. Since it uses less material, it typically is easier to make and it is cheaper. In addition, you can make the straps elastic, wchih will allow you to fit children of different ages. It can be used in very warm and very cold climates.
+A possibility is that you create a system of straps that kind of looks like a bra. One researcher that uses them is Marisa Casillas, so you can check her papers in the references, where she has a picture of this: it has a pocket on the front where you can put the device. Since it uses less material, it's typically easier to make and it is cheaper. In addition, you can make the straps elastic, which will allow you to fit children of different ages. It can be used in very warm and very cold climates.
 
 ### Attaching the device to a piece of clothing
 
@@ -54,5 +54,5 @@ Another option is to buy a money clip or a very large paper clip, so that you ca
 
 I've already said this but I cannot repeat this enough: To ensure the best quality audio,
 
-1. try to use clothing where the device is completely stable (tight-fitting clothing, device firmly attached): you want to avoid noises from clothes rustling as much as possible;
-2. place the recorder in the outermost layer of clothing possible to aovid muffled sounds
+1. Try to use clothing where the device is completely stable (tight-fitting clothing, device firmly attached): you want to avoid noises from clothes rustling as much as possible;
+2. Place the recorder in the outermost layer of clothing possible to aovid muffled sounds.
