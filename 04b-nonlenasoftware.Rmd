@@ -1,4 +1,4 @@
-# Non-Lena Softwares {#nonlena}
+# Non-Lena Softwares {#nonlenasoftware}
 
 In this video we're going to explain how to use software that is not LENA in order to do your analysis. One important point I want to make right off the bat is that you need to know a little bit of coding to use this software so if you have never used a terminal and if you don't know what bash or Python are then you probably want to get some training on that first.  we provide some links for this in the further resources section of this video. We are going to base our explanations on the software that was developed in the ACLEW project, where the analysis was broken down into several phases. 
 

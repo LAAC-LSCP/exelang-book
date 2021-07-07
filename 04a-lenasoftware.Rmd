@@ -1,4 +1,4 @@
-# Software {#software}
+# LENA software {#lena}
 
 In this video, we are only going to discuss the LENA software. We discuss alternatives to the LENA software in another dedicated video \@ref(nonlena).
 
@@ -13,9 +13,9 @@ Through this step, you extract the audiorecording from the recording device to "
 
 Once the analysis is complete, the LENA software provides several types of automated annotations. You will be given a file in which the audio signal has been classified into different types of classes (for example you will have: key child, adults, TV, etc.). 
 
-Also, the segments tagged as belonging to the key child, will have an estimate of what portions are vegetative (e.g., burps) or crying, as opposed to speech. 
+Also, the segments tagged as belonging to the key child, will have an estimate of what portions are vegetative (e.g., burps) or crying, as opposed to speech. In recent versions of the software, speech-like vocalizations are also tagged in terms of the number of canonical sounds they contain.
 
-Finally, for each stretch of speech tagged as being produced by an adult, there will be an estimate of the number of words spoken in that stretch.
+Finally, for each stretch of speech tagged as being produced by an adult, there will be an estimate of the number of words spoken in that stretch. 
 
 
 At a second level, the LENA software also derives a few descriptive statistics that are averaged over five minutes, one hour, and the whole day. 
@@ -23,21 +23,16 @@ At a second level, the LENA software also derives a few descriptive statistics t
 In addition, the system also provides an estimate of child vocal maturity compared to other children of the same age and sex using a standardized score called Automatic Vocalization Assessment (AVA).
 <!-- ac stopped here -->
 
-If you are interested in collecting language properties such as measures of lexical diversity, syntactic complexity, and who is being talked to, you need to know that the LENA system doesn’t provide automated analysis for that.
+If you are interested in collecting language properties such as measures of lexical diversity, syntactic complexity, and who is being talked to, you need to know that the LENA system doesn’t provide automated analysis for that. (Incidentally, no current software does this yet.)
 
-Also, the LENA software is most accurate for children learning American English aged between 2 months and 3 years, which is the population used to train and test the analysis software. As with any tool, if you deviate from the population on which the tool was developed and validated,you should take care to test the extent to which the measurements are still reliable.
+Also, the LENA software is in principle most accurate for children learning American English aged between 2 months and 3 or 4 years, which is the population used to train and test the analysis software As with any tool, if you deviate from the population on which the tool was developed and validated, you should take care to test the extent to which the measurements are still reliable.
 
-In particular When you are deciding which recording device to use, you need to take into consideration the kinds of analysis you will be performing and the language spoken by the population you are studying. For example, the LENA software can only be used with LENA devices. 
-    
-Also, the LENA software was trained on children 0-3 years learning American English.
-    
-    <!-- ac stopped here -->
-    
+We don't mean to scare you by saying that, and you may be surprised since you have probably heard that "LENA has been validated in many languages". We have reviewed carefully this previous literature, and indeed, it is the case that people working in a wide range of languages have looked at the accuracy of LENA. That doesn't mean that accuracy is perfect everywhere! So the phrase that "LENA has been validated in many languages" is not perfectly accurate, it should be instead "there have been checks of LENA validity in many languages"
+
 We'll see in a different video how well the LENA software fares with other languages but in a nutshell: pretty well in many, very poorly for some speaker types in some languages.
 
-So:
-a) if you are working with a population that speaks one of these languages, the LENA software might provide you with inaccurate or inappropriate measurements; 
-b) if you are working with a language speaking population that hasn't been validated, then you need to do the validation yourself -- we cover all of this in later videos .
+So if you are not working with English-learning infants 0-3 years, then the first thing you should oso if you are working with a population that speaks one of these languages, the LENA software might provide you with inaccurate or inappropriate measurements 
+    b) and if you are working with a language speaking population that hasn't been validated, then you need to do the validation yourself -- we cover all of this in later videos 
 
 The LENA system’s automated estimates are most reliable if the wearer is recorded for 12 or more consecutive hours within a single day, though the device can accommodate recordings being split over several days.
 
