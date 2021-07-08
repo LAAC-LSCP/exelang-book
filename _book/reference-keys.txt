@@ -153,3 +153,13 @@ clothing-1
 storage
 resources-7
 logistics-3
+lena
+nonlenasoftware
+whereanalyze
+basic-concepts
+lena-software
+aclew-tools
+voice-type-classifier
+alice
+resources-8
+if-you-want-a-standardized-language-assessment
