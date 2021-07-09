@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Chapter 13 Evaluating your automated analyses | Long-form recordings: From A to Z</title>
   <meta name="description" content="This bookdown contains the scripts of instructional videos created in the context of the ExELang Project (exelang.fr)." />
-  <meta name="generator" content="bookdown 0.22 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Chapter 13 Evaluating your automated analyses | Long-form recordings: From A to Z" />
   <meta property="og:type" content="book" />
@@ -23,7 +23,7 @@
 
 
 
-<meta name="date" content="2021-07-08" />
+<meta name="date" content="2021-07-09" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -32,7 +32,7 @@
   
 <link rel="prev" href="whereanalyze.html"/>
 <link rel="next" href="accuracy.html"/>
-<script src="libs/header-attrs-2.9/header-attrs.js"></script>
+<script src="libs/header-attrs-2.7/header-attrs.js"></script>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -50,13 +50,10 @@
 
 
 
-<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
-<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
 <script src="libs/kePrint-0.0.1/kePrint.js"></script>
 <link href="libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
 <link href="libs/bsTable-3.3.7/bootstrapTable.min.css" rel="stylesheet" />
 <script src="libs/bsTable-3.3.7/bootstrapTable.js"></script>
-
 
 
 
@@ -242,7 +239,7 @@
 <h1><span class="header-section-number">Chapter 13</span> Evaluating your automated analyses</h1>
 <p>Regardless of whether you are using LENA or the ACLEW tools, it’s always a good idea to check how accurate automated analyses are in your dataset. Here’s a demonstration of this:</p>
 <!--insert table-->
-<p>This graph shows the correlation between human and automated word counts for several corpora, all of which were collected from English-speaking families with infants between roughly 1 and 3 years of age. The correlations, however, vary quite a bit, particularly in the ACLEW tool called ALICE (yellow bars). We introduce ALICE in Video @ref{nonlenasoftware}, and we discuss its accuracy overall in Video @ref{accuracy}. But for now, what we want to say is general to any tool, and it has to do with the question of how you interpret results of automated analyses in general.</p>
+<p>This graph shows the correlation between human and automated word counts for several corpora, all of which were collected from English-speaking families with infants between roughly 1 and 3 years of age. The correlations, however, vary quite a bit, particularly in the ACLEW tool called ALICE (yellow bars). We introduce ALICE in Video <a href="nonlenasoftware.html#nonlenasoftware">5</a>, and we discuss its accuracy overall in Video <a href="accuracy.html#accuracy">14</a>. But for now, what we want to say is general to any tool, and it has to do with the question of how you interpret results of automated analyses in general.</p>
 <p>To prove this to you, here’s another example, this time from LENA: the correlation between human counts of child-adult conversational turns and the corresponding LENA’s automated counts was .7 in one study on Vietnamese learners (Ganek et al., 2018), but only -.03 in another on Korean learning infants (Pae et al., 2016).</p>
 <p>So when you hear someone say that “LENA has been validated” – what can this mean? We think today what this means is that someone did a study to check how accurate LENA metrics were in a given sample, but it does not necessarily mean that the accuracy was high enough for the purposes you want to use LENA, or whatever other software.</p>
 <p>In this video, we want to first introduce some concepts which will be useful to understand how to assess an algorithm’s accuracy, which is necessary for you to decide whether any algorithm is appropriate for your own research or applied goals.</p>
@@ -250,7 +247,7 @@
 <h2><span class="header-section-number">13.1</span> Basic concepts</h2>
 <p>We use the term <em>accuracy</em> to describe in general how well metrics extracted from a pipeline including some software is. So we will use this term a bit like an umbrella term.</p>
 <p>Accuracy can be assessed in many ways.</p>
-<p>As we saw in the Video @ref{nonlenasoftware}, one of the first things algorithms do is say which stretches of the audio correspond to which speakers. Within speech technology, evaluation of this type of classification is done in two main ways: using recall, precision, and the derived F-score; and/or using false alarms, misses, and confusions, which can be combined in a diarization error rate, or an identification error rate. We define each in turn.</p>
+<p>As we saw in the Video <a href="nonlenasoftware.html#nonlenasoftware">5</a>, one of the first things algorithms do is say which stretches of the audio correspond to which speakers. Within speech technology, evaluation of this type of classification is done in two main ways: using recall, precision, and the derived F-score; and/or using false alarms, misses, and confusions, which can be combined in a diarization error rate, or an identification error rate. We define each in turn.</p>
 <p>We use the term “recall” to say: what proportion of acoustic stretches that a human calls a category, say “key child,” have been discovered by the machine and put in a given class, say “key child.” A little mnemonic trick: you can call recall “recatch,” to remember that it represents what proportion has been caught with a given name. It may be easiest to assume that the category is the same for now: so for instance, what proportion of the vocalizations that the human said were spoken by the key child were discovered and classified as key child vocalizations by the machine. In reality, however, the machine and the human could use different labels – perhaps the human calls the key child “Martin” and the machine “CHN.” But if you find that confusing, just focus on cases in which the machine and the human use the same label.</p>
 <p>Precision represents instead what proportion of acoustic stretches that the machine calls a category, say “key child,” belong to a given category according to the human. This one is easier to remember – if someone asks you “but how precise are LENA’s key child labels?” it’s easy to answer by looking at this metric, and assuming that the machine and human labels are the same, because it just means what proportion of, for instance, bits the machine said were key child vocalizations truly were such according to a human annotator. In reality, just as with recall, precision can be calculated for every combination of labels across humans and machines – but let us leave that aside for a moment.</p>
 </div>
@@ -290,7 +287,6 @@ gitbook.start({
 "weibo": false,
 "instapaper": false,
 "vk": false,
-"whatsapp": false,
 "all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
 },
 "fontsettings": {

@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Chapter 6 Tutorial of our ChildProject software | Long-form recordings: From A to Z</title>
   <meta name="description" content="This bookdown contains the scripts of instructional videos created in the context of the ExELang Project (exelang.fr)." />
-  <meta name="generator" content="bookdown 0.22 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Chapter 6 Tutorial of our ChildProject software | Long-form recordings: From A to Z" />
   <meta property="og:type" content="book" />
@@ -23,7 +23,7 @@
 
 
 
-<meta name="date" content="2021-07-08" />
+<meta name="date" content="2021-07-09" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -32,7 +32,7 @@
   
 <link rel="prev" href="nonlenasoftware.html"/>
 <link rel="next" href="piloting.html"/>
-<script src="libs/header-attrs-2.9/header-attrs.js"></script>
+<script src="libs/header-attrs-2.7/header-attrs.js"></script>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -50,13 +50,10 @@
 
 
 
-<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
-<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
 <script src="libs/kePrint-0.0.1/kePrint.js"></script>
 <link href="libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
 <link href="libs/bsTable-3.3.7/bootstrapTable.min.css" rel="stylesheet" />
 <script src="libs/bsTable-3.3.7/bootstrapTable.js"></script>
-
 
 
 
@@ -240,16 +237,16 @@
             <section class="normal" id="section-">
 <div id="childproject" class="section level1" number="6">
 <h1><span class="header-section-number">Chapter 6</span> Tutorial of our ChildProject software</h1>
-<p>The ChildProject package is one part of a three-part solution to the difficulties faced when working with long-form recordings. The other two parts are Datalad and git-annex, which we do not detail here.</p>
-<p>ChildProject is a package to manage daylong recordings. It is written in python, but it can also be used from the command line so that no knowledge of python required. However, notice that this does presupposed that you know your way around a terminal – if you have no idea what that means, we strongly encourage you to take the online and free tutorial by Software Carpentry in the resources section. As we said in another video, people who know another computer language (like python or R) learn bash basics in less than an hour. And if you don’t know other languages, it may take you 3-4 hours, so it’s still not very time consuming.</p>
+<p>The <strong>ChildProject package</strong> is one part of a three-part solution to the difficulties faced when working with long-form recordings. The other two parts are Datalad and git-annex, which we do not detail here.</p>
+<p>ChildProject is a package to manage daylong recordings. It is written in python, but it can also be used from the command line so that no knowledge of python is required. However, notice that this does presuppose that you know your way around a terminal – if you have no idea what that means, we strongly encourage you to take the online free tutorial by Software Carpentry in the resources section. As we said in another video, people who know another computer language (like python or R) learn bash basics in less than an hour. And if you don’t know other languages, it may take you 3-4 hours, so it’s still not very time consuming.</p>
 <p>Within ChildProject, we have defined standards regarding the structure of the data, which we explained in previous videos. The package helps enforce these standards with tests. It also provides tools to convert annotations from a variety of input formats (LENA, ELAN, Praat, ALICE/VTC, etc.) And, it has more functionalities, including batch audio conversion, sampling of the audio data for annotation, generation of files for annotation using ELAN, anonymization of LENA’s .its files, and more!</p>
-<p>All of this power comes from having defined very clear standards as to how your dataset are structured. This does mean that you need to organize it in a specific way. We explain how to organize your data in the Video @ref{organizingdata}. With ChildProject, you can check whether you have actually organized correctly by running a simple command: <code>childproject validate .</code>.</p>
+<p>All of this power comes from having defined very clear standards as to how your dataset is structured. This means that you need to organize it in a specific way. We explain how to organize your data in the Video <a href="organizingdata.html#organizingdata">10</a>. With ChildProject, you can check whether you have actually organized correctly by running a simple command: <code>childproject validate .</code>.</p>
 <p>The package also provides some commands to import annotations into a standardized .csv format. With these commands, you can get the package to convert raw annotations (from humans, LENA, etc.) to CSV dataframes, and index them in metadata/annotations.csv in a way that makes it easy to then do other manipulations, like finding which sections of the audio are in common between two human annotators, or between LENA and a human annotator, for instance to calculate reliability.</p>
-<p>Another reason to adopt our framework is not just that you’ll be able to perform such computations, and enrich your dataset, but also that we give you a framework in which you can keep track of the changes you make to your dataset. For this, we use DataLad.</p>
-<p>DataLad is a decentralized system for integrated discovery, management, and publication of digital objects of science. It builds on git-annex, which builds on git. In a nutshell, git is a system for version control, which keeps a history of all the files you put in a place and all the changes made to them. If you’ve used the history in Google Drive or Dropbox, it’s a bit like that, except that you have more control over how the versions are defined, and you can add comments as to how they differ from previous ones.</p>
+<p>Another reason to adopt our framework is not just that you’ll be able to perform such computations, and enrich your dataset, but also that we give you a framework in which you can keep track of the changes you make to your dataset. For this, we use <strong>DataLad</strong>.</p>
+<p><strong>DataLad</strong> is a decentralized system for integrated discovery, management, and publication of digital objects of science. It builds on git-annex, which builds on git. In a nutshell, git is a system for version control, which keeps a history of all the files you put in a place and all the changes made to them. If you’ve used the history in Google Drive or Dropbox, it’s a bit like that, except that you have more control over how the versions are defined, and you can add comments as to how they differ from previous ones.</p>
 <p>One limitation that git has is that it does not handle large or binary files very well – it has a hard time finding changes in these kinds of files. So git-annex is an extension of git that handles large files.</p>
 <p>DataLad is built on git-annex, and adds abstraction and more features, like analysis reproducibility, dataset nesting, and others. We won’t cover all of these in this series because once you can understand the principles of dataset nesting, you’re ready to take on purely written instructions. So for these more “advanced” operations, we recommend checking the ChildProject documentation and the Discussion section, both of which are linked in the Resources section.</p>
-<p>Last thing: if you use our framework, you will also find really easy-to-follow instructions to create a private archive on GIN, the G-node infrastructure, which is a university-led project trying to help neuroscientists use modern data management techniques. We have been lucky enough that they have allowed us to host our datasets with them. If these grow very very large, we may need to pay some costs. But for now, it is an amazing resource because it has a git-annex-compatible interfact, and the servers are in Germany, and are GDPR-compliant.</p>
+<p>One last thing: if you use our framework, you will also find really easy-to-follow instructions to create a private archive on GIN, the G-node infrastructure, which is a university-led project trying to help neuroscientists use modern data management techniques. We have been lucky enough that they have allowed us to host our datasets with them. If these grow very very large, we may need to pay some costs. But for now, it is an amazing resource because it has a git-annex-compatible interface, the servers are in Germany, and are GDPR-compliant.</p>
 <div id="resources" class="section level2" number="6.1">
 <h2><span class="header-section-number">6.1</span> Resources</h2>
 <p><a href="https://childproject.readthedocs.io">ChildProject documentation</a></p>
@@ -288,7 +285,6 @@ gitbook.start({
 "weibo": false,
 "instapaper": false,
 "vk": false,
-"whatsapp": false,
 "all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
 },
 "fontsettings": {

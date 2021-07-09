@@ -4,7 +4,7 @@ Regardless of whether you are using LENA or the ACLEW tools, it's always a good 
 
 <!--insert table-->
 
-This graph shows the correlation between human and automated word counts for several corpora, all of which were collected from English-speaking families with infants between roughly 1 and 3 years of age. The correlations, however, vary quite a bit, particularly in the ACLEW tool called ALICE (yellow bars). We introduce ALICE in Video \@ref{nonlenasoftware}, and we discuss its accuracy overall in Video \@ref{accuracy}. But for now, what we want to say is general to any tool, and it has to do with the question of how you interpret results of automated analyses in general.
+This graph shows the correlation between human and automated word counts for several corpora, all of which were collected from English-speaking families with infants between roughly 1 and 3 years of age. The correlations, however, vary quite a bit, particularly in the ACLEW tool called ALICE (yellow bars). We introduce ALICE in Video \@ref(nonlenasoftware), and we discuss its accuracy overall in Video \@ref(accuracy). But for now, what we want to say is general to any tool, and it has to do with the question of how you interpret results of automated analyses in general.
 
 To prove this to you, here's another example, this time from LENA: the correlation between human counts of child-adult conversational turns and the corresponding LENA's automated counts was .7 in one study on Vietnamese learners (Ganek et al., 2018), but only -.03 in another on Korean learning infants (Pae et al., 2016).
 
@@ -18,7 +18,7 @@ We use the term *accuracy* to describe in general how well metrics extracted fro
 
 Accuracy can be assessed in many ways.
 
-As we saw in the Video \@ref{nonlenasoftware}, one of the first things algorithms do is say which stretches of the audio correspond to which speakers. Within speech technology, evaluation of this type of classification is done in two main ways: using recall, precision, and the derived F-score; and/or using false alarms, misses, and confusions, which can be combined in a diarization error rate, or an identification error rate. We define each in turn.
+As we saw in the Video \@ref(nonlenasoftware), one of the first things algorithms do is say which stretches of the audio correspond to which speakers. Within speech technology, evaluation of this type of classification is done in two main ways: using recall, precision, and the derived F-score; and/or using false alarms, misses, and confusions, which can be combined in a diarization error rate, or an identification error rate. We define each in turn.
 
 We use the term "recall" to say: what proportion of acoustic stretches that a human calls a category, say "key child", have been discovered by the machine and put in a given class, say "key child". A little mnemonic trick: you can call recall "recatch", to remember that it represents what proportion has been caught with a given name. It may be easiest to assume that the category is the same for now: so for instance, what proportion of the vocalizations that the human said were spoken by the key child were discovered and classified as key child vocalizations by the machine. In reality, however, the machine and the human could use different labels -- perhaps the human calls the key child "Martin" and the machine "CHN". But if you find that confusing, just focus on cases in which the machine and the human use the same label.
 
