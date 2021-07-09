@@ -43,7 +43,7 @@ Regarding special features, please note that you need to pay for the LENA softwa
 
 ## Non-LENA hardware
 
-All other hardware options require you to use a different software -- you cannot use the LENA software unless you use their hardware too. So if you choose a non-LENA hardware, you'll need to make a separate set of decisions for the software.  We'll be discussing non-LENA software options in detail in a dedicated video \@ref(nonlena).
+All other hardware options require you to use a different software -- you cannot use the LENA software unless you use their hardware too. So if you choose a non-LENA hardware, you'll need to make a separate set of decisions for the software.  We'll be discussing non-LENA software options in detail in a dedicated video \@ref(nonlenasoftware).
 
 In reality, you could use any alternative recording devices as long as it is wearable and  lightweight. In fact, even a device that wasn't designed to be worn can be adapted for this purpose, for instance by using a money or paper clip to attach it to someone's clothing. (We discuss clothing in a dedicated video \@ref(clothing).)
 

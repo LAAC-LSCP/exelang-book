@@ -1,6 +1,6 @@
 # LENA software {#lena}
 
-In this video, we are only going to discuss the LENA software. We discuss alternatives to the LENA software in another dedicated video \@ref(nonlena).
+In this video, we are only going to discuss the LENA software. We discuss alternatives to the LENA software in another dedicated video \@ref(nonlenasoftware).
 
 Let us start with how the procedure goes for LENA. Once you have done your recording, you can connect the device to a computer with access to LENA-licensed software, that automatically extracts and analyzes the recording. There are two licenses allowing you to keep a copy of the recordings: “Pro” and “SP”. I really do not recommend buying the licenses that do not allow you to keep a copy of the recordings, because, as we discuss later, LENA is no longer state of the art, and the metrics that can be extracted are limited. So I won't be discussing other alternatives.
 
