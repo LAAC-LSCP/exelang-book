@@ -1,6 +1,6 @@
 # Organizing your data {#organizingdata}
 
-Long-form recordings are rich data -- but things can get messy if you don't keep your files organized correctly. We strongly recommend following a file organization that will allow you to use the ChildProject package -- we will explain the package in a dedicated video (\@ref{childproject}). More detailed explanations about this structure are available from the ChildProject documentation, but we provide here a brief and practical overview.
+Longform recordings are rich data -- but things can get messy if you don't keep your files organized correctly. We strongly recommend following a file organization that will allow you to use the ChildProject package -- we will explain the package in a dedicated video (\@ref(childproject)). More detailed explanations about this structure are available from the ChildProject documentation, but we provide here a brief and practical overview.
 
 There are at least three folders:
 
