@@ -161,3 +161,13 @@ kable(tab, "html", "pipe", col.name=c("Hardware", "Ease of use", "Cost", "Length
 
 ```
 \normalsize
+
+## Resources
+
+- [LENA overview](https://www.lena.org/technology/) 
+- [LENA device specs](https://www.lena.org/wp-content/uploads/2016/07/LTR-03-2_Audio_Specifications.pdf)
+- [iPods](https://www.apple.com/shop/buy-ipod/ipod-touch)
+- [Sample hand-held recorder](https://www.olympus.co.uk/site/en/a/audio_systems/audio_recording/high_end_recorders/dm_720/index.html)
+- [Sample USB recorder](https://www.amazon.com/Digital-Voice-Audio-Recorder-Dictaphone/dp/B07KG386QG/ref=sr_1_3?dchild=1)  please note we have not tested this one! so do buy a sample one before you buy them in bulk. There may be others that are shipped to your location.
+- [Babylogger](https://www.echolalia.org/#/logger)
+- Sample wireless system: [microphone](https://rode.com/microphones/wireless/wirelessgoii_2)  please note we have not tested this one! Also, this is just the microphone with a transmitter -- you'll still need a receiver in the child's home.

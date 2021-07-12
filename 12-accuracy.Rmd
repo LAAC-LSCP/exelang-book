@@ -72,8 +72,8 @@ The bars for ALICE's word count estimation are yellow whereas those for LENA are
 Members of the ACLEW project also developed software to classify adult speech into child- versus adult-directed, but we feel performance of that algorithm is still not good enough to make a public release. We also developed a system for classifying the key child's sections into different vocalization types (crying, canonical, and non-canonical). This software is open source and available via a virtual machine, which we found in the past is a little hard to install and use. So for these two things, please stay tuned -- there will be developments in the future!
 
 
-## References
+## Resources
 
-Räsänen, O., Seshadri, S., Lavechin, M., Cristia, A., & Casillas, M. (2020). ALICE: An open-source tool for automatic measurement of phoneme, syllable, and word counts from child-centered daylong recordings. Behavior Research Methods. [pdf](https://psyarxiv.com/p95dz/download?format=pdf) [code](https://github.com/orasanen/ALICE)
-
-Lavechin, M., Bousbib, R., Bredin, H., Dupoux, E., & Cristia, A. (2020). An open-source voice type classifier for child-centered daylong recordings. Interspeech. [pdf](https://arxiv.org/pdf/2005.12656) [code](https://github.com/MarvinLvn/voice-type-classifier)
+- [LENA reliability original report](https://www.lena.org/wp-content/uploads/2016/07/LTR-05-2_Reliability.pdf)
+- Räsänen, O., Seshadri, S., Lavechin, M., Cristia, A., & Casillas, M. (2020). ALICE: An open-source tool for automatic measurement of phoneme, syllable, and word counts from child-centered daylong recordings. Behavior Research Methods. [pdf](https://psyarxiv.com/p95dz/download?format=pdf) [code](https://github.com/orasanen/ALICE)
+- Lavechin, M., Bousbib, R., Bredin, H., Dupoux, E., & Cristia, A. (2020). An open-source voice type classifier for child-centered daylong recordings. Interspeech. [pdf](https://arxiv.org/pdf/2005.12656) [code](https://github.com/MarvinLvn/voice-type-classifier)

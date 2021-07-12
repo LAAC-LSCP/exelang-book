@@ -24,10 +24,8 @@ Last thing: if you use our framework, you will also find really easy-to-follow i
 
 
 ## Resources
-[ChildProject documentation](https://childproject.readthedocs.io)
 
-[ChildProject discussion board](https://github.com/LAAC-LSCP/ChildProject/discussions)
-
-[ChildProject documentation on datasets structure](https://childproject.readthedocs.io/en/latest/format.html)
-
-Gautheron, L., Rochat, N., & Cristia, A. (2021). Managing, storing, and sharing long-form recordings and their annotations. [pdf](https://psyarxiv.com/w8trm/download?format=pdf)
+- [ChildProject documentation](https://childproject.readthedocs.io)
+- [ChildProject discussion board](https://github.com/LAAC-LSCP/ChildProject/discussions)
+- [ChildProject documentation on datasets structure](https://childproject.readthedocs.io/en/latest/format.html)
+- Gautheron, L., Rochat, N., & Cristia, A. (2021). Managing, storing, and sharing long-form recordings and their annotations. [pdf](https://psyarxiv.com/w8trm/download?format=pdf)

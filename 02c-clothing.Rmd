@@ -42,9 +42,9 @@ An excellent alternative are vests. LENA does not sell them anymore, but you can
 
 If you don’t find anybody who can sew pockets on your t-shirts, or if you cannot afford to buy regular t-shirts with pockets you might want to consider this alternative. 
 
-### Bras
+### Harness
 
-A possibility is that you create a system of straps that kind of looks like a bra. One researcher that uses them is Marisa Casillas, so you can check her papers in the references, where she has a picture of this: it has a pocket on the front where you can put the device. Since it uses less material, it's typically easier to make and it is cheaper. In addition, you can make the straps elastic, which will allow you to fit children of different ages. It can be used in very warm and very cold climates.
+A possibility is that you create a system of straps that kind of looks like a harness (or a bra). One researcher that uses them is Marisa Casillas, so you can check her paper in the resources section, where she has a picture of this: it has a pocket on the front where you can put the device. Yyou can make the straps elastic, which will allow you to fit children of different ages. It can be used in very warm and very cold climates.
 
 ### Attaching the device to a piece of clothing
 
@@ -55,4 +55,10 @@ Another option is to buy a money clip or a very large paper clip, so that you ca
 I've already said this but I cannot repeat this enough: To ensure the best quality audio,
 
 1. Try to use clothing where the device is completely stable (tight-fitting clothing, device firmly attached): you want to avoid noises from clothes rustling as much as possible;
-2. Place the recorder in the outermost layer of clothing possible to aovid muffled sounds.
+2. Place the recorder in the outermost layer of clothing possible to avoid muffled sounds.
+
+## Resources
+
+- LENA t-shirts: LENA no longer has a section where you can view their products. You should approach them for a quote via [the LENA contact form](https://www.lena.org/contact/)
+- Custom pockets: We don't yet have a publication for this, but we hope to -- soon!
+- Harness-like: Casillas, Marisa, Penelope Brown, and Stephen C. Levinson. "Early language experience in a Tseltal Mayan village." Child Development 91.5 (2020): 1819-1835. [pdf](https://pure.mpg.de/rest/items/item_3184321_3/component/file_3184322/content?download=true)
