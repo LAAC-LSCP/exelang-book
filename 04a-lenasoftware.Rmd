@@ -21,7 +21,7 @@ Finally, for each stretch of speech tagged as being produced by an adult, there 
 At a second level, the LENA software also derives a few descriptive statistics that are averaged over five minutes, one hour, and the whole day. 
 
 In addition, the system also provides an estimate of child vocal maturity compared to other children of the same age and sex using a standardized score called Automatic Vocalization Assessment (AVA).
-<!-- ac stopped here -->
+
 
 If you are interested in collecting language properties such as measures of lexical diversity, syntactic complexity, and who is being talked to, you need to know that the LENA system doesn’t provide automated analysis for that. (Incidentally, no current software does this yet.)
 
