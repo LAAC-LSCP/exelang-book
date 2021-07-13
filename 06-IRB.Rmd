@@ -20,6 +20,45 @@ In some cases, it is desirable to have humans annotate part of the data, to chec
 
 In addition to in-lab annotations, you can also opt for citizen-science annotations. You can see an examples of this technique [here](https://www.zooniverse.org/projects/laac-lscp/maturity-of-baby-sounds). In that study, we preserved anonymity of participants by extracting clips that were 500 ms long, and presenting listeners with clips extracted from many different children. This was possible because the decision we were asking for was very simple and could be taken with local information (e.g., who is talking: a baby, a child, or an adult?) An alternative that other researchers have selected is to have someone in the lab listen to sections of the audio and determine that there was no compromising information shared, and then these clips were annotated by citizen scientists for higher level content, based on listening to a whole sentence or even a whole conversation. If the latter seems interesting to you, then just make sure that your participants agree to this, since clips thus shared on Zooniverse become public. 
 
+
+
+
+## Text you can use in your IRB requests:
+
+### Basic description
+
+Participants will be asked to wear a <INSERT HERE NAME OF DEVICE (e.g., LENA, USB)> in <EITHER the breast pocket of a child-appropriate t-shirt OR securely fastened onto their clothes>. The device records audio for up to 16 hours <DOUBLE-CHECK DURATION BASED ON YOUR DEVICE>. Participants will be explained how to turn it on/off in order to use their right of withdrawal. In addition, they will also be able to tell us if there are sections they do not want included in the data and/or erased.
+
+Recordings will be stored in a safe location, only accessible to individuals with appropriate training for such sensitive data.
+
+### Automated analyses
+
+Given the length of these audios, they will not be studied in their entirety by a human researcher. Instead, they are processed with an automated system that assigns sections of the recordings to the child wearing the device, other children, male adults, or female adults. Additional automated processing classifies vocalizations as child-directed or overheard by the child (i.e. spoken to someone else); estimates the number of sounds, syllables and words in a turn; and/or decides whether a given vocalization is crying, laughing, or other vocal types. Thus, the content of what is said is not inspected. 
+
+### Manual annotations for validation
+
+To check that automated analyses are valid, sections of the audio will be extracted and human-annotated. Annotators will have training allowing them to treat these confidential and sensitive data appropriately. They will use a computer program to indicate who spoke when and to whom, transcribe what has been said to estimate the number of sounds, syllables, and words, and/or decide where whether a given vocalization is crying, laughing, or other vocal types -- that is, the same levels that are used in the automated analyses.
+<DESCRIBE ANY ADDITIONAL PROCEDURES YOU FORESEE, LIKE REPORTING OF ILLEGAL ACTIVITIES, VETTING SECTIONS WITH SENSITIVE INFORMATION, ETC>
+
+### Manual annotations to augment dataset
+
+To complement automated analyses, sections of the audio will be extracted and human-annotated. Annotators will have training allowing them to treat these confidential and sensitive data appropriately. They will use a computer program to  <DESCRIBE ALL PROCEDURES YOU FORESEE>.
+
+### Manual annotations using Zooniverse -- general
+
+
+Zooniverse is a citizen science platform with hundreds of thousands of users in the world. It has led to significant discoveries, as individuals can contribute their time and expertise by annotating data in their free time. We created a project on Zooniverse that was approved by the Zooniverse board and released in February 2020. This project asks citizen scientists to help us classify children's vocalizations in different types (crying, laughing, and two types of speech-like sounds differing in their maturity level).
+To this end, daylong audiorecordings are algorithmically processed to detect sections that contain speech. These sections contain identifying information (people's voices) and may contain sensitive information (e.g., people's names, intimate moments). 
+
+#### Section to add if using short clips
+
+Therefore, we don't have whole sections annotated, but instead cut these sections up into smaller clips with a procedure we explain next. Once the clips themselves are uploaded onto zooniverse they cannot be protected - they are on the web so they can be scraped. What we do is we render scraping uninteresting in several ways. First, we make the clips very short. In fact, we now extract .5s clips, so a 1.3s  section attributed to the child will be represented by 3 x 500ms clips (adding some extra audio on the edges). So now, even if someone ill-intentioned gets some clips, they cannot guess that a 300ms one was probably part of a bigger one --- all the clips are the same length.  Second, we ramp intensity in and out of each clip throughout the first and last 5 milliseconds of the audio, which is enough to destroy the amplitude of the signal, a cue ill-intentioned people could use to "glue" clips together. Third, we upload many clips, from children of different ages, and different languages, all mixed together. So if anyone goes through the trouble of scraping them, they would face an incalculable problem of trying to determine which bits belong to the same section, the same recording, the same child.
+
+
+#### Section to add if using vetting
+
+Therefore, before uploading these audio sections, trained personnel will listen through and make sure that there is no sensitive information. Parents will have been informed about the fact that their voice may be recognizable and that clips enter the public domain, and will be able to opt in or out from this part of the research in the consent form.
+
 ## Closing thoughts
 
 This is a very short introduction to this important topic because there are already excellent resources available on this. Check out the resource section for links to consent forms and IRB request language.
@@ -31,10 +70,10 @@ This is a very short introduction to this important topic because there are alre
 <!-- IRB-human annotation -->
 <!-- IRB-zooniverse annotation -->
 
+
 ## Resources
 
 - You will find sample consent forms from several labs on https://osf.io/d4tcu/
 
 - In particular, if the reuse for ExELang would be after you archive the data in a scientific archive, you can simply have a section where you ask whether they want to opt out of data donation - https://osf.io/5e3vz/ has an example of an opt-out check-box under point 2
 - If you're uncertain about archiving, you can instead use the language under point 11 of the same consent form, the option is "Checking this box indicates my permission to store, use, and share my information from this study in research databases or registries for future research conducted by the current investigators and their research partners."
-
