@@ -164,7 +164,7 @@
 </ul></li>
 <li class="chapter" data-level="15" data-path="humanannotation.html"><a href="humanannotation.html"><i class="fa fa-check"></i><b>15</b> Human annotation</a><ul>
 <li class="chapter" data-level="15.1" data-path="humanannotation.html"><a href="humanannotation.html#checking-accuracy"><i class="fa fa-check"></i><b>15.1</b> Checking accuracy</a><ul>
-<li class="chapter" data-level="15.1.1" data-path="humanannotation.html"><a href="humanannotation.html#humanannotation-faqs"><i class="fa fa-check"></i><b>15.1.1</b> FAQs</a></li>
+<li class="chapter" data-level="15.1.1" data-path="humanannotation.html"><a href="humanannotation.html#faqs"><i class="fa fa-check"></i><b>15.1.1</b> FAQs</a></li>
 </ul></li>
 <li class="chapter" data-level="15.2" data-path="humanannotation.html"><a href="humanannotation.html#doing-things-automated-analyses-could-do-but-dont-do-quite-well-yet"><i class="fa fa-check"></i><b>15.2</b> Doing things automated analyses could do but don't do quite well yet</a></li>
 <li class="chapter" data-level="15.3" data-path="humanannotation.html"><a href="humanannotation.html#getting-complementary-information"><i class="fa fa-check"></i><b>15.3</b> Getting complementary information</a></li>
@@ -203,7 +203,9 @@
 </ul></li>
 <li class="chapter" data-level="" data-path="references-1.html"><a href="references-1.html"><i class="fa fa-check"></i>References</a></li>
 <li class="appendix"><span><b>Appendix</b></span></li>
-<li class="chapter" data-level="A" data-path="sampling-strategies.html"><a href="sampling-strategies.html"><i class="fa fa-check"></i><b>A</b> Sampling strategies</a></li>
+<li class="chapter" data-level="A" data-path="sampling-strategies.html"><a href="sampling-strategies.html"><i class="fa fa-check"></i><b>A</b> Sampling strategies</a><ul>
+<li class="chapter" data-level="A.1" data-path="sampling-strategies.html"><a href="sampling-strategies.html#references-2"><i class="fa fa-check"></i><b>A.1</b> References</a></li>
+</ul></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
 
@@ -231,8 +233,8 @@
 <li>How should the clips be selected ?</li>
 <li>What should be the length of each clip ?</li>
 </ul>
-<p>Of course, the answer to each of this question depends on your research goals, and (<span class="citation">(<span class="citeproc-not-found" data-reference-id="humanannotation-faqs"><strong>???</strong></span>)</span>) provides clues to some of them.</p>
-<p>Most often, the amount of audio that can be annotated is heavily constrained by the availailty of human resources, and can be considered fixed.</p>
+<p>Of course, the answer to each of this question depends on your research goals, and (<span class="citation">(<span class="citeproc-not-found" data-reference-id="humanannotation"><strong>???</strong></span>)</span>) provides clues to some of them.</p>
+<p>Most often, the amount of audio that can be annotated is heavily constrained by the availability of human resources, and can be considered fixed.</p>
 <p>For many tasks, the clips should be selected in a way that does not induces biases in the results. For instance, if one plans to estimate the quantity of speech produced or heard by the child, then it is important to use unbiased estimators. In order to evaluate the performance of automated tools, it might also be preferrable to use unbiased annotations which can assess the behavior of the algorithms in a variety of contexts rather than for a subset of configurations.</p>
 <p>We can cite at least two antagonistic ways of achieving such an unbiased sampling:</p>
 <ul>
@@ -240,7 +242,7 @@
 <li>By sampling the audio periodically (so that the position of the first clip completely determines the positions of subsequent clips)</li>
 </ul>
 <p>This does not settle the question of the length of each clip; the answer, again, will depend on the research question. For instance, exploring conversational behaviors may require longer clips than only assessing the amount of speech.</p>
-<p>Below, we show that the choice of the sampling strategy may have a significant impact.</p>
+<p>Below, we show a way in which the choice of the sampling strategy may have a significant impact.</p>
 <p>We used automated annotations derived from 500 recordings from the Bergelson dataset (<span class="citation">(<span class="citeproc-not-found" data-reference-id="bergelson"><strong>???</strong></span>)</span>). Automated annotations are easy to produce in large amounts; this allows us to simulate a sampling method using semi-realistic distributions of speech.</p>
 <p>For a constant annotation budget of 20 minutes per recording, we estimated the total amount of speech for each recording using only annotations extracted with two sampling strategies - random clips vs periodic (i.e. evenly spaced) clips - and different lengths of clips. This allowed us to estimate the relative difference between the quantities of speech estimated from 20 minutes of annotations and the true quantities.</p>
 <p>The results are shown below.</p>
@@ -253,7 +255,11 @@ Figure A.1: Performance of several sampling strategies.
 <p>It can be seen that the estimations are much more accurate when using many short clips rather than a few longer clips. The periodic sampling also yields more accurate results. This result is rather intuitive: annotating a portion of audio in close temporal proximity with a previous portion will yield much less information, because the two portions are correlated. Using annotations that are farther from each other helps probe a wider variety of configurations and thus yields better speech quantity estimates.</p>
 <p>This does not mean, of course, that one should annotate arbitrarily short clips. First, in practice, two 1-minute clip will take longer to annotate than one 2-minute clips, especially if annotators needs to listen to the context to make better decisions. Reducing the length of the clips may thus rapidly decrease the efficiency of the annotation process. Moreover, some estimators, such as vocalization counts, may be strongly biased by using short clips, due to the increased significance of boundary effects.</p>
 <p>These results emphasize the importance of carefully assessing the impact of the sampling strategy before engaging humans into time-consuming annotation efforts, and while trying to draw conclusions from their work.</p>
+<div id="references-2" class="section level2">
+<h2><span class="header-section-number">A.1</span> References</h2>
+<p>Bergelson, Elika (2017). Bergelson Seedlings HomeBank Corpus. <a href="https://doi.org/10.21415/T5PK6D">doi:10.21415/T5PK6D</a></p>
 
+</div>
 </div>
             </section>
 

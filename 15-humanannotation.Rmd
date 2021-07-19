@@ -22,7 +22,7 @@ In a nutshell, this will allow you to extract key classification accuracy measur
 
 We insist that re-using our code is only possible “off the shelf” for manual annotations made using the ACLEW Annotation Scheme for the annotations, and ChildProject for organizing your data, although if you know how to program you can also  adapt it to other schemata.
 
-### FAQs {#humanannotation-faqs}
+### FAQs
 
 Some people ask us whether it shouldn't be better to sample regions where we know the child to be talking a lot, or where there are lots of conversational exchanges between adults and the key child. A similar question is whether you cannot use annotations that you have sampled like that, for qualitative analyses, to have an idea of accuracy. If you have a limited annotation budget, of course re-using your annotations this way is better than nothing at all, but do note that if you sample your recording non-randomly, it is less certain that your conclusions based on such clips will generalize to the whole of the recording. 
 
