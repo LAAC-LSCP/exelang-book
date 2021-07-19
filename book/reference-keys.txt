@@ -42,7 +42,7 @@ basic-description
 automated-analyses
 manual-annotations-for-validation
 manual-annotations-to-augment-dataset
-manual-annotations-using-zooniverse-general
+manual-annotations-using-zooniverse----general
 section-to-add-if-using-short-clips
 section-to-add-if-using-vetting
 closing-thoughts
@@ -92,8 +92,6 @@ you-dont-want-to-upload-your-data-on-a-scientific-repository-but-you-are-willing
 none-of-the-above-mentioned-options-works-well-for-you
 field
 devices
-clothing-1
-logistics-1
 storage
 resources-14
 performance-across-languages-for-bilingual-or-multilingual-settings-multilingual-settings
@@ -101,3 +99,5 @@ resources-15
 alternatives
 if-you-want-a-standardized-language-assessment
 references
+annotation
+fig:sampling-strategies
