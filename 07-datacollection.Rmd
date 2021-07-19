@@ -1,6 +1,6 @@
 # Logistics {#logistics}
 
-In this video we are going to talk about logistics, including how many devices you need for your research and how to organize your data collection. We are going to focus on an urban setting because field conditions are discussed in another video (see Video \@ref{field}). 
+In this video we are going to talk about logistics, including how many devices you need for your research and how to organize your data collection. We are going to focus on an urban setting because field conditions are discussed in another video (see Video \@ref(field)). 
 
 
 

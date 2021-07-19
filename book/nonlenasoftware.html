@@ -23,7 +23,7 @@
 
 
 
-<meta name="date" content="2021-07-14" />
+<meta name="date" content="2021-07-19" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -191,7 +191,8 @@
 </ul></li>
 <li class="chapter" data-level="15.2" data-path="humanannotation.html"><a href="humanannotation.html#doing-things-automated-analyses-could-do-but-dont-do-quite-well-yet"><i class="fa fa-check"></i><b>15.2</b> Doing things automated analyses could do but don’t do quite well yet</a></li>
 <li class="chapter" data-level="15.3" data-path="humanannotation.html"><a href="humanannotation.html#getting-complementary-information"><i class="fa fa-check"></i><b>15.3</b> Getting complementary information</a></li>
-<li class="chapter" data-level="15.4" data-path="humanannotation.html"><a href="humanannotation.html#resources-12"><i class="fa fa-check"></i><b>15.4</b> Resources</a></li>
+<li class="chapter" data-level="15.4" data-path="humanannotation.html"><a href="humanannotation.html#softwares-for-human-annotation"><i class="fa fa-check"></i><b>15.4</b> Softwares for human annotation</a></li>
+<li class="chapter" data-level="15.5" data-path="humanannotation.html"><a href="humanannotation.html#resources-12"><i class="fa fa-check"></i><b>15.5</b> Resources</a></li>
 </ul></li>
 <li class="chapter" data-level="16" data-path="secondaryanalyses.html"><a href="secondaryanalyses.html"><i class="fa fa-check"></i><b>16</b> Secondary analyses</a>
 <ul>
@@ -254,10 +255,11 @@
             <section class="normal" id="section-">
 <div id="nonlenasoftware" class="section level1" number="5">
 <h1><span class="header-section-number">Chapter 5</span> Non-Lena Softwares</h1>
-<p>In this video we’re going to explain how to use software that is not LENA in order to do your analysis. One important point I want to make right off the bat is that you need to know a little bit of coding to use this software so if you have never used a terminal and if you don’t know what bash or Python are then you probably want to get some training on that first. we provide some links for this in the further resources section of this video. We are going to base our explanations on the software that was developed in the ACLEW project, where the analysis was broken down into several phases.</p>
-<p>The first phase involves deciding who speaks when. For this phase you need to use VTC short for voice type classifier. VTC was trained on a large corpus of over 200 hours of child-centred recordings that were put together by combining some data that we had in our lab with data available on CHILDES. Most of the data actually came from CHILDES, in particular from the Tsay corpus that contains samples from a Chinese language. The rest of the data comes from several different languages including English French and other languages from Oceania, America, and Africa. So one big difference compared to Lena is that it was not trained solely and exclusively on children learning English.</p>
-<p>The second phase of analysis applies only to sections that the voice type classifier identified as being adult speech. For this but we use another piece of software that’s called Alice short for automatic linguistic units counter. Alice was also trained with multiple languages although much of the data was English from the US and from the UK. both of these are open source that means that you can download them and reuse them – you can even change them anytime as you think best, since both of them can be retrained. Even if both of them can be retrained, you can also use them out of the box.</p>
-<p>Both of these tools have been benchmarked against LENA and both of them are competitive. For more information, see the @ref{accuracy} Video.</p>
+<p>In this video we’re going to explain how to use a software that is not LENA in order to do your analysis. One important point I want to make right off the bat is that you need to know a little bit of coding to use this software so if you have never used a terminal and if you don’t know what bash or Python are then you probably want to get some training on that first. We provide some links for this in the further resources section of this video. We are going to base our explanations on the software that was developed in the ACLEW project, where the analysis was broken down into several phases.</p>
+<p>The first phase involves deciding who speaks when. For this phase you need to use VTC, short for Voice Type Classifier. VTC was trained on a large corpus of over 200 hours of child-centred recordings that were put together by combining some data that we had in our lab with data available on CHILDES. Most of the data actually came from CHILDES, in particular from the Tsay corpus that contains samples from Chinese language. The rest of the data comes from several different languages including English, French and other languages from Oceania, America, and Africa. So one big difference compared to Lena is that it was not trained solely and exclusively on children learning English.</p>
+<p>The second phase of analysis applies only to sections that the Voice Type Classifier identified as being adult speech. For this we use another piece of software that’s called Alice, short for Automatic Linguistic Units Counter. Alice was also trained with multiple languages although much of the data was English from the US and from the UK.</p>
+<p>Both of these are open source, which means that you can download them and reuse them – you can even change them anytime as you think best, since both of them can be retrained. Even if both of them can be retrained, you can also use them out of the box.</p>
+<p>Both of these tools have been benchmarked against LENA and both of them are competitive. For more information, see the <a href="accuracy.html#accuracy">14</a> Video.</p>
 <div id="resources-4" class="section level2" number="5.1">
 <h2><span class="header-section-number">5.1</span> Resources</h2>
 <ul>

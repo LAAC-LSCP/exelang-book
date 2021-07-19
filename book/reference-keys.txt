@@ -76,6 +76,7 @@ checking-accuracy
 faqs
 doing-things-automated-analyses-could-do-but-dont-do-quite-well-yet
 getting-complementary-information
+softwares-for-human-annotation
 resources-12
 secondaryanalyses
 resources-13

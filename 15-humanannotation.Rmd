@@ -44,6 +44,38 @@ In some cases, you do need a little context -- at the very least to decide wheth
 
 You may want to get ideas of the warmth of the interactions, or the contexts in which different languages are used in a multilingual household. In this case, we recommend the work of Cychosz, Villanueva, & Weisleder for more ideas.
 
+## Softwares for human annotation
+
+\tiny
+
+```{r, echo=FALSE, size = 'tiny'} 
+
+tab=NULL
+
+tab$software<-c("[Praat](https://www.fon.hum.uva.nl/praat/) (Boersm a, 2009)", "[Phon] (https://www.phon.ca/phon-manual/getting_started.html) (Rose et al. 2007)", "[Transcri berAG](http://transag.sourceforge.net/)", "[Datavyu] (http://www.datavyu.org/) (Datavyu Team, 2014)", "[ELAN] (https://tla.mpi.nl/tools/tla-tools/elan/) (Sloetjes & Wittenbu rg, 2008)", "[CLAN] (http://childes.psy.cmu.edu/) (MacWhi nney, 2000)")
+tab$key<-c("ideal for acoustic phonetics", "ideal for phonological level", "'recommended' by LENA", "User-defined key strokes", "Multi-stream, use of template, interopera ble", "Ideal for lexicon and grammar")
+tab$system<-c("support", "support, OS", "OS", "support, OS", "support, OS", "support")
+tab$input<-c("A", "AV", "A", "AV+", "AV", "AV")
+tab$multi<-c("timed", "both", "timed", "untimed", "both", "untimed")
+tab$vocab<-c("no", "yes", "no", "yes", "yes", "no")
+tab$text<-c("yes", "yes", "yes", "no", "yes", "yes")
+tab$pectogram<-c("yes", "no", "yes", "no", "no", "no")
+tab$large<-c("limited", "yes", "yes", "no", "yes", "yes")
+tab$interop<-c("CLAN, Phon", "Praat, CLAN", "none", "none", "CLAN, Praat Transcriber, AG, ...", "Praat, Phon, ELAN")
+tab$modes<-c("both", "both", "easy", "both", "both", "both")
+tab=data.frame(tab)
+library(kableExtra)
+
+kable(tab, "html", "pipe", col.name=c("Software", "Key strenght", "System", "Input", "Multitier", "Closed vocab", "Free text", "Spectogram", "Large files", "Interoperability", "Modes"), align=c("l", "l", "l", "l", "l", "l", "l", "l", "l", "l", "l"))  %>%
+ kable_styling(font_size = 8)
+
+#kable(cbind(tab, tab)) %>%
+#  kable_styling(font_size = 8) %>%
+#  scroll_box(width = "100%", box_css = "border: 0px;")
+
+```
+\normalsize
+
 ## Resources
 
 Cristia, A., Lavechin, M., Scaff, C., Soderstrom, M., Rowland, C., Räsänen, O., Bunce, J., & Bergelson, E. (2020) A thorough evaluation of the Language Environment Analysis (LENA) system. Behavior Research Methods. [preprint](https://osf.io/mxr8s) [online resource](https://osf.io/zdg6s/)
