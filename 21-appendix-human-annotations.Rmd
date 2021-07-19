@@ -2,6 +2,8 @@
 
 # Sampling strategies
 
+Human annotations require to define a sampling process, i.e. an algorithm to decide which portions of audio should be annotated. This raises a few questions, among which:
+
  - How much audio should be annotated ?
  - How should the clips be selected ?
  - What should be the length of each clip ?
