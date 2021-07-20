@@ -30,7 +30,7 @@ This allowed us to estimate the relative difference between the quantities of sp
 
 The results are shown below.
 
-```{r sampling-strategies, fig.align = 'center', fig.cap = "Performance of several sampling strategies. ", echo = FALSE}
+```{r sampling-strategies, fig.align = 'center', fig.cap = "Performance of several sampling strategies. (500 recordings; constant annotation budget of 20 minutes per recording.)", echo = FALSE}
 knitr::include_graphics("figures/speech_estimation_strategies.png")
 ```
 
@@ -40,7 +40,15 @@ Using annotations that are farther from each other helps probe a wider variety o
 
 This does not mean, of course, that one should annotate arbitrarily short clips. First, in practice, two 1-minute clip will take longer to annotate than one 2-minute clips, especially if annotators needs to listen to the context to make better decisions. Reducing the length of the clips may thus rapidly decrease the efficiency of the annotation process. Moreover, some estimators, such as vocalization counts, may be strongly biased by using short clips, due to the increased significance of boundary effects.
 
-These results emphasize the importance of carefully assessing the impact of the sampling strategy before engaging humans into time-consuming annotation efforts, and while trying to draw conclusions from their work.
+Manual annotations may be used to assess the reliability of automated tools on a subset of a corpus. There are several ways quantify the quality of automated annotations from a gold standard established by expert annotators. One of them is to calculate correlation coefficients between the metrics derived from the algorithm (e.g. vocalization counts or speech duration) and the ground truth for each of the sampled clips. To simulate the impact of the choice of the clip duration over these correlation coefficients, we again used the Bergelson dataset; we calculated the correlations between the vocalization counts and speech durations for the children and the adults, using both the LENA and the VTC annotations.
+
+```{r pearson-length, fig.align = 'center', fig.cap = "Pearson correlation between LENA and VTC derived metrics as a function of clips length. (500 recordings; periodic sampling; constant annotation budget of 60 minutes per recording.)", echo = FALSE}
+knitr::include_graphics("figures/pearson_clip_length.png")
+```
+
+We can observe a clear increase in the correlation coefficients as the length of the clips increases. This means Pearson correlation coefficients for these metrics are not robust again the length of the clips. 
+
+These results emphasize the importance of carefully assessing the impact of the sampling strategy before engaging humans into time-consuming annotation efforts; this also demonstrates how the conclusions to be drawn from manual annotations by depend a lot on how they were selected.
 
 ## References
 

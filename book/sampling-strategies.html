@@ -23,7 +23,7 @@
 
 
 
-<meta name="date" content="2021-07-19" />
+<meta name="date" content="2021-07-20" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -248,14 +248,22 @@
 <p>For a constant annotation budget of 20 minutes per recording, we estimated the total amount of speech for each recording using only annotations extracted with two sampling strategies - random clips vs periodic (i.e. evenly spaced) clips - and different lengths of clips. This allowed us to estimate the relative difference between the quantities of speech estimated from 20 minutes of annotations and the true quantities.</p>
 <p>The results are shown below.</p>
 <div class="figure" style="text-align: center"><span id="fig:sampling-strategies"></span>
-<img src="figures/speech_estimation_strategies.png" alt="Performance of several sampling strategies. "  />
+<img src="figures/speech_estimation_strategies.png" alt="Performance of several sampling strategies. (500 recordings; constant annotation budget of 20 minutes per recording.)"  />
 <p class="caption">
-Figure A.1: Performance of several sampling strategies.
+Figure A.1: Performance of several sampling strategies. (500 recordings; constant annotation budget of 20 minutes per recording.)
 </p>
 </div>
 <p>It can be seen that the estimations are much more accurate when using many short clips rather than a few longer clips. The periodic sampling also yields more accurate results. This result is rather intuitive: annotating a portion of audio in close temporal proximity with a previous portion will yield much less information, because the two portions are correlated. Using annotations that are farther from each other helps probe a wider variety of configurations and thus yields better speech quantity estimates.</p>
 <p>This does not mean, of course, that one should annotate arbitrarily short clips. First, in practice, two 1-minute clip will take longer to annotate than one 2-minute clips, especially if annotators needs to listen to the context to make better decisions. Reducing the length of the clips may thus rapidly decrease the efficiency of the annotation process. Moreover, some estimators, such as vocalization counts, may be strongly biased by using short clips, due to the increased significance of boundary effects.</p>
-<p>These results emphasize the importance of carefully assessing the impact of the sampling strategy before engaging humans into time-consuming annotation efforts, and while trying to draw conclusions from their work.</p>
+<p>Manual annotations may be used to assess the reliability of automated tools on a subset of a corpus. There are several ways quantify the quality of automated annotations from a gold standard established by expert annotators. One of them is to calculate correlation coefficients between the metrics derived from the algorithm (e.g. vocalization counts or speech duration) and the ground truth for each of the sampled clips. To simulate the impact of the choice of the clip duration over these correlation coefficients, we again used the Bergelson dataset; we calculated the correlations between the vocalization counts and speech durations for the children and the adults, using both the LENA and the VTC annotations.</p>
+<div class="figure" style="text-align: center"><span id="fig:pearson-length"></span>
+<img src="figures/pearson_clip_length.png" alt="Pearson correlation between LENA and VTC derived metrics as a function of clips length. (500 recordings; periodic sampling; constant annotation budget of 60 minutes per recording.)"  />
+<p class="caption">
+Figure A.2: Pearson correlation between LENA and VTC derived metrics as a function of clips length. (500 recordings; periodic sampling; constant annotation budget of 60 minutes per recording.)
+</p>
+</div>
+<p>We can observe a clear increase in the correlation coefficients as the length of the clips increases. This means Pearson correlation coefficients for these metrics are not robust again the length of the clips.</p>
+<p>These results emphasize the importance of carefully assessing the impact of the sampling strategy before engaging humans into time-consuming annotation efforts; this also demonstrates how the conclusions to be drawn from manual annotations by depend a lot on how they were selected.</p>
 <div id="references-2" class="section level2">
 <h2><span class="header-section-number">A.1</span> References</h2>
 <p>Bergelson, Elika (2017). Bergelson Seedlings HomeBank Corpus. <a href="https://doi.org/10.21415/T5PK6D">doi:10.21415/T5PK6D</a></p>
