@@ -105,3 +105,7 @@ humanannotation-faqs
 sampling-strategies
 references-2
 fig:pearson-length
+manual-annotations
+sampling-strategy
+evaluating-automated-annotations-from-manual-annotations
+automated-and-manual-annotations
