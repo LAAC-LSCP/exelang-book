@@ -109,3 +109,5 @@ manual-annotations
 sampling-strategy
 evaluating-automated-annotations-from-manual-annotations
 automated-and-manual-annotations
+fig:budget-impact
+how-much-data-should-i-annotate

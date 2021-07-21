@@ -205,7 +205,8 @@
 <li class="appendix"><span><b>Appendix</b></span></li>
 <li class="chapter" data-level="A" data-path="automated-and-manual-annotations.html"><a href="automated-and-manual-annotations.html"><i class="fa fa-check"></i><b>A</b> Automated and manual annotations</a><ul>
 <li class="chapter" data-level="A.1" data-path="automated-and-manual-annotations.html"><a href="automated-and-manual-annotations.html#sampling-strategy"><i class="fa fa-check"></i><b>A.1</b> Sampling strategy</a></li>
-<li class="chapter" data-level="A.2" data-path="automated-and-manual-annotations.html"><a href="automated-and-manual-annotations.html#evaluating-automated-annotations-from-manual-annotations"><i class="fa fa-check"></i><b>A.2</b> Evaluating automated annotations from manual annotations</a></li>
+<li class="chapter" data-level="A.2" data-path="automated-and-manual-annotations.html"><a href="automated-and-manual-annotations.html#how-much-data-should-i-annotate"><i class="fa fa-check"></i><b>A.2</b> How much data should I annotate ?</a></li>
+<li class="chapter" data-level="A.3" data-path="automated-and-manual-annotations.html"><a href="automated-and-manual-annotations.html#evaluating-automated-annotations-from-manual-annotations"><i class="fa fa-check"></i><b>A.3</b> Evaluating automated annotations from manual annotations</a></li>
 </ul></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
@@ -238,7 +239,7 @@
 <li>What should be the length of each clip ?</li>
 </ul>
 <p>Of course, the answer to each of this question depends on your research goals, and (<span class="citation">(<span class="citeproc-not-found" data-reference-id="humanannotation"><strong>???</strong></span>)</span>) provides clues to some of them.</p>
-<p>Most often, the amount of audio that can be annotated is heavily constrained by the availability of human resources, and can be considered fixed.</p>
+<p>Most often, the amount of audio that can be annotated is heavily constrained by the availability of human resources, and can be considered fixed; the impact of the volume of annotations will be studied in the next subsection.</p>
 <p>For many tasks, the clips should be selected in a way that does not induce biases in the results. For instance, if one plans to estimate the quantity of speech produced or heard by the child, then it is important to use unbiased estimators. In order to evaluate the performance of automated tools, it might also be preferrable to use unbiased annotations which can assess the behavior of the algorithms in a variety of contexts rather than for a subset of configurations.</p>
 <p>We can cite at least two antagonistic ways of achieving such an unbiased sampling:</p>
 <ul>
@@ -258,16 +259,32 @@ Figure A.1: Performance of several sampling strategies. (500 recordings; constan
 </div>
 <p>It can be seen that the estimations are much more accurate when using many short clips rather than a few longer clips. The periodic sampling also yields more accurate results. This result is rather intuitive: annotating a portion of audio in close temporal proximity with a previous portion will yield much less information, because the two portions are correlated. Using annotations that are farther from each other helps probe a wider variety of configurations and thus yields better speech quantity estimates.</p>
 <p>This does not mean, of course, that one should annotate arbitrarily short clips. First, in practice, two 1-minute clip will take longer to annotate than one 2-minute clips, especially if annotators needs to listen to the context to make better decisions. Reducing the length of the clips may thus rapidly decrease the efficiency of the annotation process. Moreover, some estimators, such as vocalization counts, may be strongly biased by using short clips, due to the increased significance of boundary effects.</p>
-<p>These results emphasize the importance of carefully assessing the impact of the sampling strategy before engaging humans into time-consuming annotation efforts;</p>
+<p>These results emphasize the importance of carefully assessing the impact of the sampling strategy before engaging humans into time-consuming annotation efforts.</p>
+</div>
+<div id="how-much-data-should-i-annotate" class="section level2">
+<h2><span class="header-section-number">A.2</span> How much data should I annotate ?</h2>
+<p>The quality of estimations based off partial annotations primarily depends on the volume of audio that have been annotated. There are several reasons to use partial annotations to extrapolate metrics over the whole data:</p>
+<ul>
+<li>No automated tools exist or are accurate enough for the task that is being considered</li>
+<li>Automated tools exist, but due to limited resources and/or time, they cannot be run over whole recordings.</li>
+</ul>
+<p>To illustrate the effect of subsampling on the quality of estimates derived from annotations, we used annotations generated by the Voice Type Classifier over recordings of the Bergelson dataset <span class="citation">(Bergelson <a href="#ref-bergelson">2015</a>)</span>. We compared the estimates based from subsamples with various annotation budgets to the values obtained for the whole recordings.</p>
+<div class="figure" style="text-align: center"><span id="fig:budget-impact"></span>
+<img src="figures/budget_impact.png" alt="Relative error between speech duration estimates based on subsamples and the values for the whole recordings, using the Voice Type Classifier. (periodic sampling; 1-minute clips.)"  />
+<p class="caption">
+Figure A.2: Relative error between speech duration estimates based on subsamples and the values for the whole recordings, using the Voice Type Classifier. (periodic sampling; 1-minute clips.)
+</p>
+</div>
+<p>The level of accuracy to achieve, and therefore the volume of audio to annotate, depend on the size of the effects being studied.</p>
 <!-- this also demonstrates how the conclusions to be drawn from manual annotations may vary according to how they were selected. -->
 </div>
 <div id="evaluating-automated-annotations-from-manual-annotations" class="section level2">
-<h2><span class="header-section-number">A.2</span> Evaluating automated annotations from manual annotations</h2>
+<h2><span class="header-section-number">A.3</span> Evaluating automated annotations from manual annotations</h2>
 <p>Manual annotations may be used to assess the reliability of automated tools on a subset of a corpus. There are many ways to quantify the quality of automated annotations from a gold standard established by expert annotators. Typically, classification algorithms are evaluated using metrics such as Recall, Precision, or F-score. Many metrics more specific to certain speech processing tasks have been developed, some of which can be easily be calculated in python using the pyannote-metrics package <span class="citation">(Bredin <a href="#ref-pyannote_metrics">2017</a>)</span>. Agreement coefficients commonly used in Psychology and Natural Language Processing (Krippendorff' Alpha, Fleiss' Kappa, etc.) can also be used to evaluate the reliability of automated annotations. Another possibility is to calculate Pearson correlation coefficients between the metrics derived from the algorithm (e.g. vocalization counts or speech duration) and the ground truth for each of the sampled clips. To simulate the impact of the choice of the clip duration over these correlation coefficients, we again used the Bergelson dataset; we calculated the correlations between the vocalization counts and speech durations for the children and the adults, using both the LENA and the VTC annotations.</p>
 <div class="figure" style="text-align: center"><span id="fig:pearson-length"></span>
 <img src="figures/pearson_clip_length.png" alt="Pearson correlation between LENA and VTC derived metrics as a function of clips length. (500 recordings; periodic sampling; constant annotation budget of 60 minutes per recording.)"  />
 <p class="caption">
-Figure A.2: Pearson correlation between LENA and VTC derived metrics as a function of clips length. (500 recordings; periodic sampling; constant annotation budget of 60 minutes per recording.)
+Figure A.3: Pearson correlation between LENA and VTC derived metrics as a function of clips length. (500 recordings; periodic sampling; constant annotation budget of 60 minutes per recording.)
 </p>
 </div>
 <p>We can observe a clear increase in the correlation coefficients as the length of the clips increases. This means Pearson correlation coefficients for these metrics are not robust again the length of the clips used to evalute the algorithms. One may turn to other metrics such as Recall and Precision, which remain stable for varying clip lengths.</p>
