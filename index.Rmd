@@ -32,9 +32,12 @@ Alejandrina Cristia assumes full responsibility for the contents. Nonetheless, w
 - Lucas Gautheron, on the ChildProject tutorial sections
 - Clementine Fourrier, for contacts with the ENS Audiovisual department
 - Catherine Urban, for administrative support
-- and particularly, to our collaborators in related projects, from whom we have learned tremendously 
+- and particularly, to our collaborators in related projects, from whom we have learned tremendously: 
+- Elika Bergelson and Marisa Casillas, for frequent discussions ranging from data collection to analyses and beyond
+- Marisa Casillas, Jonathan Stieglitz, Gandhi Yetish, and Camila Scaff, for insights regarding the use of long-form recordings in field conditions, and mentoring before, during, and after fieldwork
+- Florencia Lopez Boo and Maria de la Paz Ferro, for irreplaceable discussions about the use of long-form recordings in the context of large randomized control trials evaluating at scale social programs
+- Fiona Burns, Pauline Grosjean, and Fiona Burns, for invaluable discussions about application to large randomized control trials in field conditions
 
-<!-- saliently Marisa Casillas, Elika Bergelson, Florencia Lopez Boo, Sarah Walker, Pauline Grosjean, Heidi Colleran, Jonathan Stieglitz, Gandhi Yetish. -->
 
 
 
