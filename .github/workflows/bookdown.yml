@@ -44,7 +44,7 @@ jobs:
        env:
           GITHUB_TOKEN: ${{ secrets.GH_PAT }} # https://github.com/settings/tokens
        with:
-          branch: docs
+          branch: book
           email: ${{ secrets.EMAIL }}
           build_dir: book/
           
