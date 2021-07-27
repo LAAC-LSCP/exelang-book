@@ -48,7 +48,7 @@ tab$other<-c("Plugins for software such as Google Drive, GitHub (GitHub, 2018), 
 tab=data.frame(tab)
 library(kableExtra)
 
-kable(tab, "html", "pipe", col.name=c("Repository name", "Project file Formatting", "How to update data", "Data access by non-curators", "Other features"), align=c("l", "l", "l", "l", "l"))  %%
+kable(tab, "html", "pipe", col.name=c("Repository name", "Project file Formatting", "How to update data", "Data access by non-curators", "Other features"), align=c("l", "l", "l", "l", "l"))  %>%
  kable_styling(font_size = 8)
 
 #kable(cbind(tab, tab)) %>%
