@@ -153,10 +153,10 @@ tab=data.frame(tab)
 library(kableExtra)
 
 kable(tab, "html", "pipe", col.name=c("Hardware", "Ease of use", "Cost", "Length of one bout", "Storage capacity", "Childproof", "Pros", "Cons", "Best choice for"), align=c("l", "l", "l", "l", "l", "l", "l", "l", "l"))  %>%
- kable_styling(font_size = 8)
+ kable_styling(font_size = 10)
 
 #kable(cbind(tab, tab)) %>%
-#  kable_styling(font_size = 8) %>%
+#  kable_styling(font_size = 10) %>%
 #  scroll_box(width = "100%", box_css = "border: 0px;")
 
 ```
