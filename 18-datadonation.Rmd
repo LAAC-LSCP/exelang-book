@@ -34,18 +34,30 @@ If you are not familiar with scientific repositories online, we can give you sug
 
 Feel free to comment if you have other questions for us!
 
-```{r, echo=FALSE} 
+\tiny
+
+```{r, echo=FALSE, size = 'tiny'} 
 
 tab=NULL
 
-tab$repository<-c("Open Science Framework (osf.io)", "Databrary (databrary.org)", "Language Archive")
-tab$ease<-c("Highest", "Intermediate", "Lowest")
-tab$what<-c("Needs to create an account, use any format you want", "Needs to get institution approved & create an account, use their data format", "Needs to create an account, choice between their format or free-form")
-tab$reusers<-c("Needs to create an account & get access from a curator", "Needs to get institution approved, create an account & get access from a curator", "Needs to create an account & get access from a curator (by signing a license)")
+tab$repository<-c("[Open Science Framework] (https://osf.io)", "[Databrary] (https://nyu.databrary.org)", "[HomeBank] (https://homebank.talkbank.org)", "[The Language Archive] (https://archive.mpi.nl/tla/)")
+tab$formatting<-c("No specific requirements for files or project structure", "Some aspects of project structure specified", "Project structure and file structure must follow one specific format", "?")
+tab$update<-c("Via browser", "Via browser", "Through personal contact with HomeBank personnel", "?")
+tab$reusers<-c("A choice of: None (completely private), Invited people can read (and write), Anyone can read", "A choice of: None (completely private), Invited people can read (and write), Anyone can read", "A choice of: None (completely private); Any HomeBank member can read; Selected HomeBank members can read; Anyone can read", "?")
+tab$other<-c("Plugins for software such as Google Drive, GitHub (GitHub, 2018), and others; Storage in USA or Europe", "Data annotation with Datavyu software (Datavyu Team, 2014), some APIs", "Data annotation and analyses with CLAN software", "?")
 tab=data.frame(tab)
-knitr::kable(tab, "pipe", col.name=c("Repository", "Ease of use", "What you, as curator, need to do", "What re-users need to do"), align=c("l", "l", "l", "l"))
+library(kableExtra)
+
+kable(tab, "html", "pipe", col.name=c("Repository name", "Project file Formatting", "How to update data", "Data access by non-curators", "Other features"), align=c("l", "l", "l", "l", "l"))  %%
+ kable_styling(font_size = 8)
+
+#kable(cbind(tab, tab)) %>%
+#  kable_styling(font_size = 8) %>%
+#  scroll_box(width = "100%", box_css = "border: 0px;")
 
 ```
+\normalsize
+
 
 ### You don’t want to upload your data on a scientific repository but you are willing to create a license
 

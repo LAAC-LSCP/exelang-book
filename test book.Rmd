@@ -1,0 +1,517 @@
+--- 
+title: "Long-form recordings: From A to Z"
+author: 
+  - name          : "Sara Pisani"
+  - name          : "Alejandrina Cristia"
+    affiliation   : "Ecole Normale Supérieure, PSL Research University, Departement d'etudes cognitives, Laboratoire de Sciences Cognitives et Psycholinguistique (ENS, EHESS, CNRS)"
+    corresponding : yes    # Define only one corresponding author
+    address       : "LSCP 29 rue d'Ulm, Paris, France "
+    email         : "alejandrina.cristia@ens.fr"
+date: "`r Sys.Date()`"
+site: bookdown::bookdown_site
+output: bookdown::gitbook
+documentclass: book
+bibliography: [book.bib, packages.bib]
+biblio-style: apalike
+link-citations: yes
+description: "This bookdown contains the scripts of instructional videos created in the context of the ExELang Project (exelang.fr)."
+
+---
+
+# Preface {-}
+
+Placeholder
+
+
+
+<!--chapter:end:index.Rmd-->
+
+# Introduction {-}
+
+Hello, I'm Alex Cristia, principal investigator of the ExELang Project. For this Project, we are creating a series of videos to help researchers everywhere use long-form recordings to collect data on early language development.
+
+Longform recordings are recordings made over an extended period of time, for instance, one whole day or even several days. 
+They are often made using a wearable device, for instance, a recorder that is clipped on the child's clothing.
+
+Since each recording lasts several hours (often 10 or more) you will have many hours of audio for each child, and often hundreds or thousands across all children in your sample. So you cannot analyze this audio manually, by listening to it and transcribing what you hear, but instead you will need to use some kind of automated system, at least as a first pass. 
+
+Longform recordings are good if you want to look for broad phenomena that happen frequently, for example how frequently the child vocalizes or cries; you can get estimates and reasons why. 
+
+They are not very good if you want to look for narrower phenomena that are rare or don’t have very clear acoustic cues. Imagine you are interested in knowing whether the child makes systematic errors when they talk, for example if they make systematic errors in the past simple form. This is difficult to study because at present we don’t have an automated system that transcribes what the child precisely says (e.g. walk vs walked).
+
+
+*What will this series cover then?* 
+
+If you are interested in using longform recordings, we are going to help you with everything you need to know, from how you decide to collect data, to hardware and software, clothing, how to ask permission to your IRB, human annotation, piloting, how to share data. 
+We have tried to distill nearly 10 years of using the technique, and literally hundreds of hours collecting, analyzing, discussing the technique, and teaching it to others. Our hope is that this series will serve as a reference: You can quickly get an idea of what are the things you need to think about and do, and you can go back to the videos of different steps as you progress in your project. Each video will end with a series of references and links where you can get more in depth information. We are also making the script of this video available as a book - the link is at the end too. You can ask questions and make comments as issues to the book or in the discussion section of each video. 
+
+We hope this is useful to you! 
+
+<!--chapter:end:01-intro.Rmd-->
+
+
+# Hardware {#hardware}
+
+Placeholder
+
+
+## LENA hardware 
+## Non-LENA hardware
+### iPods
+### Hand-held recorders
+### USB "spy" recording devices
+### Babylogger
+### Wireless systems
+## The bottom line regarding hardware
+## Summary
+## Resources
+
+<!--chapter:end:02a-hardware.Rmd-->
+
+# Additional measures {#add}
+
+As we said in our introduction video, we are not going to talk into detail about how to collect and analyse data that are not audio, but we do want to have some reference for people interested in this work. There are some people who already have added other measures:
+
+## Movement
+
+One case where another measure is integrated in the device is the Babylogger, which has an accelerometer. I (Alex) personally haven’t analysed those data, but in theory this could be useful if you want to look at changes in how children move (i.e. if you want to identify walking or crawling). To my knowledge, there aren't yet automated algorithms to do this, so you may need to do some manual annotation and algorithm development.
+
+## Visual information: Snapshots
+
+If you are interested in visual information, Marisa Casillas has used photo logging. She used a device that is no longer purchasable, that is called Lifelogger which took pictures every some numbers of seconds. Marisa has published two papers where she shows pictures taken by the device, so you can check them out -- see links in the resources. She also added a fish-eye lens, because she wanted to get more of the visual environment and, to my knowledge, she has quite a lot of hand annotations of this; also, she has some explanatory work on how to automatise the analysis, but it is still to be done in the future. 
+
+
+## Visual information: Continuous recordings
+
+Some of you want to have videos to capture gestures and other things that cannot be captured by pictures. I know that many people are really interested in this, but this can also be really challenging. Why? Collecting videos requires a lot of energy and batteries make the hardware heavier. In the case of videos, the battery just runs out very quickly, so it’s not something that you can collect over an extended period of time -- i.e., hours at a time. So it's technically impossible to collect 10h of video with a device that is wearable by the child. 
+
+That said, what people are doing is that they are collecting videos separately, for a short period of time. An example would be the work of Elika Bergelson: she collected daylong audio recordings for a month for each child, and on a separate day she went back to the children’s homes, set up a tripod and had the kids wear a cap on which she had mounted two video cameras. This way, for each child, she has some video data and some audio data. So if you are interested in that approach, you can check out her work from the references. 
+
+## Other information
+
+There is another set of analysis and possibilities that come from Kaya de Barbaro's work. She has a few papers describing a technology that she and her team are developing and it’s really interesting because it contains many psycho-physiological measurements including for instance children’s heart rates. She also uses parental questionnaires on a phone app, which asks parents questions throughout the day. This is another type of work that it’s beginning to be explored, so I encourage you to check out Kaya de Barbaros’s work for more information on that.
+
+## Resources
+- Casillas, Marisa, Penelope Brown, and Stephen C. Levinson. "Early language experience in a Tseltal Mayan village." Child Development 91.5 (2020): 1819-1835. [pdf](https://pure.mpg.de/rest/items/item_3184321_3/component/file_3184322/content?download=true)
+- Casillas, M., Brown, P., & Levinson, S. C. (2021). Early language experience in a Papuan community. Journal of Child Language, 48(4), 792-814. [pdf](https://pdfs.semanticscholar.org/74c0/ea8d28ec58f2734f58bce84279a29c1185f9.pdf)
+- Bergelson, E., Amatuni, A., Dailey, S., Koorathota, S., & Tor, S. (2019). Day by day, hour by hour: Naturalistic language input to infants. Developmental science, 22(1), e12715. [pdf](https://bergelsonlab.com/files/publications/Bergelson_et_al_DevSci_2018.pdf)
+- de Barbaro, K. (2019). Automated sensing of daily activity: A new lens into development. Developmental psychobiology, 61(3), 444-464. [pdf](https://moody.utexas.edu/sites/default/files/de-Barbaro-automated-sensing-daily-activity.pdf)
+
+<!--chapter:end:02b-addmeasures.Rmd-->
+
+
+# Clothing {#clothing}
+
+Placeholder
+
+
+## Custom-sized pockets
+### LENA t-shirts
+### Non-LENA t-shirts
+#### How to close the pocket
+## Alternatives to t-shirts
+### Vests
+### Harness
+### Attaching the device to a piece of clothing
+## Final comments
+## Resources
+
+<!--chapter:end:02c-clothing.Rmd-->
+
+
+# LENA software {#lena}
+
+Placeholder
+
+
+## Resources
+
+<!--chapter:end:04a-lenasoftware.Rmd-->
+
+# Non-Lena Softwares {#nonlenasoftware}
+
+In this video we're going to explain how to use a software that is not LENA in order to do your analysis. One important point I want to make right off the bat is that you need to know a little bit of coding to use this software so if you have never used a terminal and if you don't know what bash or Python are then you probably want to get some training on that first. We provide some links for this in the further resources section of this video. We are going to base our explanations on the software that was developed in the ACLEW project, where the analysis was broken down into several phases. 
+
+The first phase involves deciding who speaks when. For this phase you need to use VTC, short for Voice Type Classifier. VTC was trained on a large corpus of over 200 hours of child-centred recordings that were put together by combining some data that we had in our lab with data available on CHILDES. Most of the data actually came from CHILDES, in particular from the Tsay corpus that contains samples from Chinese language. The rest of the data comes from several different languages including English, French and other languages from Oceania, America, and Africa. So one big difference compared to Lena is that it was not trained solely and exclusively on children learning English. 
+
+The second phase of analysis applies only to sections that the Voice Type Classifier identified as being adult speech. For this we use another piece of software that's called Alice, short for Automatic Linguistic Units Counter.  Alice was also trained with multiple languages although much of the data was English from the US and from the UK.  
+
+Both of these are open source, which means that you can download them and reuse them -- you can even change them anytime as you think best, since both of them can be retrained. Even if both of them can be retrained, you can also use them out of the box. 
+
+Both of these tools have been benchmarked  against LENA and both of them are competitive.  For more information, see the \@ref(accuracy) Video.
+
+
+## Resources
+
+- Räsänen, O., Seshadri, S., Lavechin, M., Cristia, A., & Casillas, M. (2020). ALICE: An open-source tool for automatic measurement of phoneme, syllable, and word counts from child-centered daylong recordings. Behavior Research Methods. [pdf](https://psyarxiv.com/p95dz/download?format=pdf) [code](https://github.com/orasanen/ALICE)
+- Lavechin, M., Bousbib, R., Bredin, H., Dupoux, E., & Cristia, A. (2020). An open-source voice type classifier for child-centered daylong recordings. Interspeech. [pdf](https://arxiv.org/pdf/2005.12656) [code](https://github.com/MarvinLvn/voice-type-classifier)
+
+<!--chapter:end:04b-nonlenasoftware.Rmd-->
+
+
+# Tutorial of our ChildProject software {#childproject}
+
+Placeholder
+
+
+## Resources
+
+<!--chapter:end:04c-childproject.Rmd-->
+
+# Piloting {#piloting}
+
+In this video we are going to talk about the importance of piloting. You might think that since people have already done these kinds of tests in the past, then you don’t have to do piloting yourself. This is simply not true, because you need to make sure that the community whom you are working with agree on this project and feel comfortable and give you feedback. 
+
+What do we mean by community? Community means having at least 2 families who come from the population that you are going to sample, so this means not your friends or family. You might want to start by asking them, but if they do not belong to the community you are targeting, then their answers might be different, if not opposite to your target community, thus misleading. 
+
+So, something you need to bring up with the community you are targeting is how they feel about the clothing: you need to ask them if they would be ok with their child wearing this or that type of clothing with hardware in it. Also, you need to ask them if they are open with the device you intend to use: suppose you are not sure whether you want to use a device or another, for example Olympus or USB. What we found out is that usually families tend to have strong preferences about the device they prefer their child to wear, so that might also help you decide. For example, in my personal experience [ALEX], what I found is that some families don’t like the USB device because they feel like it can be easily lost and the child can play with it resulting in an additional worry for the parents, which you want to avoid; while other families have a preference for the USB device, especially when used for extended periods of time and during the night, because they are afraid the child would get tired by going around with bigger devices, and this happens especially when children are very small, so the parents think it’s weird to put a 300g device on them. 
+
+You also want to ask them how they want you to analyse their recordings. Sometimes you have a preference, whether you want to use automated analysis or manual analysis, so that’s fine. But it’s always very useful to talk about it with the families and have their impressions on what it means when each of these methods are used. So, for instance, what we found is that for some communities, they do not like the idea of human annotation, because they are not sure of what the people who are going to listen to the recordings are going to think of them or how they are going to treat these data. So if this is your preferred choice, and the family tells you this, then that’s something you’ll want to address. So you will need to specify how the people who are going to listen to the recordings, are going to treat these data, that they are going to do it with respect and they are going to be cognisant of the unique situation each family is in. 
+
+At this point we also want to remind you something that we are going to touch upon the ethics and legal series: if you are recording in a setting where you are supposed to report anything illegal to the law (e.g drug consumption or anything involving violence), if you are mandated by the law to report anything illegal, what you want to do with piloting is to mention this to the families and ask them what they think about this and what they want to do about this. Since you will have to specify this anyway when making people sign the consent to you study, your risk is to have a biased sample of the population you are targeting.
+
+Some of the complaints and worries we got about annotation are concerned with automated annotation, but they are very very few and usually they come from very informed parents that come from the tech industry. So, if you are collecting data from families like that, parents might know the use of automated analysis for purposes that are close to surveillance or that are being used in discriminatory manners (e.g face recognition, since algorithm are trained with faces taken from the internet, which is biased with faces of whit people, these algorithms might work against people who are not white). This is something that some parents are aware of and that you want to bring up in your piloting phase.
+
+To cite a couple more examples: in the piloting stage you don’t want to just discuss about logistics but you also want to take a moment to discuss all the stages of you data collection and analysis with the representatives of the community you are working with because you want to make sure you won’t have surprises down the line.  
+
+When you are going through all the stages, you want to point out also what the goals of your study are and you want to have impressions of what these goals mean to them. Sometimes when you have a very narrow, technical goal, parents might not really care about it, and that’s fine. You just want to check if they have any strong feelings about it. When talking about goals with the families, you’ll also want to discuss about what could happen in the context of a reuse and this is something that we will go through in another series of videos but we think that these data but we think that these data are really valuable so they shouldn't be used for a single purpose, right? People have gone through a lot of effort to collect them, so they should’ just be thrown away after one use. So this is for you a good possibility to talk to parents about donating data and reusability of data. You can also mention other purposes for their data, make examples of what would be interesting to look into, and see if parents are ok with data being reused in different settings.
+
+Another thing you want to check is that the families have other areas or research goals they want you to be thinking about (e.g something that happens very frequently is that these communities are interested in researches about bilingual or multilingual children development, they are maybe speaking a language that is not spoken by many and they are afraid their children will lose it, so they would like you think about ways to make sure their language isn’t lost). This is thus the natural time to look into this, so that you can already foresee it in your request. 
+Finally, here is the time for you to ask parents what is reasonable feedback they would like to have, whether they are interested in having some of your resulting data and in which form. 
+
+## Resources
+- Cychosz, M., Romeo, R., Soderstrom, M., Scaff, C., Ganek, H., Cristia, A., ... & Weisleder, A. (2020). Longform recordings of everyday life: Ethics for best practices. Behavior research methods, 52(5), 1951-1969. [pdf](https://psyarxiv.com/ah37c/download?format=pdf)
+- Levin, H. I., Egger, D., Andres, L., Johnson, M., Bearman, S. K., & de Barbaro, K. (2021). Sensing everyday activity: Parent perceptions and feasibility. Infant Behavior and Development, 62, 101511. [pdf](https://repositories.lib.utexas.edu/bitstream/handle/2152/83853/Preprint_MinorRevisions_Manuscript_ParentPerceptions.pdf?sequence=2)
+
+
+<!--chapter:end:05-piloting.Rmd-->
+
+
+# IRB {#irb}
+
+Placeholder
+
+
+## Basic information for all IRB submissions
+## Additional considerations
+## Text you can use in your IRB requests:
+### Basic description
+### Automated analyses
+### Manual annotations for validation
+### Manual annotations to augment dataset
+### Manual annotations using Zooniverse -- general
+#### Section to add if using short clips
+#### Section to add if using vetting
+## Closing thoughts
+## Resources
+
+<!--chapter:end:06-IRB.Rmd-->
+
+
+# Logistics {#logistics}
+
+Placeholder
+
+
+## How to deliver the hardware
+## How long to record for
+## How to communicate about the hardware with family members
+## How many devices do you need?
+### Sample calculation 1
+### Sample calculation 2
+### Sample calculation 3
+
+<!--chapter:end:07-datacollection.Rmd-->
+
+
+# Organizing your data {#organizingdata}
+
+Placeholder
+
+
+## What information to collect about the children
+## What information to collect about the recordings
+## Resources
+
+<!--chapter:end:08-organizingdata.Rmd-->
+
+# Storing your data {#storingdata}
+
+These data are precious and should be handled carefully, both to protect access and to make sure it is not lost. This will typically mean that once you have extracted data from the device, you should create a back-up. In our experience, it gets messy if you do a back-up by hand (through copy-pasting to another location), because you can make a mistake and replace a file, or forget to replace a file, and then you have copies that seem duplicates but you are not sure whether they are or not. Also, it is good practice for the back-up not to be in the same physical place as the main copy, as in case of fire, flood, or theft they may all disappear at once.
+
+Also, you should make sure people who do not have ethical clearance do not gain access to the data. Therefore, do not put the data in a cloud server (like Dropbox or Drive) with a link whereby anyone with the link can access it, since it means that if the link is found by someone, then they gain access to the data.
+
+Taking all of this into account, we believe a good solution is to use a system like Dropbox, Drive, or AWS because they keep a record of versions and do the back-up in the background, without you needing to do anything. Note that in some locations, those services may not be allowed because they are not specifically meant for sensitive data. 
+
+The solution we use in our lab is a little bit more technically involved, but it is HIPAA and GDPR-compliant. You can read more about it in Gautheron et al. (2021), in the Resources section.
+
+## Resources
+
+Gautheron, L., Rochat, N., & Cristia, A. (2021). Managing, storing, and sharing long-form recordings and their annotations. [pdf](https://psyarxiv.com/w8trm/download?format=pdf)
+
+<!--chapter:end:09-storingdata.Rmd-->
+
+# Where should you run automated analyses {#whereanalyze}
+
+If you use LENA, most often you will have purchased one of the licenses that allows you to do your analyses on the cloud. This is great because it means that you don't have to have a particularly powerful computer, and you'll probably benefit from software and algorithm updates without even noticing. One downside, however, is that certain laws restrict storage and sharing of data across national boundaries, so if you are not based in the USA, you should consult local regulations to see if it is nonetheless possible for you to use LENA's cloud-based service.
+Also within LENA, another option is to purchase their XP license. They do not recommend this because this license only works on machines running Windows 10, and it will not be updated in the future. This means you either need to have a computer that always runs this operating system, or use a virtual machine system, which in our experience is not always easy to set up.
+
+If you are running open-source software, like the ACLEW options we discuss in another video, you have a choice between running your analyses in the cloud, in a cluster, or locally in your computer. Regarding cloud-based services, these do require a bit of technical expertise to set up, and you do need to check local regulations, but we think it is very likely that if you are based in the Global North, you'll be able to find a cloud-based service that has everything you need. We know less about the Global South, but if your local regulations allow transfer of data to Europe, you can probably use a European-based cloud service which should fulfill all regulations and ethical constraints. The Echolalia team is based in our same department, and are also working on this topic, so we asked them about this. They looked most thoroughly into using Amazon Web Services, or AWS for short. If you are in Europe, this is an option that is GDPR- compatible, and in the USA it is HIPAA-compatible. In other locations, please check local regulations.
+
+If you cannot use cloud-based services, the next best alternative is to use a local cluster. Many institutions have these, so you can reach out to your local informatics department to ask. This option also requires a bit of technical background, so you probably want to collaborate with someone who knows about this to get the analysis pipeline set up. Once everything is installed, running the ACLEW analysis involves simply copy-pasting a series of commands, and so you just need minimal knowledge of bash. If you don't know what bash is, there are short courses -- in our experience, people who know another computer language (like python or R) learn bash basics in less than an hour. And if you don't know other languages, it may take you 3-4 hours, so it's still not very time consuming. We provide links to tutorials in the resources section.
+
+The big advantage of those two options is that you'll be relying on powerful machines which will make processing faster. If neither of those work, you'll be left with only one option, which is running these tools in your personal computer. You may think that this is a good option because then you don't need to move your data around. However, as we explain on the video on storage and backup, it is a very bad idea to only have one copy of your data, as it may be accidentally destroyed or damaged. So you need several copies anyways. Running the software in your personal computer is not a great option for at least two reasons. First, you still need quite a bit of knowledge to get everything properly installed. We have had a myriad of problems trying to get this done, as each machine has a slightly different operating system and software already installed. Plus you still need some technical knowledge -- not just bash, as in the case of the cluster (assuming that someone else will help you install things in the cluster). To get these tools installed in your machine will probably require general informatics knowledge, and lots of patience, as you look up errors and try out recommended solutions.That is just the first disadvantage. The second one is that even when you've installed everything, the trouble is not over as it will take quite a bit of time to actually process the data. We haven't thoroughly benchmarked ALICE but this table shows you how long it takes to process files using the voice type classifier. Batch size is the number of sequences your computer will process in parallel. This can decrease the running time but increase the memory consumption of the program. Personal computers typically have CPUs, not GPUs. In a nutshell, it'll take about 4h to do a 16h recording in your personal computer. The precise numbers, however, will change depending on the specifications of your personal computer.
+
+<!--insert table-->
+
+
+
+
+<!--chapter:end:10-whereanalyze.Rmd-->
+
+
+# Evaluating your automated analyses {#evaluating}
+
+Placeholder
+
+
+## Basic concepts
+## Resources
+
+<!--chapter:end:11-evaluating.Rmd-->
+
+
+# Accuracy of automated analyses {#accuracy}
+
+Placeholder
+
+
+## LENA Software
+## ACLEW tools
+### Voice type classifier
+### ALICE
+## Resources
+
+<!--chapter:end:12-accuracy.Rmd-->
+
+
+# Human annotation {#humanannotation}
+
+Placeholder
+
+
+## Checking accuracy
+### FAQs
+## Doing things automated analyses could do but don't do quite well yet
+## Getting complementary information
+## Softwares for human annotation
+## Resources
+
+<!--chapter:end:15-humanannotation.Rmd-->
+
+# Secondary analyses {#secondaryanalyses}
+
+If you have opted into our ChildProject framework, then there are a number of secondary analyses that become incredibly easy. We have thought about the most typical routines you need to engage in, and provide sample code or direct functions for all of them.
+
+In particular, one thing you typically want to do is estimate the child-session-level metrics. For instance, one child was recorded for 8 hours one day and 16 hours another day. You don't want to have the play-by-play, that is, when the child was vocalizing. But instead, you may be interested in finding out, in total, how much they vocalized in each of these recordings. Since the recordings lasted a different number of hours, you may want to get the recording length and estimate a number of vocalizations per hour instead. Getting all of these numbers is easy once your data are in the ChildProject format, and you can find example code for estimating these "metrics".
+
+Another frequently encountered issue is how accurate automated analyses are. We discussed in the Video on \@ref(humanannotation) that to this end, you may want to do human annotation. You will find an example of how to set up an annotation campaign in the Resources.
+
+
+Moreover, once you've gotten some sections annotated, how do you estimate the reliability? ChildProject functions make it easy to calculate recall, precision, agreement, and other reliability metrics (such as error rates and correlations). Check the Resources section for an example on reliability.
+
+Some of you have so much data that you may want the help of citizen scientists in the Zooniverse platform to get them annotated. We an example project that shows you how to extract clips and cut them up into short sections, so they can be shared over Zooniverse, and then get back the annotations, analyze them, and integrate them with your dataset -- this is the best practices for Zooniverse example.
+
+Do you have other questions for analyses not covered above? Well, peruse the "show and tell" conversations in the ChildProject discussion board for some ideas, and feel free to create your own!
+
+## Resources
+
+Metrics
+
+Annotation campaign
+
+Reliability
+
+Zooniverse
+
+<!--chapter:end:16-secondaryanalyses.Rmd-->
+
+# Writing up results {#results}
+
+## scientist venue 
+
+In this video we are not going to talk about how you will frame your paper because that depends on the kind of journal you are aiming to. That said, there are some important things to keep in mind and some key references you will want to remember when you are going to write up your results. 
+So you’ll typically have: a participants section, where I recommend you mention not only the data you are including but all the data you collected, meaning you’ll mention data exclusion (e.g recordings that are too short with respect to others; or recordings that have mostly silence on it, meaning that probably those families put the recorder in a drawer, while exercising their right of withdraw; etc.).
+
+Then you’ll have the equipment section, where you’ll want to say what device you were using and you want to mention also clothing and attachment. Then the next section will be analysis: here you can mention the software you used to analyse (e.g. for LENA, your reference is the LENA technical reports, in particular the one that explains how the hardware and software work, etc.). You’ll probably also want to mention studies on reliability, which is the accuracy of the system. In particular we have a meta analysis that looked at that recently, but that meta analysis was not complete, so if for your particular study you have categories that are most important, for instance if you are interested in the key child, the you’ll need to have the accuracy of key child and this is not something that the meta analysis could look at in much detail because not too many studies report this but there is one paper by me [ALEX] and other people that was published last year, which reports key child’s performance. 
+
+In the software section, you will have also manual analysis, so you should provide the link to the human annotation training material that you have, and this is because this section you’ll make about human annotation will effect your data so that should be documented. If You followed the ACLEW documentation scheme version, then there is some reliability data from different labs that you can cite. The said, you cannot assume you got accuracy at the same level, so this is also something you will wan to point out.  
+
+	ACLEW: intro, tutorial
+	
+## Families
+
+Typically (at least in my lab → ALEX). we provide summaries with the results of the studies to the families who participated in it, so we thought to give you some tips on how to explain results to families. 
+Some parents want to get their own data, so you can produce an individualised graf which shows the proportion of silence, vocalisations etc., so a sort of overview. With the Lena yu can easily do it, by printing a copy of the relevant section.
+
+Some parents want more, so for example a comparison between their quantity of speech and the others and it’s up to you to decide whether it’s reasonable to give them this info. Something we found here in France is that, particularly for methods like this one which is still being developed and where we don’t have a very large normed population on which to base our measures, then providing percentages within a small population might generate some anxiety on parents (for example if you have a community of 30 children, someone is going to be the 30th, and this is perceived as discouraging). 
+
+Another thing you might want to do is provide them with group results, which might be a summary of your scientific paper. You can also provide them with the link to the actual paper and this is important because they feel they are represented in that publication. The usual advice is not to use highly technical phrases, instead using a language that is understandable by someone who doesn’t have the technical background.
+
+## Communities
+
+In the piloting stage we mentioned that we like thinking of LFR as a sample of a population, and so we always talk about communities. Communities don’t necessarily have a physical identity but they might be seen as a superset of all of the families that participated in your study. So, if this sounds something that applies to the work you are doing, you can think of ways to get back to the community and not just the single families who participated, by for instance creating a summary of the results or short presentations of your study and what you found so far and distribute it to associations or other entities related to that community. This could be via a newspaper article , if you know a journalist who can help you with that, or it could be an association representing your community (if they have a self identity) so you could provide them with information on your study. So we think that this is important because LFR are capturing people’s lives to a certain extent, and they are not just capturing the single families’ lives but they are sample of a population so it’s important for the identity to which they belong. So in that sense, it is useful to send the message that you have clear who are this community and ideally this is something you are going to discuss in your piloting stage as well, so if the community specifically ask you for some specific goal, this is also something that you need to pay mention in your write up.
+
+<!--chapter:end:17-writingresults.Rmd-->
+
+# Data donation / Transfer {#datadonation}
+
+If you are considering sharing your data with ExELang, you are probably in one of the following situations: 
+
+a) You already have collected data and you want to share it with us; or
+b) You don't have data yet but you are willing to collect it and share it with us.
+ 
+## You don’t have data yet
+
+Let’s start with the easier option: you haven’t collected data yet. 
+In this case, we'll typically need to sign a bilateral agreement. This is ideal because we are going to agree on several things:
+
+- you'll always keep ownership (and main responsibility) over the data;
+- what you get from us can include expertise hours, equipment, data processing, and funding for logistics;
+- what we would like to get is the possibility to re-analyze your data within the scope of [ExELang](https://drive.google.com/file/d/1k52yK1FYI76MlXtF4iWzuTlXFlETo6nu/view).
+
+Please note that in the agreement, we'll agree on an appropriate scope for *intellectual property*. At ExELang, we are specifically interested in relating children's experiences with how they talk, so we will ask for the ability to analyze and publish about this one point. If that covers your own research goals, we will discuss how to frame intellectual property so that it is ideal for both of us. 
+
+If this sounds complicated, you can always just start collecting data on your own, and eventually get back to us when you have your data -- in which case, you can watch the video “you already have data”. 
+ 
+## You already have data
+
+If you already have data, there are four different options:
+ 
+### You have already shared your data in a scientific repository
+
+Great, we only need to access you data!
+
+### You haven’t shared your data in a scientific repository yet but you are willing to do so
+
+This is our preferred option! Sharing data in a scientific repository might be good for you and your study because it allows you to get many potential collaborators and citations by making the effort of uploading your data only once. Moreover, you are contributing to make science an open source for everybody. 
+
+If you are not familiar with scientific repositories online, we can give you suggestions based on our experience with each one of the repositories, so to make it easier for you to decide which one works best for you. 
+
+Feel free to comment if you have other questions for us!
+
+\tiny
+
+```{r, echo=FALSE, size = 'tiny'} 
+
+tab=NULL
+
+tab$repository<-c("[Open Science Framework] (https://osf.io)", "[Databrary] (https://nyu.databrary.org)", "[HomeBank] (https://homebank.talkbank.org)", "[The Language Archive] (https://archive.mpi.nl/tla/)")
+tab$formatting<-c("No specific requirements for files or project structure", "Some aspects of project structure specified", "Project structure and file structure must follow one specific format", "?")
+tab$update<-c("Via browser", "Via browser", "Through personal contact with HomeBank personnel", "?")
+tab$reusers<-c("A choice of: None (completely private), Invited people can read (and write), Anyone can read", "A choice of: None (completely private), Invited people can read (and write), Anyone can read", "A choice of: None (completely private); Any HomeBank member can read; Selected HomeBank members can read; Anyone can read", "?")
+tab$other<-c("Plugins for software such as Google Drive, GitHub (GitHub, 2018), and others; Storage in USA or Europe", "Data annotation with Datavyu software (Datavyu Team, 2014), some APIs", "Data annotation and analyses with CLAN software", "?")
+tab=data.frame(tab)
+library(kableExtra)
+
+knitr::kable(tab, "html", "pipe", col.name=c("Repository name", "Project file Formatting", "How to update data", "Data access by non-curators", "Other features"), align=c("l", "l", "l", "l", "l"))  %%
+ kable_styling(font_size = 8)
+
+#kable(cbind(tab, tab)) %>%
+#  kable_styling(font_size = 8) %>%
+#  scroll_box(width = "100%", box_css = "border: 0px;")
+
+```
+\normalsize
+
+
+### You don’t want to upload your data on a scientific repository but you are willing to create a license
+
+A License is an official permission granted by the owner of some Work (the “Licensor”) to other people (the “Licensee”) and governing how the Licensee is allowed to use the Licensor’s Work. 
+This option allows you to make the effort of establishing rules for potential collaborators/citations once, and then re-use this license with others.
+ 
+When you create your license, you make the rules, so you can specify whatever you feel is best. You probably want to look at some examples:
+
+- https://www.ldc.upenn.edu/data-management/using/licensing
+- [License for BabyTrain Corpus](https://docs.google.com/document/d/1RdR3c-LPkhBSqRoH1Wapf_G26v82LkOr47puQhTQqYU/edit)
+
+
+You can also use open source licences, but you need to know that they allow for re-distribution (i.e., the people who get hands on your corpus can re-distribute it). Just in case, we made a list of the most commonly used ones:
+ 
+- **GNU**: The GNU General Public Licence (GPL) is probably one of the most commonly used licenses for open-source projects. The GPL grants and guarantees a wide range of rights to developers who work on open-source projects. Basically, it allows users to legally copy, distribute and modify software. It’s a copyleft license: it means that the derived works need to have the same type of license.
+- **MIT**: The MIT License is the least restrictive license out there. It basically says that anyone can do whatever they want with the licensed material, as long as it’s accompanied by the license.
+- **APACHE**: The Apache License, Version 2.0, grants a number of rights to users. These rights can be applied to both copyrights and patents. 1) Rights are perpetual, 2) Rights are worldwide, 3) Rights are granted for no fee or royalty, 4) Rights are non-exclusive, 5) Rights are irrevocable, 6) Redistributing code also has special requirements, mostly pertaining to giving proper credit to those who have worked on the code and to maintaining the same license. It’s a non copyleft license: it means that the works derived can have a different type of license. 
+- **CREATIVE COMMONS**: Creative Commons (CC) licenses aren’t quite open-source licenses, but they are commonly used for design projects. A wide variety of CC licenses is available, each granting certain rights. A CC license has four basic parts, which can be enacted individually or in combination.
+    
+    - Attribution. The author must be attributed as the creator of the work. Beyond that, the work can be modified, distributed, copied and otherwise used.
+    - Share Alike. The work can be modified, distributed and so forth, but only under the same CC license.
+    - Non-Commercial. The work can be modified, distributed and so on, but not for commercial purposes. 
+    - No Derivative Works. This means you can copy and distribute the licensed work, but you can’t modify it in any way or create work based on the original.
+
+These parts of the CC license terms can be combined. The most restrictive license would be the “Attribution, Non-Commercial, No Derivatives” license, which means that you can freely share the work, but not change it or charge for it, and you must attribute it to the creator. This is a good license to get your work out there but still maintain more or less complete control over how it is used. The least restrictive would be the “Attribution” license, which means that as long as people credit you, they can do whatever they like with the work.
+ 
+### None of the above mentioned options works well for you
+
+In this case, we are back to the bilateral agreement. This is ideal if we want to agree on something very specific (e.g., we want to make an exchange -- for instance, we fund your re-consenting the families who participated, in exchange for the possibility of re-using the data). Please note that in the agreement, you'll always keep ownership over the data; and that we'll agree on an appropriate scope for intellectual property. At ExELang, we are specifically interested in relating children's experiences with how they talk, so we will ask for the ability to analyze and publish about this one point. If that covers your own research goals, we will discuss how to frame intellectual property so that it is ideal for both.
+
+Here is an example: https://docs.google.com/file/d/1_IoMlTIP1cB63d5ojEGf_j21uN5Mg5cV/edit?usp=docslist_api&filetype=msword
+
+<!--chapter:end:18-datadonation.Rmd-->
+
+
+# Tips for field workers {#field}
+
+Placeholder
+
+
+## Devices
+## Clothing
+## Logistics
+## Storage
+## Resources
+
+<!--chapter:end:19a-field.Rmd-->
+
+# Performance across languages & for bilingual or multilingual settings {#multilingual settings}
+
+Many people asks us whether automated analyses are valid in bilingual or multilingual settings. It is important to bear in mind that no automated tool exists that classifies sections of the audio as the different languages, and I think it will take many years before such a tool is developed. 
+
+So if in your research you just want to get an idea of overall quantities of speech by the and around the child, without separating the languages, then in general there is no clear reason why accuracy would be any different from that in monolingual settings.
+
+That said, as explained in the \@ref{accuracy} Video, there is considerable variation in performance across corpora from the same language and culture, and across languages and cultures, for reasons that are not entirely clear yet. So particularly if you are working in a multilingual or bilingual setting where one or more of the languages represented have not been the object of a study on the automated analysis' accuracy, it is a good idea ot try to do one. To find out more, see the Video \@ref{humanannotation}.
+
+## Resources
+
+Cychosz, M., Villanueva, A., & Weisleder, A. (2020). Efficient estimation of children's language exposure in two bilingual communities. [pdf](https://psyarxiv.com/dy6v2/download?format=pdf)
+
+<!--chapter:end:19b-acrosslanguages.Rmd-->
+
+
+# Alternative / Additional tests {#alternatives}
+
+Placeholder
+
+
+## If you want a standardized language assessment
+## References
+
+<!--chapter:end:19c-additionaltests.Rmd-->
+
+`r if (knitr::is_html_output()) '
+# References {-}
+'`
+
+<!--chapter:end:20-references.Rmd-->
+
+
+# (APPENDIX) Appendix {-} 
+
+Placeholder
+
+
+## Sampling strategy
+## How much data should I annotate ?
+## Evaluating automated annotations from manual annotations
+
+<!--chapter:end:21-appendix-human-annotations.Rmd-->
+
