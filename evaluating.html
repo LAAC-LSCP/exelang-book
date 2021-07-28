@@ -23,7 +23,7 @@
 
 
 
-<meta name="date" content="2021-07-27" />
+<meta name="date" content="2021-07-28" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -237,7 +237,10 @@
 <div id="evaluating" class="section level1">
 <h1><span class="header-section-number">Chapter 13</span> Evaluating your automated analyses</h1>
 <p>Regardless of whether you are using LENA or the ACLEW tools, it’s always a good idea to check how accurate automated analyses are in your dataset. Here’s a demonstration of this:</p>
-<!--insert table-->
+<pre><code>##       BER.ENG. MCD.ENG. WAR.ENG. L05.ENG.
+## ALICE     0.91     0.65     0.80     0.90
+## LENA      0.75     0.71     0.82     0.79</code></pre>
+<p><img src="test-book_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
 <p>This graph shows the correlation between human and automated word counts for several corpora, all of which were collected from English-speaking families with infants between roughly 1 and 3 years of age. The correlations, however, vary quite a bit, particularly in the ACLEW tool called ALICE (yellow bars). We introduce ALICE in Video <a href="nonlenasoftware.html#nonlenasoftware">5</a>, and we discuss its accuracy overall in Video <a href="accuracy.html#accuracy">14</a>. But for now, what we want to say is general to any tool, and it has to do with the question of how you interpret results of automated analyses in general.</p>
 <p>To prove this to you, here’s another example, this time from LENA: the correlation between human counts of child-adult conversational turns and the corresponding LENA’s automated counts was .7 in one study on Vietnamese learners (Ganek et al., 2018), but only -.03 in another on Korean learning infants (Pae et al., 2016).</p>
 <p>So when you hear someone say that “LENA has been validated” – what can this mean? We think today what this means is that someone did a study to check how accurate LENA metrics were in a given sample, but it does not necessarily mean that the accuracy was high enough for the purposes you want to use LENA, or whatever other software.</p>
