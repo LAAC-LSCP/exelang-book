@@ -84,7 +84,7 @@ resources-12
 secondaryanalyses
 resources-13
 results
-scientist-venue
+scientific-venue
 families
 communities
 datadonation
@@ -100,7 +100,7 @@ clothing-1
 logistics-1
 storage
 resources-14
-performance-across-languages-for-bilingual-or-multilingual-settings-multilingual-settings
+multilingualsettings
 resources-15
 alternatives
 if-you-want-a-standardized-language-assessment
