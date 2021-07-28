@@ -1,10 +1,10 @@
-# Performance across languages & for bilingual or multilingual settings {#multilingual settings}
+# Performance across languages & for bilingual or multilingual settings {#multilingualsettings}
 
 Many people asks us whether automated analyses are valid in bilingual or multilingual settings. It is important to bear in mind that no automated tool exists that classifies sections of the audio as the different languages, and I think it will take many years before such a tool is developed. 
 
-So if in your research you just want to get an idea of overall quantities of speech by the and around the child, without separating the languages, then in general there is no clear reason why accuracy would be any different from that in monolingual settings.
+So if in your research you just want to get an idea of overall quantities of speech by and around the child, without separating the languages, then in general there is no clear reason why accuracy would be any different from that in monolingual settings.
 
-That said, as explained in the \@ref{accuracy} Video, there is considerable variation in performance across corpora from the same language and culture, and across languages and cultures, for reasons that are not entirely clear yet. So particularly if you are working in a multilingual or bilingual setting where one or more of the languages represented have not been the object of a study on the automated analysis' accuracy, it is a good idea ot try to do one. To find out more, see the Video \@ref{humanannotation}.
+That said, as explained in the \@ref(accuracy) Video, there is considerable variation in performance across corpora from the same language and culture, and across languages and cultures, for reasons that are not entirely clear yet. So particularly if you are working in a multilingual or bilingual setting where one or more of the languages represented have not been the object of a study on the automated analysis' accuracy, it is a good idea to try and do one. To find out more, see the Video \@ref(humanannotation).
 
 ## Resources
 
