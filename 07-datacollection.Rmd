@@ -22,11 +22,11 @@ That said, most researchers are only recording one full day, and as we will see 
 
 ## How to communicate about the hardware with family members
 
-We have found it useful to provide parents with both oral and written instructions on everything they need to know: how the device works, how to turn it on, how they need to attach it to the clothing, how to recharge it (if you are recording multiple days), and that they can just go about their day. The written version could be provided printed out as well as on a website. This is useful because you can also have FAQs at the end, which will be informed by the things that the representatives of the community told you during your piloting sessions (see Video \@ref{pilot}). This may be how the data are going to be analysed, how they are going to be used for, etc. So anything parents told you or asked you about in the piloting stage, you can have it in a little booklet. 
+We have found it useful to provide parents with both oral and written instructions on everything they need to know: how the device works, how to turn it on, how they need to attach it to the clothing, how to recharge it (if you are recording multiple days), and that they can just go about their day. The written version could be provided printed out as well as on a website. This is useful because you can also have FAQs at the end, which will be composed by the things that the representatives of the community told you during your piloting sessions (see Video \@ref(pilot). This may be how the data are going to be analysed, how they are going to be used for, etc. So anything parents told you or asked you about in the piloting stage, you can have it in a little booklet. 
 
-The booklet is useful to some parents who like to consult it and have everything written down. However, for some things, it may be better to have short videos that are accessible through a QR code that the parents can scan in the booklet and so in this case they can read the explanation or watch the video. Particularly, regarding how to put the device in clothing, the booklet has pictures but nothing really replaces a tutorial video, so if you can do that, it will probably be appreciated. 
+The booklet is useful to some parents who like to consult it and have everything written down. However, for some things, it may be better to have short videos that are accessible through a QR code that the parents can scan in the booklet. This way, they can read the explanation or watch the video. Particularly, regarding how to put the device in clothing, the booklet has pictures but nothing really replaces a tutorial video, so if you can do that, it will probably be appreciated. 
 
-Ideally, you should also have a phone number they can call or send a message to, for instance via WhatsApp, if that is common in the community you are working with. This is very reassuring in case they have questions not on the booklet, or they want to refer someone else to you, for instance because they were incidentally recorded.
+Ideally, you should also have a phone number they can call or send a message to, for instance via WhatsApp, if that is common in the community you are working with. This is very reassuring in case they have questions that are not in the booklet, or they want to refer someone else to you, for instance because they were incidentally recorded.
 
 ## How many devices do you need?
 
@@ -41,7 +41,7 @@ In addition to the time of the recording and the delays of transferring the devi
 ### Sample calculation 1
 
 So, for instance, imagine you want to launch a study where you have 40 families participating and you want each family to contribute with one set of recordings per month from the ages of 6 months to the age of 12 months of the child. So in this case you will need at least 30 recording devices and 30 sets of t-shirts. This is because: imagine you have device 1 that goes with family 1 on week number 1. Then, you can use it with another family but probably it’s a little bit risky to use it on week number 2 so you will use it with family 2 on week number 3. This is because otherwise you would need to pick up the device, wash the t-shirts and drop the equipment off to the next family on the same day. 
-(People who have been doing this in a large scale, they had cases in which a device gets thrown in the toilet or it gets crashed or the child jumps into a pool with the device on, so one should plan for at least one or two devices getting lost or broken.)
+(People who have been doing this in a large scale had cases in which a device got thrown in the toilet or it got crashed or the child jumped into a pool with the device on, so one should plan for at least one or two devices getting lost or broken).
 
 ### Sample calculation 2
 
@@ -49,9 +49,9 @@ So, for instance, imagine you want to launch a study where you have 40 families 
 - 500 families, recorded twice, one year apart (pre- and post-intervention)
 - study rolled out seeing 50 families in a given week
 
-**2.a. Assuming drop-off and pick-up through in-person visits to the homes**: Given potential equipment loss and to reduce logistic burden, 60 recording units should be purchased (50/week + 10 extra)
+**2.a. Assuming drop-off and pick-up through in-person visits to the homes**: Given potential equipment loss and to reduce logistic burden, 60 recording units should be purchased (50/week + 10 extra).
 
-**2.b. Assuming drop-off and pick-up through mail** (7 days to send out & get back the recorders): Given potential equipment loss and to reduce logistic burden, 160 recording units should be purchased (50/week x 3 weeks given delays in mailing in/out equipment, 10 extra)
+**2.b. Assuming drop-off and pick-up through mail** (7 days to send out & get back the recorders): Given potential equipment loss and to reduce logistic burden, 160 recording units should be purchased (50/week x 3 weeks given delays in mailing in/out equipment, 10 extra).
 
 ### Sample calculation 3
 
@@ -60,9 +60,9 @@ So, for instance, imagine you want to launch a study where you have 40 families 
 
 That means that at the "peak" of data collection, 15 families are recording the same week. Families keep the equipment over the 3 months of data collection, so drop-off & pick-up happen only once per family.
 
-**3.a. Assuming drop-off and pick-up through in-person visits to the homes**: Given potential equipment loss and to reduce logistic burden, 60 recording units should be purchased 20 recording units should be purchased (15/week + 5 extra)
+**3.a. Assuming drop-off and pick-up through in-person visits to the homes**: Given potential equipment loss and to reduce logistic burden, 60 recording units should be purchased 20 recording units should be purchased (15/week + 5 extra).
 
-**3.b. Assuming drop-off and pick-up through mail** (7 days to send out & get back the recorders): Given potential equipment loss and to reduce logistic burden, 30 recording units should be purchased (10/week + (5/week equipment that is changing families) x 3 weeks given delays in mailing in/out equipment, 5 extra)
+**3.b. Assuming drop-off and pick-up through mail** (7 days to send out & get back the recorders): Given potential equipment loss and to reduce logistic burden, 30 recording units should be purchased (10/week + (5/week equipment that is changing families) x 3 weeks given delays in mailing in/out equipment, 5 extra).
 
 
 
