@@ -15,27 +15,20 @@ First let's start with the voice type classifier. We checked performance in a fe
 Let me start with results in a completely held out set:  the algorithm had never seen data from those corpora. We used data from the English portion of ACLEW, which matches the language on which LENA was trained -- but not our Voice Type Classifier, which was trained with multiple languages. The fact that LENA got to see more data in this language could lead LENA to have better performance than the Voice Type Classifier. 
 
 
-REMOVE SPEECH & AVE
-
-RENAME KCHI -> CHI
-
-CHI -> OCH
-
-
 ```{r, echo=FALSE}
 
 tab=NULL
-tab$precision<-c(62.37, 46.77, 70.30, 39.52, 77.03, 59.20)
-tab$recall<-c(76.67, 25.78, 57.87, 46.92, 79.89, 57.42)
-tab$fscore<-c(68.78, 33.24, 63.48, 42.91, 78.43, 57.37)
+tab$precision<-c(62.37, 46.77, 70.30, 39.52)
+tab$recall<-c(76.67, 25.78, 57.87, 46.92)
+tab$fscore<-c(68.78, 33.24, 63.48, 42.91)
 tab=data.frame(tab) 
-rownames(tab)<-c("KCHI", "CHI", "FEM", "MAL", "SPEECH", "AVE")
+rownames(tab)<-c("CHI", "OCH", "FEM", "MAL")
 
 library(kableExtra)
 kable(tab,  col.name=c("Precision", "Recall", "Fscore"), align=c( "c", "c", "c"))
 
 ```
-<!--maybe redo table?-->
+
 
 Here is the performance for each talker type -- in machine-learning terms, we call these "classes". KCHI is the class corresponding to the key child, chi that corresponding to other children, fem to adult females, mal to adult males. You can ignore speech (a class that is activated whenever anyone talks), and AVE (the average). 
 
@@ -47,16 +40,16 @@ You can see here that in this test set (only English learning infants, recorded 
 
 How does the LENA software fare on the same data?
 
-Here is the Table for LENA performance on the exact same data: FAKE NUMBERS!!! page 22
+Here is the Table for LENA performance on the exact same data:
 
 ```{r, echo=FALSE}
 
 tabLENA=NULL
-tabLENA$precision<-c(62.37, 46.77, 70.30, 39.52, 77.03, 59.20)
-tabLENA$recall<-c(76.67, 25.78, 57.87, 46.92, 79.89, 57.42)
-tabLENA$fscore<-c(68.78, 33.24, 63.48, 42.91, 78.43, 57.37)
+tabLENA$precision<-c(60.91, 27.34, 63.87, 43.57)
+tabLENA$recall<-c(50.07, 29.97, 31.96, 32.5)
+tabLENA$fscore<-c(54.96, 28.59, 42.60, 37.23)
 tabLENA=data.frame(tabLENA) 
-rownames(tabLENA)<-c("KCHI", "CHI", "FEM", "MAL", "SPEECH", "AVE")
+rownames(tabLENA)<-c("CHI", "OCH", "FEM", "MAL")
 
 library(kableExtra)
 kable(tabLENA,  col.name=c("Precision", "Recall", "Fscore"), align=c( "c", "c", "c"))
@@ -65,20 +58,22 @@ kable(tabLENA,  col.name=c("Precision", "Recall", "Fscore"), align=c( "c", "c", 
 ```
 
 
+
+
 And here is the F-score in a bar plot, so it's easier to compare them side by side.
 
-```{r}
+```{r, echo=FALSE}
 data=rbind(tab$fscore,
            tabLENA$fscore)
 
 rownames(data)<-c("VTC", "LENA")
-data
+#data
 
 barplot(data,
         col = c("yellow", "purple"),
         beside = TRUE)
 
-legend("top",
+legend(4,60,
        legend=c("VTC", "LENA"),
        fill=c("yellow", "purple"))
 ```
@@ -90,7 +85,19 @@ We find better fscores for the voice type classifier than in LENA for all the cl
 That is the performance in a completely held out set, which is great because  the algorithm had never seen data from those corpora and it allowed us to benchmark against LENA. But you may be interested in how good performance is across languages. For this, we are going to show you results from our "test set" -- this is a set of data that was drawn from the same corpora as the training set. But note that the test set is "new", since we didn't use it for training. That said, generalization here is smaller in terms of the fact that these data come from the same corpora that were used for training. One advantage of this evaluation is that it covers more languages -- remember that the corpora we used included English, French, a Chinese language, and many more. Moreover, the data were collected with a wide array of recording devices: LENA devices weren't even the majority of the data. 
 In this case, we see here that performance is also quite good for KCHI (the key child) and FEM (female adult), lower for MAL (male adults), and relatively low for other children (CHI). 
 
-<!--insert table--> page 23
+```{r, echo=FALSE}
+
+tab=NULL
+tab$precision<-c(81.69, 18.78, 77.94, 37.82)
+tab$recall<-c(73.48, 40.45, 87.40, 47.86)
+tab$fscore<-c(77.37, 25.65, 82.40, 42.25)
+tab=data.frame(tab) 
+rownames(tab)<-c("CHI", "OCH", "FEM", "MAL")
+
+library(kableExtra)
+kable(tab,  col.name=c("Precision", "Recall", "Fscore"), align=c( "c", "c", "c"))
+
+```
 
 However, please note that, as in the LENA case, performance for male speech and other children's speech is not very good -- so if you are interested in those classes, there is currently no algorithm that is perfect for them. That said, one of the goals of the exelang project is to improve performance on those classes so -- stay tuned!
 
@@ -99,7 +106,29 @@ However, please note that, as in the LENA case, performance for male speech and 
 
 Let us now discuss performance of our word counting open source alternative, ALICE.
 
-<!--insert same info as in 13 chart but for all corpora (only yellow & purple bars)--> page 24
+```{r, echo=FALSE} 
+
+data <- as.matrix(data.frame("BER(ENG)" = c (0.91, 0.75),
+                             "MCD(ENG)" = c (0.65, 0.71),
+                             "WAR(ENG)" = c (0.8, 0.82),
+                             "L05(ENG)" = c (0.9, 0.79),
+                             "TSE(TSE)" = c (0.82, 0),
+                             "ROS(SPA)" = c (0.73, 0),
+                             "YEL(YEL)" = c (0.83, 0)))
+
+rownames(data)<-c("ALICE", "LENA")
+#data  
+
+barplot(data,
+        col = c("yellow", "purple"),
+        beside = TRUE)
+
+legend(3.1,.9,
+       legend=c("ALICE", "LENA"),
+       fill=c("yellow", "purple"))
+
+```
+
 
 In this chart we're showing you the evaluation for ALICE: the y axis shows correlations between the word count estimation according to an algorithm and the human -- higher is better because it means the two agree more. Each one of the bars shows a different estimation, using different algorithms. We are going to focus only on two of these bars:
 
