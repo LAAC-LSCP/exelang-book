@@ -11,7 +11,7 @@ data <- as.matrix(data.frame("BER(ENG)" = c (0.91, 0.75),
                              "L05(ENG)" = c (0.9, 0.79)))
 
 rownames(data)<-c("ALICE", "LENA")
-data
+#data  #SARA, LOOK HERE!
 
 barplot(data,
         col = c("yellow", "purple"),
