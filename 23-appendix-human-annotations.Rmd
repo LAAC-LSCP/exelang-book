@@ -10,7 +10,7 @@ Human annotations require to define a sampling process, i.e. an algorithm to dec
  - How should the clips be selected ?
  - What should be the length of each clip ?
  
-Of course, the answer to each of this question depends on your research goals, and \ref(@humanannotation) provides clues to some of them.
+Of course, the answer to each of this question depends on your research goals, and \@ref(humanannotation) provides clues to some of them.
 
 Most often, the amount of audio that can be annotated is heavily constrained by the availability of human resources, and can be considered fixed; the impact of the volume of annotations will be studied in the next subsection.
 
