@@ -41,10 +41,10 @@ Feel free to comment if you have other questions for us!
 tab=NULL
 
 tab$repository<-c("[Open Science Framework] (https://osf.io)", "[Databrary] (https://nyu.databrary.org)", "[HomeBank] (https://homebank.talkbank.org)", "[The Language Archive] (https://archive.mpi.nl/tla/)")
-tab$formatting<-c("No specific requirements for files or project structure", "Some aspects of project structure specified", "Project structure and file structure must follow one specific format", "?")
-tab$update<-c("Via browser", "Via browser", "Through personal contact with HomeBank personnel", "?")
-tab$reusers<-c("A choice of: None (completely private), Invited people can read (and write), Anyone can read", "A choice of: None (completely private), Invited people can read (and write), Anyone can read", "A choice of: None (completely private); Any HomeBank member can read; Selected HomeBank members can read; Anyone can read", "?")
-tab$other<-c("Plugins for software such as Google Drive, GitHub (GitHub, 2018), and others; Storage in USA or Europe", "Data annotation with Datavyu software (Datavyu Team, 2014), some APIs", "Data annotation and analyses with CLAN software", "?")
+tab$formatting<-c("No specific requirements for files or project structure", "Some aspects of project structure specified", "Project structure and file structure must follow one specific format", "Some aspects of project structure specified")
+tab$update<-c("Via browser", "Via browser", "Through personal contact with HomeBank personnel", "Via browser")
+tab$reusers<-c("A choice of: None (completely private), Invited people can read (and write), Anyone can read", "A choice of: None (completely private), Invited people can read (and write), Anyone can read", "A choice of: None (completely private); Any HomeBank member can read; Selected HomeBank members can read; Anyone can read", "A choice of: None (completely private), Invited people can read (and write), Anyone can read")
+tab$other<-c("Plugins for software such as Google Drive, GitHub (GitHub, 2018), and others; Storage in USA or Europe", "Data annotation with Datavyu software (Datavyu Team, 2014), some APIs", "Data annotation and analyses with CLAN software", "Data annotation with ELAN software")
 tab=data.frame(tab)
 library(kableExtra)
 
