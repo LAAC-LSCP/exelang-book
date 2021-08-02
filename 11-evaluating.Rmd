@@ -17,7 +17,7 @@ barplot(data,
         col = c("yellow", "purple"),
         beside = TRUE)
 
-legend("topright",
+legend(4,.9,
        legend=c("ALICE", "LENA"),
        fill=c("yellow", "purple"))
 
