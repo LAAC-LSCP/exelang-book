@@ -527,21 +527,21 @@ AVE
 </tbody>
 </table>
 <p>And here is the F-score in a bar plot, so it’s easier to compare them side by side.</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="accuracy.html#cb2-1"></a>data=<span class="kw">rbind</span>(tab<span class="op">$</span>fscore,</span>
-<span id="cb2-2"><a href="accuracy.html#cb2-2"></a>           tabLENA<span class="op">$</span>fscore)</span>
-<span id="cb2-3"><a href="accuracy.html#cb2-3"></a></span>
-<span id="cb2-4"><a href="accuracy.html#cb2-4"></a><span class="kw">rownames</span>(data)&lt;-<span class="kw">c</span>(<span class="st">&quot;VTC&quot;</span>, <span class="st">&quot;LENA&quot;</span>)</span>
-<span id="cb2-5"><a href="accuracy.html#cb2-5"></a>data</span></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="accuracy.html#cb1-1"></a>data=<span class="kw">rbind</span>(tab<span class="op">$</span>fscore,</span>
+<span id="cb1-2"><a href="accuracy.html#cb1-2"></a>           tabLENA<span class="op">$</span>fscore)</span>
+<span id="cb1-3"><a href="accuracy.html#cb1-3"></a></span>
+<span id="cb1-4"><a href="accuracy.html#cb1-4"></a><span class="kw">rownames</span>(data)&lt;-<span class="kw">c</span>(<span class="st">&quot;VTC&quot;</span>, <span class="st">&quot;LENA&quot;</span>)</span>
+<span id="cb1-5"><a href="accuracy.html#cb1-5"></a>data</span></code></pre></div>
 <pre><code>##       [,1]  [,2]  [,3]  [,4]  [,5]  [,6]
 ## VTC  68.78 33.24 63.48 42.91 78.43 57.37
 ## LENA 68.78 33.24 63.48 42.91 78.43 57.37</code></pre>
-<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="accuracy.html#cb4-1"></a><span class="kw">barplot</span>(data,</span>
-<span id="cb4-2"><a href="accuracy.html#cb4-2"></a>        <span class="dt">col =</span> <span class="kw">c</span>(<span class="st">&quot;yellow&quot;</span>, <span class="st">&quot;purple&quot;</span>),</span>
-<span id="cb4-3"><a href="accuracy.html#cb4-3"></a>        <span class="dt">beside =</span> <span class="ot">TRUE</span>)</span>
-<span id="cb4-4"><a href="accuracy.html#cb4-4"></a></span>
-<span id="cb4-5"><a href="accuracy.html#cb4-5"></a><span class="kw">legend</span>(<span class="st">&quot;top&quot;</span>,</span>
-<span id="cb4-6"><a href="accuracy.html#cb4-6"></a>       <span class="dt">legend=</span><span class="kw">c</span>(<span class="st">&quot;VTC&quot;</span>, <span class="st">&quot;LENA&quot;</span>),</span>
-<span id="cb4-7"><a href="accuracy.html#cb4-7"></a>       <span class="dt">fill=</span><span class="kw">c</span>(<span class="st">&quot;yellow&quot;</span>, <span class="st">&quot;purple&quot;</span>))</span></code></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="accuracy.html#cb3-1"></a><span class="kw">barplot</span>(data,</span>
+<span id="cb3-2"><a href="accuracy.html#cb3-2"></a>        <span class="dt">col =</span> <span class="kw">c</span>(<span class="st">&quot;yellow&quot;</span>, <span class="st">&quot;purple&quot;</span>),</span>
+<span id="cb3-3"><a href="accuracy.html#cb3-3"></a>        <span class="dt">beside =</span> <span class="ot">TRUE</span>)</span>
+<span id="cb3-4"><a href="accuracy.html#cb3-4"></a></span>
+<span id="cb3-5"><a href="accuracy.html#cb3-5"></a><span class="kw">legend</span>(<span class="st">&quot;top&quot;</span>,</span>
+<span id="cb3-6"><a href="accuracy.html#cb3-6"></a>       <span class="dt">legend=</span><span class="kw">c</span>(<span class="st">&quot;VTC&quot;</span>, <span class="st">&quot;LENA&quot;</span>),</span>
+<span id="cb3-7"><a href="accuracy.html#cb3-7"></a>       <span class="dt">fill=</span><span class="kw">c</span>(<span class="st">&quot;yellow&quot;</span>, <span class="st">&quot;purple&quot;</span>))</span></code></pre></div>
 <p><img src="test-book_files/figure-html/unnamed-chunk-6-1.png" width="672" /></p>
 <p>We find better fscores for the voice type classifier than in LENA for all the classes. The increase in performance is particularly salient for key child and female adult, which also tend to be the most common classes. This is great news because it means overall better performance.</p>
 <p>That is the performance in a completely held out set, which is great because the algorithm had never seen data from those corpora and it allowed us to benchmark against LENA. But you may be interested in how good performance is across languages. For this, we are going to show you results from our “test set” – this is a set of data that was drawn from the same corpora as the training set. But note that the test set is “new”, since we didn’t use it for training. That said, generalization here is smaller in terms of the fact that these data come from the same corpora that were used for training. One advantage of this evaluation is that it covers more languages – remember that the corpora we used included English, French, a Chinese language, and many more. Moreover, the data were collected with a wide array of recording devices: LENA devices weren’t even the majority of the data.
