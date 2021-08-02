@@ -19,14 +19,14 @@ Let me start with results in a completely held out set:  the algorithm had never
 ```{r, echo=FALSE}
 
 tab=NULL
-tab$class<-c("KCHI", "CHI", "FEM", "MAL", "SPEECH", "AVE")
-tab$precision<-c("62.37", "46.77", "70.30", "39.52", "77.03", "59.20")
-tab$recall<-c("76.67", "25.78", "57.87", "46.92", "79.89", "57.42")
-tab$fscore<-c("68.78", "33.24", "63.48", "42.91", "78.43", "57.37")
+tab$precision<-c(62.37, 46.77, 70.30, 39.52, 77.03, 59.20)
+tab$recall<-c(76.67, 25.78, 57.87, 46.92, 79.89, 57.42)
+tab$fscore<-c(68.78, 33.24, 63.48, 42.91, 78.43, 57.37)
 tab=data.frame(tab) 
+rownames(tab)<-c("KCHI", "CHI", "FEM", "MAL", "SPEECH", "AVE")
 
 library(kableExtra)
-kable(tab, "html", "pipe", col.name=c("Class", "Precision", "Recall", "Fscore"), align=c("c", "c", "c", "c"))
+kable(tab,  col.name=c("Precision", "Recall", "Fscore"), align=c( "c", "c", "c"))
 
 ```
 <!--maybe redo table?-->
@@ -41,12 +41,43 @@ You can see here that in this test set (only English learning infants, recorded 
 
 How does the LENA software fare on the same data?
 
-Here is the Table for LENA performance on the exact same data:
+Here is the Table for LENA performance on the exact same data: FAKE NUMBERS!!!
 
-<!--insert table-->
+```{r, echo=FALSE}
+
+tabLENA=NULL
+tabLENA$precision<-c(62.37, 46.77, 70.30, 39.52, 77.03, 59.20)
+tabLENA$recall<-c(76.67, 25.78, 57.87, 46.92, 79.89, 57.42)
+tabLENA$fscore<-c(68.78, 33.24, 63.48, 42.91, 78.43, 57.37)
+tabLENA=data.frame(tabLENA) 
+rownames(tabLENA)<-c("KCHI", "CHI", "FEM", "MAL", "SPEECH", "AVE")
+
+library(kableExtra)
+kable(tabLENA,  col.name=c("Precision", "Recall", "Fscore"), align=c( "c", "c", "c"))
+
+
+```
+
 
 And here are both tables side by side
 (or even better, plot the data into a bar plot)
+
+```{r}
+data=rbind(tab$fscore,
+           tabLENA$fscore)
+
+rownames(data)<-c("VTC", "LENA")
+data
+
+barplot(data,
+        col = c("yellow", "purple"),
+        beside = TRUE)
+
+legend("top",
+       legend=c("VTC", "LENA"),
+       fill=c("yellow", "purple"))
+```
+
 
 We find better fscores for the voice type classifier than in LENA for all the classes.  The increase in performance is particularly salient for key child and female adult, which also tend to be the most common classes. This is great news because it means overall better performance.
 
