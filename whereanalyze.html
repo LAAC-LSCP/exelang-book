@@ -23,7 +23,7 @@
 
 
 
-<meta name="date" content="2021-08-02" />
+<meta name="date" content="2021-08-04" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -241,7 +241,68 @@ Also within LENA, another option is to purchase their XP license. They do not re
 <p>If you are running open-source software, like the ACLEW options we discuss in another video, you have a choice between running your analyses in the cloud, in a cluster, or locally in your computer. Regarding cloud-based services, these do require a bit of technical expertise to set up, and you do need to check local regulations, but we think it is very likely that if you are based in the Global North, you’ll be able to find a cloud-based service that has everything you need. We know less about the Global South, but if your local regulations allow transfer of data to Europe, you can probably use a European-based cloud service which should fulfill all regulations and ethical constraints. The Echolalia team is based in our same department, and are also working on this topic, so we asked them about this. They looked most thoroughly into using Amazon Web Services, or AWS for short. If you are in Europe, this is an option that is GDPR- compatible, and in the USA it is HIPAA-compatible. In other locations, please check local regulations.</p>
 <p>If you cannot use cloud-based services, the next best alternative is to use a local cluster. Many institutions have these, so you can reach out to your local informatics department to ask. This option also requires a bit of technical background, so you probably want to collaborate with someone who knows about this to get the analysis pipeline set up. Once everything is installed, running the ACLEW analysis involves simply copy-pasting a series of commands, and so you just need minimal knowledge of bash. If you don’t know what bash is, there are short courses – in our experience, people who know another computer language (like python or R) learn bash basics in less than an hour. And if you don’t know other languages, it may take you 3-4 hours, so it’s still not very time consuming. We provide links to tutorials in the resources section.</p>
 <p>The big advantage of those two options is that you’ll be relying on powerful machines which will make processing faster. If neither of those work, you’ll be left with only one option, which is running these tools in your personal computer. You may think that this is a good option because then you don’t need to move your data around. However, as we explain on the video on storage and backup, it is a very bad idea to only have one copy of your data, as it may be accidentally destroyed or damaged. So you need several copies anyways. Running the software in your personal computer is not a great option for at least two reasons. First, you still need quite a bit of knowledge to get everything properly installed. We have had a myriad of problems trying to get this done, as each machine has a slightly different operating system and software already installed. Plus you still need some technical knowledge – not just bash, as in the case of the cluster (assuming that someone else will help you install things in the cluster). To get these tools installed in your machine will probably require general informatics knowledge, and lots of patience, as you look up errors and try out recommended solutions.That is just the first disadvantage. The second one is that even when you’ve installed everything, the trouble is not over as it will take quite a bit of time to actually process the data. We haven’t thoroughly benchmarked ALICE but this table shows you how long it takes to process files using the voice type classifier. Batch size is the number of sequences your computer will process in parallel. This can decrease the running time but increase the memory consumption of the program. Personal computers typically have CPUs, not GPUs. In a nutshell, it’ll take about 4h to do a 16h recording in your personal computer. The precise numbers, however, will change depending on the specifications of your personal computer.</p>
-<!--insert table-->
+<table>
+<thead>
+<tr>
+<th style="text-align:center;">
+batch_size
+</th>
+<th style="text-align:center;">
+GPU
+</th>
+<th style="text-align:center;">
+CPU
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center;">
+32
+</td>
+<td style="text-align:center;">
+1/35
+</td>
+<td style="text-align:center;">
+0.27
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+64
+</td>
+<td style="text-align:center;">
+1/45
+</td>
+<td style="text-align:center;">
+0.26
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+128
+</td>
+<td style="text-align:center;">
+OOM*
+</td>
+<td style="text-align:center;">
+0.25
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+256
+</td>
+<td style="text-align:center;">
+OOM
+</td>
+<td style="text-align:center;">
+0.24
+</td>
+</tr>
+</tbody>
+</table>
+<p>*OOM stands for out of memory.</p>
 
 </div>
             </section>

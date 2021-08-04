@@ -23,7 +23,7 @@
 
 
 
-<meta name="date" content="2021-08-02" />
+<meta name="date" content="2021-08-04" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -403,7 +403,7 @@ MAL
 </tbody>
 </table>
 <p>And here is the F-score in a bar plot, so it’s easier to compare them side by side.</p>
-<p><img src="test-book_files/figure-html/unnamed-chunk-6-1.png" width="672" /></p>
+<p><img src="test-book_files/figure-html/unnamed-chunk-7-1.png" width="672" /></p>
 <p>We find better fscores for the voice type classifier than in LENA for all the classes. The increase in performance is particularly salient for key child and female adult, which also tend to be the most common classes. This is great news because it means overall better performance.</p>
 <p>That is the performance in a completely held out set, which is great because the algorithm had never seen data from those corpora and it allowed us to benchmark against LENA. But you may be interested in how good performance is across languages. For this, we are going to show you results from our “test set” – this is a set of data that was drawn from the same corpora as the training set. But note that the test set is “new”, since we didn’t use it for training. That said, generalization here is smaller in terms of the fact that these data come from the same corpora that were used for training. One advantage of this evaluation is that it covers more languages – remember that the corpora we used included English, French, a Chinese language, and many more. Moreover, the data were collected with a wide array of recording devices: LENA devices weren’t even the majority of the data.
 In this case, we see here that performance is also quite good for KCHI (the key child) and FEM (female adult), lower for MAL (male adults), and relatively low for other children (CHI).</p>
@@ -487,7 +487,7 @@ MAL
 <div id="alice" class="section level3">
 <h3><span class="header-section-number">14.2.2</span> ALICE</h3>
 <p>Let us now discuss performance of our word counting open source alternative, ALICE.</p>
-<p><img src="test-book_files/figure-html/unnamed-chunk-8-1.png" width="672" /></p>
+<p><img src="test-book_files/figure-html/unnamed-chunk-9-1.png" width="672" /></p>
 <p>In this chart we’re showing you the evaluation for ALICE: the y axis shows correlations between the word count estimation according to an algorithm and the human – higher is better because it means the two agree more. Each one of the bars shows a different estimation, using different algorithms. We are going to focus only on two of these bars:</p>
 <p>The bars for ALICE’s word count estimation are yellow whereas those for LENA are purple. We didn’t have LENA performance for all of the corpora because some of them were gathered with an olympus device, and as explained in the hardware video, you cannot annotate data with LENA unless you use a LENA device. In this evaluation, we only looked at languages that were represented in the training set, and also we retrained each language separately. The corpora used contained mostly English, with some Spanish, Tseltal, and a little bit of French. In terms of recording devices, it was mostly LENA, with some data collected using olympus and other similar devices. Notice that in general performance is quite good, and certainly comparable to LENA: it’s much better than LENA in two cases (the bergelson corpus, which is English-spoken and the LUCID 0-5 corpus, which is also English spoken), LENA is quite a bit better in one case (the McDivitt corpus, which is mainly English spoken) and just a little better in the last case having results for both (the Warlaumont corpus, mostly English). As for differences across languages and devices, it does not appear to be the case that the bars are always higher (ie correlations are always better) for English spoken corpora collected using LENA (BER, MCD, WAR, L05) than for corpora collected in other languages and with non-LENA devices (Tseltal, the Rosemberg corpus of Argentinean Spanish, and Yélî Dnye).</p>
 <p>Members of the ACLEW project also developed software to classify adult speech into child- versus adult-directed, but we feel performance of that algorithm is still not good enough to make a public release. We also developed a system for classifying the key child’s sections into different vocalization types (crying, canonical, and non-canonical). This software is open source and available via a virtual machine, which we found in the past is a little hard to install and use. So for these two things, please stay tuned – there will be developments in the future!</p>
