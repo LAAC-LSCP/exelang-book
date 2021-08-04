@@ -9,7 +9,18 @@ If you cannot use cloud-based services, the next best alternative is to use a lo
 
 The big advantage of those two options is that you'll be relying on powerful machines which will make processing faster. If neither of those work, you'll be left with only one option, which is running these tools in your personal computer. You may think that this is a good option because then you don't need to move your data around. However, as we explain on the video on storage and backup, it is a very bad idea to only have one copy of your data, as it may be accidentally destroyed or damaged. So you need several copies anyways. Running the software in your personal computer is not a great option for at least two reasons. First, you still need quite a bit of knowledge to get everything properly installed. We have had a myriad of problems trying to get this done, as each machine has a slightly different operating system and software already installed. Plus you still need some technical knowledge -- not just bash, as in the case of the cluster (assuming that someone else will help you install things in the cluster). To get these tools installed in your machine will probably require general informatics knowledge, and lots of patience, as you look up errors and try out recommended solutions.That is just the first disadvantage. The second one is that even when you've installed everything, the trouble is not over as it will take quite a bit of time to actually process the data. We haven't thoroughly benchmarked ALICE but this table shows you how long it takes to process files using the voice type classifier. Batch size is the number of sequences your computer will process in parallel. This can decrease the running time but increase the memory consumption of the program. Personal computers typically have CPUs, not GPUs. In a nutshell, it'll take about 4h to do a 16h recording in your personal computer. The precise numbers, however, will change depending on the specifications of your personal computer.
 
-<!--insert table-->
+```{r, echo=FALSE}
 
+tab=NULL
+tab$batch<-c(32, 64, 128, 256)
+tab$gpu<-c("1/35", "1/45", "OOM*", "OOM")
+tab$cpu<-c(0.27, 0.26, 0.25, 0.24)
+tab=data.frame(tab) 
 
+library(kableExtra)
+kable(tab,  col.name=c("batch_size", "GPU", "CPU"), align=c( "c", "c", "c"))
+
+```
+
+*OOM stands for out of memory.
 

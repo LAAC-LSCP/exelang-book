@@ -9,7 +9,7 @@ Another frequently encountered issue is how accurate automated analyses are. We 
 
 Moreover, once you've gotten some sections annotated, how do you estimate the reliability? ChildProject functions make it easy to calculate recall, precision, agreement, and other reliability metrics (such as error rates and correlations). Check the Resources section for an example on reliability.
 
-Some of you have so much data that you may want the help of citizen scientists in the Zooniverse platform to get them annotated. We an example project that shows you how to extract clips and cut them up into short sections, so they can be shared over Zooniverse, and then get back the annotations, analyze them, and integrate them with your dataset -- this is the best practices for Zooniverse example.
+Some of you have so much data that you may want the help of citizen scientists in the Zooniverse platform to get them annotated. We have an example project that shows you how to extract clips and cut them up into short sections, so they can be shared over Zooniverse, and then get back the annotations, analyze them, and integrate them with your dataset -- this is the best practices for Zooniverse example.
 
 Do you have other questions for analyses not covered above? Well, peruse the "show and tell" conversations in the ChildProject discussion board for some ideas, and feel free to create your own!
 
