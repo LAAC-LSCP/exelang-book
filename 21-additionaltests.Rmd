@@ -6,7 +6,7 @@ Some people have asked us: In order to measure language in young children, what 
 
 A fantastic resource for measuring language (and cognition and development more generally) is the report by Fernald and colleagues published by the World Bank in 2009.
 
-They explain that assessments should meet a variety of desiderata. Among them is the fact that they are "psychometrically adequate, valid and reliable". We have seen validity and reliability in Video \@ref{validreli}  
+They explain that assessments should meet a variety of desiderata. Among them is the fact that they are "psychometrically adequate, valid and reliable". We have seen validity and reliability in Video \@ref(validreli)  
 
 Balanced in terms of number of items at the lower end to avoid children with low scores;
 
