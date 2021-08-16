@@ -108,20 +108,24 @@ Let us now discuss performance of our word counting open source alternative, ALI
 
 ```{r, echo=FALSE} 
 
-data <- as.matrix(data.frame("BER(ENG)" = c (0.91, 0.75),
-                             "MCD(ENG)" = c (0.65, 0.71),
-                             "WAR(ENG)" = c (0.8, 0.82),
-                             "L05(ENG)" = c (0.9, 0.79),
-                             "TSE(TSE)" = c (0.82, 0),
-                             "ROS(SPA)" = c (0.73, 0),
-                             "YEL(YEL)" = c (0.83, 0)))
+data <- as.matrix(data.frame("BER ENG" = c (0.91, 0.75),
+                             "MCD ENG" = c (0.65, 0.71),
+                             "WAR ENG" = c (0.8, 0.82),
+                             "L05 ENG" = c (0.9, 0.79),
+                             "TSE" = c (0.82, 0),
+                             "SPA ROS" = c (0.73, 0),
+                             "YEL" = c (0.83, 0)))
 
 rownames(data)<-c("ALICE", "LENA")
 #data  
 
-barplot(data,
+x<-barplot(data,
         col = c("yellow", "purple"),
-        beside = TRUE)
+        beside = TRUE,xaxt="n")
+x_avg=colMeans(x)
+labs <- paste(colnames(data))
+mtext(labs, side = 1, line = 0, at=x_avg, las=2)
+
 
 legend(3.1,.9,
        legend=c("ALICE", "LENA"),
