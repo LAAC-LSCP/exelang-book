@@ -6,15 +6,15 @@ In this video we are going to talk about logistics, including how many devices y
 
 ## How to deliver the hardware
 
-Many researchers in the past would go to the family's home at the beginning of the day, to fit the child with the device and turn it on, then picked up the device at the end of the day, so that the parents didn’t need to do anything particular. I think that today, whether you are using LENA or another device, you don’t need to drop off and pick up the equipment yourself. There are downsides in doing this, including that your presence is very salient to the child and the people around them, and also that you are not capturing interactions early in the morning and late in the day. 
+Many researchers in the past would go to the family's home at the beginning of the day, to fit the child with the device and turn it on, then picked up the device at the end of the day, so that the parents didn’t need to do anything particular. I think that today, whether you are using LENA or another device, you don’t need to drop off and pick up the equipment yourself. There are downsides to doing the drop-off and pick-up yourself in the same day of recording, including that your presence is very salient to the child and the people around them, and also that you are not capturing interactions early in the morning and late in the day. 
 
 You can instead mail the device and clothing to the families or use a courrier service. Even if you decide to visit the family, you can explain to them how to turn the recording on and off -- which they need to know anyone to apply their right of withdrawal (i.e., to not have certain sections of the day recorded). Another option that may be good for you depending on your community contact is to have devices and clothing delivered to a trusted center, like a daycare or a clinic -- provided that you can make sure that nobody will tamper with the recordings and that the devices will be kept in a secure location. 
 
-In the hardware section, we explained that the only device for which you have time stamps with respect to local time is LENA. So if you are using a different device, you should ask parents to speak into the device, after it has been turned off, what time is then. This will allow you to track the time and position the recording with respect to time of day. You can ask them to again say the time into the device if they pause it.
+In the hardware section, we explained that the only device for which you have time stamps with respect to local time is LENA. So if you are using a different device, you should ask parents to speak into the device, after it has been turned off, what time it is then. This will allow you to track the time and position the recording with respect to time of day. You can ask them to again say the time into the device if they pause it. Please note that some devices do not start recording immediately -- so to be on the safe side, ask the family to count to five before saying the time and day (i.e. say "one two three four five -- today is Wednesday August 3 2021 and the time is 09:25am").
 
 ## How long to record for
 
-We recommend recording for the maximum storage duration whenever possible, because we have some initial evidence that derived metrics are more reliable the longer the recording, perhaps because with more data are a better representation of what the child’s environment is like.
+We recommend recording for the maximum storage duration whenever possible, because we have some initial evidence that derived metrics are more reliable the more  recordings you have, perhaps because with more data are a better representation of what the child’s environment is like.  (We also have some evidence that recordings about 4h in length or shorter have a lot more speech than longer ones -- probably because the family is overly conscious -- so try to record at least 6h continuously, without asking the family to interact with the recordings again.)
 
 If you are using the newest generation of LENA, that means you can record up to 72 hours total, asking families to recharge the device overnight. Similarly for the USBs, which can often hold 150 hours total; and the Babylogger, which can hold even more. 
 
@@ -65,5 +65,9 @@ That means that at the "peak" of data collection, 15 families are recording the 
 **3.b. Assuming drop-off and pick-up through mail** (7 days to send out & get back the recorders): Given potential equipment loss and to reduce logistic burden, 30 recording units should be purchased (10/week + (5/week equipment that is changing families) x 3 weeks given delays in mailing in/out equipment, 5 extra).
 
 
+## Resources
+
+- [ExELang cost analyses](https://docs.google.com/document/d/1qzY871lnUbD1nGsBcUoFoipwBgbXRCcUeaNI0sfIBWw/edit)
+- [Example information for parents (French)](https://osf.io/4grsn/)
 
 
