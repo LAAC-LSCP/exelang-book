@@ -114,9 +114,9 @@ data <- as.matrix(data.frame("BER ENG" = c (0.91, 0.75),
                              "MCD ENG" = c (0.65, 0.71),
                              "WAR ENG" = c (0.8, 0.82),
                              "L05 ENG" = c (0.9, 0.79),
-                             "TSE" = c (0.82, 0),
-                             "SPA ROS" = c (0.73, 0),
-                             "YEL" = c (0.83, 0)))
+                             "TSE" = c (0.82, NA),
+                             "SPA ROS" = c (0.73, NA),
+                             "YEL" = c (0.83, NA)))
 
 rownames(data)<-c("ALICE", "LENA")
 #data  
