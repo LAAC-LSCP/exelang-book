@@ -15,10 +15,6 @@ Do you have other questions for analyses not covered above? Well, peruse the "sh
 
 ## Resources
 
-Metrics
-
-Annotation campaign
-
-Reliability
-
-Zooniverse
+- Metrics: [code to extract](https://childproject.readthedocs.io/en/latest/metrics.html), [example analysis](https://github.com/LAAC-LSCP/ChildProject/discussions/251)
+- Reliability: [how to example](https://github.com/LAAC-LSCP/ChildProject/discussions/263)
+- [Zooniverse annotation campaign example](https://gin.g-node.org/LAAC-LSCP/zoo-campaign)
