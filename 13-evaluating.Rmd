@@ -43,7 +43,7 @@ We use the term "recall" to say: what proportion of acoustic stretches that a hu
 
 Precision represents instead what proportion of acoustic stretches that the machine calls a category, say "key child", belong to a given category according to the human. This one is easier to remember -- if someone asks you "but how precise are LENA's key child labels?" it's easy to answer by looking at this metric, and assuming that the machine and human labels are the same, because it just means what proportion of, for instance, bits the machine said were key child vocalizations truly were such according to a human annotator. In reality, just as with recall, precision can be calculated for every combination of labels across humans and machines -- but let us leave that aside for a moment.
 
-
+To make this more precise, let us look at an example of recall and precision.
 
 
 ## Resources
