@@ -4,6 +4,30 @@ In this video, we are going to discuss accuracy of automated analyses.
 
 ## LENA Software
 
+The LENA Foundation has made an important effort to document the accuracy of different aspects of their software. However, I admit I am more convinced by data produced by other researchers, who have a smaller conflict of interest: Even if researchers in the LENA Foundation have every good intention, it will be very hard for them to not prefer to see good results over poorer results. Additionally, I disagree with some analysis decisions they made in their initial accuracy reports: Most saliently, they only discuss confusion between children and adults, and thus do not report errors due to missed speech (i.e., low recall) nor confusion between the key child and other children, and across sexes among adults. For some research purposes and populations, the accuracy of other child and male adult categories are particularly important. 
+
+In my view, at present, the most convincing evidence on LENA performance comes from a comparative analysis we did on a corpus that contained mostly North American children:
+
+```{r, echo=FALSE}
+
+tabLENA=NULL
+tabLENA$precision<-c(60.91, 27.34, 63.87, 43.57)
+tabLENA$recall<-c(50.07, 29.97, 31.96, 32.5)
+tabLENA$fscore<-c(54.96, 28.59, 42.60, 37.23)
+tabLENA=data.frame(tabLENA) 
+rownames(tabLENA)<-c("CHI", "OCH", "FEM", "MAL")
+
+library(kableExtra)
+kable(tabLENA,  col.name=c("Precision", "Recall", "Fscore"), align=c( "c", "c", "c"))
+
+
+```
+
+As you can see, the precision is relatively high for the key child and female adult, lower for male adult, and really very low for other children, with just one quarter of sections attributed to other child truly being classified as such by human annotators. As for recall, LENA tends to miss a lot of speech, less so for the key child, but for all others, two thirds of speech found by human annotators was missed by LENA.
+
+As explained in the previous section, some research purposes do not depend so much on perfect precision or recall, but rather in the extent to which differences across clips or across children are reflected. In these cases, one can look at correlations between e.g. child vocalization counts according to LENA versus humans. The data on such correlations is much more encouraging: A systematic review found that child vocalization counts for LENA versus humans correlated above .7 for many samples (including non-English speakers), with similarly good results for adult word counts. Results for conversational turns were much worse however, and work published since has raised concerns about this measure.
+
+
 
 ## ACLEW tools
 
@@ -38,29 +62,7 @@ You can combine both of these types of information together into a measure that'
 
 You can see here that in this test set (only English learning infants, recorded with a LENA device) we find pretty good scores for the key child and female adult, lower for male adult, and lower for other children. 
 
-How does the LENA software fare on the same data?
-
-Here is the Table for LENA performance on the exact same data:
-
-```{r, echo=FALSE}
-
-tabLENA=NULL
-tabLENA$precision<-c(60.91, 27.34, 63.87, 43.57)
-tabLENA$recall<-c(50.07, 29.97, 31.96, 32.5)
-tabLENA$fscore<-c(54.96, 28.59, 42.60, 37.23)
-tabLENA=data.frame(tabLENA) 
-rownames(tabLENA)<-c("CHI", "OCH", "FEM", "MAL")
-
-library(kableExtra)
-kable(tabLENA,  col.name=c("Precision", "Recall", "Fscore"), align=c( "c", "c", "c"))
-
-
-```
-
-
-
-
-And here is the F-score in a bar plot, so it's easier to compare them side by side.
+How does the LENA software fare on the same data? Here is the F-score in a bar plot, so it's easier to compare them side by side.
 
 ```{r, echo=FALSE}
 data=rbind(tab$fscore,
@@ -112,9 +114,9 @@ data <- as.matrix(data.frame("BER ENG" = c (0.91, 0.75),
                              "MCD ENG" = c (0.65, 0.71),
                              "WAR ENG" = c (0.8, 0.82),
                              "L05 ENG" = c (0.9, 0.79),
-                             "TSE" = c (0.82, 0),
-                             "SPA ROS" = c (0.73, 0),
-                             "YEL" = c (0.83, 0)))
+                             "TSE" = c (0.82, NA),
+                             "SPA ROS" = c (0.73, NA),
+                             "YEL" = c (0.83, NA)))
 
 rownames(data)<-c("ALICE", "LENA")
 #data  
