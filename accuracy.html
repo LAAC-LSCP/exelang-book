@@ -23,7 +23,7 @@
 
 
 
-<meta name="date" content="2021-08-31" />
+<meta name="date" content="2021-09-02" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -242,6 +242,85 @@
 <p>In this video, we are going to discuss accuracy of automated analyses.</p>
 <div id="lena-software" class="section level2">
 <h2><span class="header-section-number">14.1</span> LENA Software</h2>
+<p>The LENA Foundation has made an important effort to document the accuracy of different aspects of their software. However, I admit I am more convinced by data produced by other researchers, who have a smaller conflict of interest: Even if researchers in the LENA Foundation have every good intention, it will be very hard for them to not prefer to see good results over poorer results. Additionally, I disagree with some analysis decisions they made in their initial accuracy reports: Most saliently, they only discuss confusion between children and adults, and thus do not report errors due to missed speech (i.e., low recall) nor confusion between the key child and other children, and across sexes among adults. For some research purposes and populations, the accuracy of other child and male adult categories are particularly important.</p>
+<p>In my view, at present, the most convincing evidence on LENA performance comes from a comparative analysis we did on a corpus that contained mostly North American children:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left;">
+</th>
+<th style="text-align:center;">
+Precision
+</th>
+<th style="text-align:center;">
+Recall
+</th>
+<th style="text-align:center;">
+Fscore
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+CHI
+</td>
+<td style="text-align:center;">
+60.91
+</td>
+<td style="text-align:center;">
+50.07
+</td>
+<td style="text-align:center;">
+54.96
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+OCH
+</td>
+<td style="text-align:center;">
+27.34
+</td>
+<td style="text-align:center;">
+29.97
+</td>
+<td style="text-align:center;">
+28.59
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+FEM
+</td>
+<td style="text-align:center;">
+63.87
+</td>
+<td style="text-align:center;">
+31.96
+</td>
+<td style="text-align:center;">
+42.60
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+MAL
+</td>
+<td style="text-align:center;">
+43.57
+</td>
+<td style="text-align:center;">
+32.50
+</td>
+<td style="text-align:center;">
+37.23
+</td>
+</tr>
+</tbody>
+</table>
+<p>As you can see, the precision is relatively high for the key child and female adult, lower for male adult, and really very low for other children, with just one quarter of sections attributed to other child truly being classified as such by human annotators. As for recall, LENA tends to miss a lot of speech, less so for the key child, but for all others, two thirds of speech found by human annotators was missed by LENA.</p>
+<p>As explained in the previous section, some research purposes do not depend so much on perfect precision or recall, but rather in the extent to which differences across clips or across children are reflected. In these cases, one can look at correlations between e.g. child vocalization counts according to LENA versus humans. The data on such correlations is much more encouraging: A systematic review found that child vocalization counts for LENA versus humans correlated above .7 for many samples (including non-English speakers), with similarly good results for adult word counts. Results for conversational turns were much worse however, and work published since has raised concerns about this measure.</p>
 </div>
 <div id="aclew-tools" class="section level2">
 <h2><span class="header-section-number">14.2</span> ACLEW tools</h2>
@@ -328,84 +407,7 @@ MAL
 <p>The first two columns show precision and recall. Precision means: when the algorithm said that something was a given talker what proportion of the time it actually was that talker? Recall means: what proportion of sounds or segments that were originally described as being a given speaker by human annotators were actually classified into that class by the algorithm?</p>
 <p>You can combine both of these types of information together into a measure that’s called f-score – shown here in the last column. In all three measures, higher is better. For recall, higher performance means that the algorithm successfully identified more of that class. For precision, higher precision means that more of the audio identified as a given class truly WAS that class. And finally, higher F-score can be obtained either because the algorithm found more of what it was looking for (so higher recall) and/or because it was more accurate (higher precision).</p>
 <p>You can see here that in this test set (only English learning infants, recorded with a LENA device) we find pretty good scores for the key child and female adult, lower for male adult, and lower for other children.</p>
-<p>How does the LENA software fare on the same data?</p>
-<p>Here is the Table for LENA performance on the exact same data:</p>
-<table>
-<thead>
-<tr>
-<th style="text-align:left;">
-</th>
-<th style="text-align:center;">
-Precision
-</th>
-<th style="text-align:center;">
-Recall
-</th>
-<th style="text-align:center;">
-Fscore
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left;">
-CHI
-</td>
-<td style="text-align:center;">
-60.91
-</td>
-<td style="text-align:center;">
-50.07
-</td>
-<td style="text-align:center;">
-54.96
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-OCH
-</td>
-<td style="text-align:center;">
-27.34
-</td>
-<td style="text-align:center;">
-29.97
-</td>
-<td style="text-align:center;">
-28.59
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-FEM
-</td>
-<td style="text-align:center;">
-63.87
-</td>
-<td style="text-align:center;">
-31.96
-</td>
-<td style="text-align:center;">
-42.60
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-MAL
-</td>
-<td style="text-align:center;">
-43.57
-</td>
-<td style="text-align:center;">
-32.50
-</td>
-<td style="text-align:center;">
-37.23
-</td>
-</tr>
-</tbody>
-</table>
-<p>And here is the F-score in a bar plot, so it’s easier to compare them side by side.</p>
+<p>How does the LENA software fare on the same data? Here is the F-score in a bar plot, so it’s easier to compare them side by side.</p>
 <p><img src="test-book_files/figure-html/unnamed-chunk-7-1.png" width="672" /></p>
 <p>We find better fscores for the voice type classifier than in LENA for all the classes. The increase in performance is particularly salient for key child and female adult, which also tend to be the most common classes. This is great news because it means overall better performance.</p>
 <p>That is the performance in a completely held out set, which is great because the algorithm had never seen data from those corpora and it allowed us to benchmark against LENA. But you may be interested in how good performance is across languages. For this, we are going to show you results from our “test set” – this is a set of data that was drawn from the same corpora as the training set. But note that the test set is “new”, since we didn’t use it for training. That said, generalization here is smaller in terms of the fact that these data come from the same corpora that were used for training. One advantage of this evaluation is that it covers more languages – remember that the corpora we used included English, French, a Chinese language, and many more. Moreover, the data were collected with a wide array of recording devices: LENA devices weren’t even the majority of the data.
