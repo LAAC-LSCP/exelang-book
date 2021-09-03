@@ -2,21 +2,50 @@
 
 Some people have asked us: In order to measure language in young children, what else should or could I collect? This is a complex question to answer because it depends on what you are hoping to gain from these additional tests. We have compiled here ideas from a variety of sources, and we explain the reasoning for our recommendations, but this is definitely one point in which we think discussion would be most helpful. So don't hesitate to post comments in the chat or reach out to us. 
 
-## If you want a standardized language (or cognitive) assessment
+One common scenario is that  you are interested in what long-form recordings can tell you about the interaction between the child and others, but you are not sure you will be able to collect it (or perhaps not for your whole sample). You are then looking for some measure of interaction that is easier to collect, perhaps faster and with lower logistical costs. We provide some ideas in the "Alternative measures of interaction" below.
 
-A good starting point for this is the report by Fernald and colleagues published by the World Bank in 2009. They explain that assessments should meet a variety of desiderata. Among them is the fact that they are "psychometrically adequate, valid and reliable". We have seen validity and reliability in Video \@ref(validreli)  -- we'll add here that the situation is similar to that for LENA, in that typically the people that evaluate the validity and reliability of a tool need it to work (either because they sell the tool or they need to use it in a study). So from our point of view, often the evidence is gathered by people who have some form of a conflict of interest, and in general there is very little -- perhaps only one study with a smallish and potentially biased sample. 
+
+Another common scenario is that you are not sure of using long-form recordings on their own, since it is not a very established measure yet. Therefore, you want to complement (or replace) them with something that your stakeholders will find easier to understand and accept. In this case, you will typically want to use a more established instrument -- then the second section below is for you.
+
+## If you want alternative measures of interaction
+
+It is quite common to use interaction tasks in which the child and a caregiver are provided with a set of objects (age-appropriate toys or household objects) and asked to play together. Such tasks often last 5-10 minutes, and are video-recorded using a tripod-based camera. If doing so, we recommend piloting the task with members of the community, to get their impression of how comfortable they feel; and provide the data to your coders, to make sure that you can actually code it. Common errors include setting up the camera too far, so you cannot see or hear the participants well; or at an angle where you only see one of the participants; or becoming so fussy with the camera position that parents are hyperconscious of the task. Some researchers have adapted this procedure to collect data remotely, by asking parents to video record their interaction with the child using zoom or some other such tool. We do not know of a similar procedure for audio only, but it may be worth trying, particularly in areas in which data are limited and/or parents do not have access to webcams.
+
+Once you have this audio(video) data, you can annotate it like what was described in our other sections for the long-form audio recordings. If you decide to do full segmentation and annotation, the difficulty is lower but still estimate about x15 (i.e., 10 mins of video takes 150 mins to annotate). As discussed in the relevant video, you can also make some decisions that are relevant to your own purposes with a coarser granularity -- in our previous discussion, we talked about a system where coders make decisions every 30 seconds. You could even have a coder watch the video and make high-level decisions at the video level, such as how fluid the conversation was on a scale of 1 to 5. 
+
+To our knowledge, there is no work comparing measures of children and others' behavior from usch 5-10-minute play sessions against long-form recordings, so we do not know to what extent one captures similar patterns or not. However, in the SEEDLingS study we have already discussed, they compared behaviors in 1-h video against long-form found considerable convergence in e.g. proportion of speech by different speaker types as well as divergence in aspects like how much people talked (with a lot more speech in the shorter video recording). For more information, see the resources.
+
+## If you want use a more established instrument
+
+
+A good starting point for this is the report by Fernald and colleagues published by the World Bank in 2009. They explain that assessments should meet a variety of desiderata. Among them is the fact that they are "psychometrically adequate, valid and reliable". We have seen validity and reliability in Video \@ref(validreli)  -- we'll add here that the situation is similar to that for LENA, in that typically the people that evaluate the validity and reliability of a tool need it to work (either because they sell the tool or they have already collected data with it). So from our point of view, often the evidence is gathered by people who have some form of a conflict of interest. 
 
 In that report, they discuss instruments that are not too expensive, that are adaptable to a wide range of cultural settings, and that do not suffer from floor or ceiling effects. Floor effects emerge when the test is so hard for a given population that you cannot really measure individual differences or intervention effects because everyone is already at the lowest level they could score. Ceiling effects emerge when the items are so easy that everyone scores very well, similarly making it hard to measure variation across children or effects of an intervention.
 
+We can also recommend the work of the INTERGROWTH project, which was done multinationally. They developed their short test, which we also introduce below, after carefully sifting through 47 tests as explained in the Fernandes paper provided in Resources. 
+
+We are going to distinguish between instruments that rely solely or primarily on parental report from those that are primarily based on direct observation. There are pros and cons to both of these: Parental report is great if you want to have an idea of how the child acts in general, in their natural environment. However, if the "right" response is obvious to the parent, they may provide responses that over-estimate the child's development. Alternatively, if the parent doesn't actually spend much time with the child or doesn't really understand what is being asked, then you may end up with an underestimate of the child's abilities. To give a specific example, if you are evaluating an intervention aimed at increasing parents' sensitivity to the child, then parents may report improvements in vocabulary not because they happened, but because you did manage to change parents' behavior and now they pay more attention to the child's vocabulary. Direct observations, for their part, can avoid some biases (particularly if the people administering them do not know whether a child is part of a treatment or control group, or their prior test scores, etc.) However, one should be very careful to interpret results if children seem to be uncomfortable with the tasks. Additionally, these tests have been developed in specific settings, and so one should be careful to compare results across groups for whom the activities represented in the tests (e.g., picture pointing) may be more versus less relevant.
+
+Another global comment is 
+
 ### Children 0-3 years
+
 For children under three years of age, there are very few options. We will discuss the subset of assessments that have sections dedicated to language, even if they are not specifically thought to test language development only. 
 
 
 #### Bayley Scales of Infant Development (BSID)
 
-Arguably, this is the most commonly used assessment of infant development in the world. There was a 4th edition released in 2019 that includes an online training and a Digital delivery option. The digital delivery concerns the administrators (there is no digital material for the child). It has been adapted to many languages.
+Arguably, this is historically the most commonly used assessment of infant development in the world. There was a 4th edition released in 2019 that includes an online training and a Digital delivery option. The digital delivery concerns the administrators (there is no digital material for the child). 
 
-### MacArthur Communicative Development Inventories (CDI)
+It has been adapted to many languages and cultures, and used in hundreds of studies. To our knowledge, however, there are very few independent evaluations of the reliability and validity of BSID. Some worries had been raised for BSID-III (even in American samples) as a screening tool -- which is now outdated given the new edition. 
+
+#### Denver Developmental Screening Test (DDST)
+
+The DDST is a comprehensive test of children’s development, and can be used to assess development from birth through 5 years of age. The Denver II was released in 1992.
+
+
+
+#### MacArthur Communicative Development Inventories (CDI)
 CDIs are parent report forms for assessing language and communication skills in infants and young children. Most of the items are words: parents will report which among a list of words the child says (or comprehends, depending on the instrument).  It has been adapted to many languages.
 
 
@@ -25,32 +54,43 @@ CDIs are parent report forms for assessing language and communication skills in 
 The ASQ is a parent report, and can be completed by parents alone or administered by a trained assessor, who helps the parent understand the questions and/or decides based on observation of the child. The subscales measure skills in Communication, Gross Motor, Fine Motor, Personal-Social and Problem-Solving (similar to cognitive) domains. The third edition was published in 2009 and allows data to be managed online. At the time of writing, they are collecting data for a 4th edition.
 
 
-
-#### Denver Developmental Screening Test (DDST)
-
-The DDST is a comprehensive test of children’s development, and can be used to assess development from birth through 5 years of age. The Denver II was released in 1992.
-
 #### Evaluacion de Escala de Evaluacion del Desorrollo Psicomotor (EEDP)  
 The EEDP is a Spanish-language screening test initially developed in Chile and widely used in Latin America.
 
 #### The Guide for Monitoring Child Development 
 This parent report assessment provides a method for developmental monitoring and early detection of developmental difficulties in children of low and middle income countries.
 
+#### Oxford Neurodevelopment Assessment (OX-NDA) 
+
+The INTERGROWTH group developed their test after carefully sifting through previous tests. The items for cognitive and language (Table 1 on p. 9 of the [manual](https://www.inter-nda.com/uploads/9/5/4/2/9542591/inter-nda_manual_v2.2021.pdf) and following pages for explanation) use a combination of direct observation and parental questionnaire. It is very fast to administer, and to train people to do so, and it's easier to use in multilingual settings due to the fact that questions to the parents are quite simple and there shouldn't be much "lost in translation". To our knowledge, validity and reliability has only been measured by the same team who developed the task.
+
 ### Children aged 3-5 years
 
+For this age range, you can use tests directly on the child (rather than parental reports), and that are more specific to language
 
-#### Peabody Picture Vocabulary Test (PPVT) / Test de Imagines de Vocabulario Peabody (TVIP, in Spanish)
+#### Peabody Picture Vocabulary Test (PPVT) 
 The PPVT (is a test of “receptive language” or listening comprehension for the spoken world and has been used in many countries throughout the world. The traditional version is a booklet with four images per page; the assessor then says the name of one of the images and the child needs to point to it. The forth edition can be administered on tablets, allowing online handling of data.
 
 #### Reynell Developmental Language Scale
 The 134-item Reynell scale (Reynell, 1990) is comprised of two subscales to assess both Receptive Language and Expressive Language. The kit includes paper material. Online you can find webinars for people who assess the test. 
 
+### Additional tests
+
+- If you would like to use instruments in combination with LENA and want to be informed by previous work, there exists a meta-analysis of [how LENA measures related to standardized instruments](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7337141/); [this table](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7337141/table/T1/?report=objectonly) contains the full list of papers with LENA + some test that they included in their analysis. 
+- If working with an American sample, specifically, the [Preschool Language Scales (0-7 years)](https://www.pearsonassessments.com/store/usassessments/en/Store/Professional-Assessments/Speech-%26-Language/Preschool-Language-Scales-%7C-Fifth-Edition/p/100000233.html?tab=product-details)  was used in the very large sample by Gilkerson et al. 2017, and has one of the highest and most precise correlations with CVC (though r = .38 -- see forest plot).  It can be used with children 0-6 years.
+- Another commonly used test elsewhere is the Wechsler Preschool and Primary Scale of Intelligence  (2-7 years), which contains a verbal component.
+
+
+
+
 
 ## References
-
+- [Bergelson, E., Amatuni, A., Dailey, S., Koorathota, S., & Tor, S. (2019). Day by day, hour by hour: Naturalistic language input to infants. Developmental science, 22(1), e12715.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6294661/)
 - Fernald, L. C., Kariger, P., Engle, P., & Raikes, A. (2009). Examining early child development in low-income countries. [pdf](https://openknowledge.worldbank.org/bitstream/handle/10986/28107/NonAsciiFileName0.pdf?sequence=1)
+- [Fernandes, M., Stein, A., Newton, C. R., Cheikh-Ismail, L., Kihara, M., Wulff, K., ... & International Fetal and Newborn Growth Consortium for the 21st Century (INTERGROWTH-21st). (2014). The INTERGROWTH-21st Project Neurodevelopment Package: a novel method for the multi-dimensional assessment of neurodevelopment in pre-school age children. PloS one, 9(11), e113360.](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0113360)
 - [Bayleys BSID](https://www.pearsonassessments.com/store/usassessments/en/Store/Professional-Assessments/Cognition-%26-Neuro/Bayley-Scales-of-Infant-and-Toddler-Development-%7C-Fourth-Edition/p/100001996.html?tab=product-details)
 - [CDI](https://mb-cdi.stanford.edu/index.html)
 - [ASQ](https://agesandstages.com/products-pricing/asq3/)
 - [PPVT](https://www.pearsonassessments.com/store/usassessments/en/Store/Professional-Assessments/Academic-Learning/Brief/Peabody-Picture-Vocabulary-Test-%7C-Fourth-Edition/p/100000501.html?tab=product-details )
 - [Reynell](https://www.gl-assessment.co.uk/assessments/products/new-reynell-developmental-language-scales/)
+- [InterNDA Manual](https://www.inter-nda.com/uploads/9/5/4/2/9542591/inter-nda_manual_v2.2021.pdf)
