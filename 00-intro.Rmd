@@ -17,4 +17,11 @@ They are not very good if you want to look for narrower phenomena that are rare 
 If you are interested in using longform recordings, we are going to help you with everything you need to know, from how you decide to collect data, to hardware and software, clothing, how to ask permission to your IRB, human annotation, piloting, how to share data. 
 We have tried to distill nearly 10 years of using the technique, and literally hundreds of hours collecting, analyzing, discussing the technique, and teaching it to others. Our hope is that this series will serve as a reference: You can quickly get an idea of what are the things you need to think about and do, and you can go back to the videos of different steps as you progress in your project. Each video will end with a series of references and links where you can get more in depth information. We are also making the script of this video available as a book - the link is at the end too. You can ask questions and make comments as issues to the book or in the discussion section of each video. 
 
+
+![Flowchart of key decisions for those considering a study with LFSE recordings. Those researchers whose path ends with an “X” should instead consider non-LFSE approaches.](figures/flowchart.png)
+
+```{r pearson-length, fig.align = 'center', fig.cap = "Flowchart of key decisions for those considering a study with LFSE recordings. Those researchers whose path ends with an “X” should instead consider non-LFSE approaches.", echo = FALSE}
+knitr::include_graphics("figures/flowchart.png")
+```
+
 We hope this is useful to you! 
