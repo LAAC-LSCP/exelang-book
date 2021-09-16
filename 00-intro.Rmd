@@ -20,7 +20,7 @@ We have tried to distill nearly 10 years of using the technique, and literally h
 
 ![Flowchart of key decisions for those considering a study with LFSE recordings. Those researchers whose path ends with an “X” should instead consider non-LFSE approaches.](figures/flowchart.png)
 
-```{r pearson-length, fig.align = 'center', fig.cap = "Flowchart of key decisions for those considering a study with LFSE recordings. Those researchers whose path ends with an “X” should instead consider non-LFSE approaches.", echo = FALSE}
+```{r key-decisions-flowchart, fig.align = 'center', fig.cap = "Flowchart of key decisions for those considering a study with LFSE recordings. Those researchers whose path ends with an “X” should instead consider non-LFSE approaches.", echo = FALSE}
 knitr::include_graphics("figures/flowchart.png")
 ```
 
