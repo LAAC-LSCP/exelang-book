@@ -2,6 +2,8 @@ fig:key-decisions-flowchart
 fig:recall
 fig:precision
 fig:sampling-strategies
+fig:energy-sampler-n
+fig:energy-sampler-time
 fig:budget-impact
 fig:pearson-length
 hardware
@@ -127,5 +129,7 @@ additional-tests
 references
 automated-and-manual-annotations
 sampling-strategy
+unbiased-samplers
+targeted-samplers
 how-much-data-should-i-annotate
 evaluating-automated-annotations-from-manual-annotations

@@ -23,7 +23,7 @@
 
 
 
-<meta name="date" content="2021-09-16" />
+<meta name="date" content="2021-09-17" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -220,7 +220,10 @@
 <li class="chapter" data-level="" data-path="references-1.html"><a href="references-1.html"><i class="fa fa-check"></i>References</a></li>
 <li class="appendix"><span><b>Appendix</b></span></li>
 <li class="chapter" data-level="A" data-path="automated-and-manual-annotations.html"><a href="automated-and-manual-annotations.html"><i class="fa fa-check"></i><b>A</b> Automated and manual annotations</a><ul>
-<li class="chapter" data-level="A.1" data-path="automated-and-manual-annotations.html"><a href="automated-and-manual-annotations.html#sampling-strategy"><i class="fa fa-check"></i><b>A.1</b> Sampling strategy</a></li>
+<li class="chapter" data-level="A.1" data-path="automated-and-manual-annotations.html"><a href="automated-and-manual-annotations.html#sampling-strategy"><i class="fa fa-check"></i><b>A.1</b> Sampling strategy</a><ul>
+<li class="chapter" data-level="A.1.1" data-path="automated-and-manual-annotations.html"><a href="automated-and-manual-annotations.html#unbiased-samplers"><i class="fa fa-check"></i><b>A.1.1</b> Unbiased samplers</a></li>
+<li class="chapter" data-level="A.1.2" data-path="automated-and-manual-annotations.html"><a href="automated-and-manual-annotations.html#targeted-samplers"><i class="fa fa-check"></i><b>A.1.2</b> Targeted samplers</a></li>
+</ul></li>
 <li class="chapter" data-level="A.2" data-path="automated-and-manual-annotations.html"><a href="automated-and-manual-annotations.html#how-much-data-should-i-annotate"><i class="fa fa-check"></i><b>A.2</b> How much data should I annotate ?</a></li>
 <li class="chapter" data-level="A.3" data-path="automated-and-manual-annotations.html"><a href="automated-and-manual-annotations.html#evaluating-automated-annotations-from-manual-annotations"><i class="fa fa-check"></i><b>A.3</b> Evaluating automated annotations from manual annotations</a></li>
 </ul></li>
@@ -256,6 +259,8 @@
 </ul>
 <p>Of course, the answer to each of this question depends on your research goals, and <a href="humanannotation.html#humanannotation">15</a> provides clues to some of them.</p>
 <p>Most often, the amount of audio that can be annotated is heavily constrained by the availability of human resources, and can be considered fixed; the impact of the volume of annotations will be studied in the next subsection.</p>
+<div id="unbiased-samplers" class="section level3">
+<h3><span class="header-section-number">A.1.1</span> Unbiased samplers</h3>
 <p>For many tasks, the clips should be selected in a way that does not induce biases in the results. For instance, if one plans to estimate the quantity of speech produced or heard by the child, then it is important to use unbiased estimators. In order to evaluate the performance of automated tools, it might also be preferrable to use unbiased annotations which can assess the behavior of the algorithms in a variety of contexts rather than for a subset of configurations.</p>
 <p>We can cite at least two antagonistic ways of achieving such an unbiased sampling:</p>
 <ul>
@@ -280,6 +285,41 @@ Using annotations that are farther from each other helps probe a wider variety o
 <p>This does not mean, of course, that one should annotate arbitrarily short clips. First, in practice, two 1-minute clip will take longer to annotate than one 2-minute clips, especially if annotators needs to listen to the context to make better decisions. Reducing the length of the clips may thus rapidly decrease the efficiency of the annotation process. Moreover, some estimators, such as vocalization counts, may be strongly biased by using short clips, due to the increased significance of boundary effects.</p>
 <p>These results emphasize the importance of carefully assessing the impact of the sampling strategy before engaging humans into time-consuming annotation efforts.</p>
 </div>
+<div id="targeted-samplers" class="section level3">
+<h3><span class="header-section-number">A.1.2</span> Targeted samplers</h3>
+<p>Although unbiased samplers are necessary for many purposes, targeted samplers may be useful in a number of cases.
+One such case is the training of a computational model that requires a great amount of manual annotations.
+Usually, annotations obtained from portions of audio that contain little to no speech are uninformative for these models.
+Therefore, it may be much more efficient to let humans annotate portions of the recordings that have a higher chance of containing speech.</p>
+<p>For this purpose, one could at least conceive two strategies:</p>
+<ul>
+<li>Using a Voice Activation Detection model or more sophisticated models (e.g. linguistic unit estimation, speaker diarization, etc.)</li>
+<li>Choosing portions of the audio that have a strong signal energy</li>
+</ul>
+<p>Using sophisticated models may yield a more efficient pre-selection. However, it is harder to predict the effects of their own biases, and a cruder
+selection method (such as the energy detection) may still show good results while being less arbitrary.
+Below, using 2 hours and 40 minutes of human annotations from the Solomon Islands corpus, we show how selecting portions of audio
+based on the signal energy alone can increase the amount of speech.
+This benchmark is based on the <a href="https://childproject.readthedocs.io/en/latest/samplers.html#energy-based-sampler">Energy Detection Sampler of the ChildProject package</a>.
+We used a 50 Hz - 3000 Hz passband in order to increase the signal/noise ratio.</p>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:energy-sampler-n"></span>
+<img src="figures/energy_sampler_n.png" alt="Fraction of 30 second windows above some energy quantile that contain speech from a given speaker class. CHI = key child, OCH = other children, FEM = female adult, MAL = male adult."  />
+<p class="caption">
+Figure A.2: Fraction of 30 second windows above some energy quantile that contain speech from a given speaker class. CHI = key child, OCH = other children, FEM = female adult, MAL = male adult.
+</p>
+</div>
+<div class="figure" style="text-align: center"><span style="display:block;" id="fig:energy-sampler-time"></span>
+<img src="figures/energy_sampler_time.png" alt="Average speech time for each speaker class depending on the energy quantile. CHI = key child, OCH = other children, FEM = female adult, MAL = male adult."  />
+<p class="caption">
+Figure A.3: Average speech time for each speaker class depending on the energy quantile. CHI = key child, OCH = other children, FEM = female adult, MAL = male adult.
+</p>
+</div>
+<p>This example shows that the energy-based sampler clearly suppresses silence.
+However, it also induces a bias by favoring some classes (CHI and FEM) over others (MAL and OCH).
+One explanation is that the first two (key child and female adult) are closer to the device (especially the key child, by design)
+and thus sound louder on average.</p>
+</div>
+</div>
 <div id="how-much-data-should-i-annotate" class="section level2">
 <h2><span class="header-section-number">A.2</span> How much data should I annotate ?</h2>
 <p>The quality of estimations based off partial annotations primarily depends on the volume of audio that have been annotated. There are several reasons to use partial annotations to extrapolate metrics over the whole data:</p>
@@ -291,7 +331,7 @@ Using annotations that are farther from each other helps probe a wider variety o
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:budget-impact"></span>
 <img src="figures/budget_impact.png" alt="Relative error between speech duration estimates based on subsamples and the values for the whole recordings, using the Voice Type Classifier. (periodic sampling; 1-minute clips.)"  />
 <p class="caption">
-Figure A.2: Relative error between speech duration estimates based on subsamples and the values for the whole recordings, using the Voice Type Classifier. (periodic sampling; 1-minute clips.)
+Figure A.4: Relative error between speech duration estimates based on subsamples and the values for the whole recordings, using the Voice Type Classifier. (periodic sampling; 1-minute clips.)
 </p>
 </div>
 <p>The level of accuracy to achieve, and therefore the volume of audio to annotate, depend on the size of the effects being studied.</p>
@@ -305,7 +345,7 @@ Another possibility is to calculate Pearson correlation coefficients between the
 <div class="figure" style="text-align: center"><span style="display:block;" id="fig:pearson-length"></span>
 <img src="figures/pearson_clip_length.png" alt="Pearson correlation between LENA and VTC derived metrics as a function of clips length. (500 recordings; periodic sampling; constant annotation budget of 60 minutes per recording.)"  />
 <p class="caption">
-Figure A.3: Pearson correlation between LENA and VTC derived metrics as a function of clips length. (500 recordings; periodic sampling; constant annotation budget of 60 minutes per recording.)
+Figure A.5: Pearson correlation between LENA and VTC derived metrics as a function of clips length. (500 recordings; periodic sampling; constant annotation budget of 60 minutes per recording.)
 </p>
 </div>
 <p>We can observe a clear increase in the correlation coefficients as the length of the clips increases. This means Pearson correlation coefficients for these metrics are not robust again the length of the clips used to evalute the algorithms. One may turn to other metrics such as Recall and Precision, which remain stable for varying clip lengths.</p>
