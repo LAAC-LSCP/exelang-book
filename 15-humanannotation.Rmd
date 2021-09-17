@@ -148,11 +148,12 @@ Also, there is one exception to this general recommendation of prioritizing shor
 knitr::include_graphics("figures/pearson_clip_length.png")
 ```
 
-We can observe a clear increase in the correlation coefficients as the length of the clips increases. This means Pearson correlation coefficients for these metrics are not robust to the length of the clips used to evaluate the algorithms, and actually benefit from longer clips. But we know longer clips have issues: they could lead to more biased sampling (as we saw above).
+We can observe a clear increase in the correlation coefficients as the length of the clips increases. This means Pearson correlation coefficients for these metrics are not robust to the length of the clips used to evaluate the algorithms, and actually benefit from longer clips. But we know longer clips have issues: they can have greater estimation errors (as we saw above).
 
-Our conclusion from this is that the field should probably use other metrics, such as Recall and Precision, which remain stable for varying clip lengths.
+In contrast, Recall and Precision remain stable for varying clip lengths.
 
 
+Our conclusion is that perhaps the field should turn to these other metrics, but in the meantime, you should be really careful when thinking about why you are doing annotation, what you are going to use them for, and how they may be suboptimal for other goals.
 
 
 ## Softwares for human annotation
