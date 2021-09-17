@@ -69,6 +69,9 @@ The level of accuracy to achieve, and therefore the volume of audio to annotate,
 
 ## How should the clips be selected?
 
+
+### Unbiased sampling
+
 For many tasks, the clips should be selected in a way that does not induce biases in the results. For instance, if one plans to estimate the quantity of speech produced or heard by the child, then it is important to use unbiased estimators. In order to evaluate the performance of automated tools, it might also be preferable to use unbiased annotations which can assess the behavior of the algorithms in a variety of contexts rather than for a subset of configurations.
 
 We can cite at least two ways of achieving such an unbiased sampling:
@@ -85,6 +88,38 @@ For instance, imagine that you were trying to decide whether the child talks lit
 **Q: When I sample randomly or periodically, I don't have a lot of category X - is that a problem?**
 
 If there are no samples of a given category, then accuracy of that category cannot be evaluated; and if there are only a few, then it is possible that these are special in some way and accuracy estimates may not generalize well to others. So if the sections you end up with have no "other child" or "male" speech, then perhaps you'll be uncertain of how well the algorithm picks up these voices. 
+
+### Targeted samplers
+
+Although unbiased samplers are necessary for many purposes, targeted samplers may be useful in a number of cases.
+One such case is the training of a computational model that requires a great amount of manual annotations.
+Usually, annotations obtained from portions of audio that contain little to no speech are uninformative for these models.
+Therefore, it may be much more efficient to let humans annotate portions of the recordings that have a higher chance of containing speech.
+
+For this purpose, one could at least conceive two strategies:
+
+ - Using a Voice Activation Detection model or more sophisticated models (e.g. linguistic unit estimation, speaker diarization, etc.)
+ - Choosing portions of the audio that have a strong signal energy
+
+Using sophisticated models may yield a more efficient pre-selection. However, it is harder to predict the effects of their own biases, and a cruder
+selection method (such as the energy detection) may still show good results while being less arbitrary.
+Below, using 2 hours and 40 minutes of human annotations from the Solomon Islands corpus, we show how selecting portions of audio
+based on the signal energy alone can increase the amount of speech. 
+This benchmark is based on the [Energy Detection Sampler of the ChildProject package](https://childproject.readthedocs.io/en/latest/samplers.html#energy-based-sampler).
+We used a 50 Hz - 3000 Hz passband in order to increase the signal/noise ratio.
+
+```{r energy-sampler-n, fig.align = 'center', fig.cap = "Fraction of 30 second windows above some energy quantile that contain speech from a given speaker class. CHI = key child, OCH = other children, FEM = female adult, MAL = male adult.", echo = FALSE}
+knitr::include_graphics("figures/energy_sampler_n.png")
+```
+
+```{r energy-sampler-time, fig.align = 'center', fig.cap = "Average speech time for each speaker class depending on the energy quantile. CHI = key child, OCH = other children, FEM = female adult, MAL = male adult.", echo = FALSE}
+knitr::include_graphics("figures/energy_sampler_time.png")
+```
+
+This example shows that the energy-based sampler clearly suppresses silence.
+However, it also induces a bias by favoring some classes (CHI and FEM) over others (MAL and OCH).
+One explanation is that the first two (key child and female adult) are closer to the device (especially the key child, by design)
+and thus sound louder on average.
  
 ## What should be the length of each clip? 
  
