@@ -14,6 +14,8 @@ Of course, the answer to each of this question depends on your research goals, a
 
 Most often, the amount of audio that can be annotated is heavily constrained by the availability of human resources, and can be considered fixed; the impact of the volume of annotations will be studied in the next subsection.
 
+### Unbiased samplers
+
 For many tasks, the clips should be selected in a way that does not induce biases in the results. For instance, if one plans to estimate the quantity of speech produced or heard by the child, then it is important to use unbiased estimators. In order to evaluate the performance of automated tools, it might also be preferrable to use unbiased annotations which can assess the behavior of the algorithms in a variety of contexts rather than for a subset of configurations.
 
 We can cite at least two antagonistic ways of achieving such an unbiased sampling:
@@ -44,6 +46,39 @@ This does not mean, of course, that one should annotate arbitrarily short clips.
 
 These results emphasize the importance of carefully assessing the impact of the sampling strategy before engaging humans into time-consuming annotation efforts.
 
+### Targeted samplers
+
+Although unbiased samplers are necessary for many purposes, targeted samplers may be useful in a number of cases.
+One such case is the training of a computational model that requires a great amount of manual annotations.
+Usually, annotations obtained from portions of audio that contain little to no speech are uninformative for these models.
+Therefore, it may be much more efficient to let humans annotate portions of the recordings that have a higher chance of containing speech.
+
+For this purpose, one could at least conceive two strategies:
+
+ - Using a Voice Activation Detection model or more sophisticated models (e.g. linguistic unit estimation, speaker diarization, etc.)
+ - Choosing portions of the audio that have a strong signal energy
+
+Using sophisticated models may yield a more efficient pre-selection. However, it is harder to predict the effects of their own biases, and a cruder
+selection method (such as the energy detection) may still show good results while being less arbitrary.
+Below, using 2 hours and 40 minutes of human annotations from the Solomon Islands corpus, we show how selecting portions of audio
+based on the signal energy alone can increase the amount of speech. 
+This benchmark is based on the [Energy Detection Sampler of the ChildProject package](https://childproject.readthedocs.io/en/latest/samplers.html#energy-based-sampler).
+We used a 50 Hz - 3000 Hz passband in order to increase the signal/noise ratio.
+
+```{r energy-sampler-n, fig.align = 'center', fig.cap = "Fraction of 30 second windows above some energy quantile that contain speech from a given speaker class. CHI = key child, OCH = other children, FEM = female adult, MAL = male adult.", echo = FALSE}
+knitr::include_graphics("figures/energy_sampler_n.png")
+```
+
+```{r energy-sampler-time, fig.align = 'center', fig.cap = "Average speech time for each speaker class depending on the energy quantile. CHI = key child, OCH = other children, FEM = female adult, MAL = male adult.", echo = FALSE}
+knitr::include_graphics("figures/energy_sampler_time.png")
+```
+
+This example shows that the energy-based sampler clearly suppresses silence.
+However, it also induces a bias by favoring some classes (CHI and FEM) over others (MAL and OCH).
+One explanation is that the first two (key child and female adult) are closer to the device (especially the key child, by design)
+and thus sound louder on average.
+
+ 
 ## How much data should I annotate ?
 
 The quality of estimations based off partial annotations primarily depends on the volume of audio that have been annotated. There are several reasons to use partial annotations to extrapolate metrics over the whole data:
