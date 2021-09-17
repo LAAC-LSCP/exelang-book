@@ -380,8 +380,9 @@ Using annotations that are farther from each other helps probe a wider variety o
 Figure 15.5: Pearson correlation between LENA and VTC derived metrics as a function of clips length. (500 recordings; periodic sampling; constant annotation budget of 60 minutes per recording.)
 </p>
 </div>
-<p>We can observe a clear increase in the correlation coefficients as the length of the clips increases. This means Pearson correlation coefficients for these metrics are not robust to the length of the clips used to evaluate the algorithms, and actually benefit from longer clips. But we know longer clips have issues: they could lead to more biased sampling (as we saw above).</p>
-<p>Our conclusion from this is that the field should probably use other metrics, such as Recall and Precision, which remain stable for varying clip lengths.</p>
+<p>We can observe a clear increase in the correlation coefficients as the length of the clips increases. This means Pearson correlation coefficients for these metrics are not robust to the length of the clips used to evaluate the algorithms, and actually benefit from longer clips. But we know longer clips have issues: they can have greater estimation errors (as we saw above).</p>
+<p>In contrast, Recall and Precision remain stable for varying clip lengths.</p>
+<p>Our conclusion is that perhaps the field should turn to these other metrics, but in the meantime, you should be really careful when thinking about why you are doing annotation, what you are going to use them for, and how they may be suboptimal for other goals.</p>
 </div>
 <div id="softwares-for-human-annotation" class="section level2">
 <h2><span class="header-section-number">15.7</span> Softwares for human annotation</h2>
