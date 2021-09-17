@@ -2,6 +2,7 @@
 title: "Long-form recordings: From A to Z"
 author: 
   - name          : "Sara Pisani"
+  - name          : "Lucas Gautheron"
   - name          : "Alejandrina Cristia"
     affiliation   : "Ecole Normale Supérieure, PSL Research University, Departement d'etudes cognitives, Laboratoire de Sciences Cognitives et Psycholinguistique (ENS, EHESS, CNRS)"
     corresponding : yes    # Define only one corresponding author

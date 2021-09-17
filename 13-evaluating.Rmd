@@ -55,11 +55,14 @@ Precision represents instead what proportion of acoustic stretches that the mach
 knitr::include_graphics("figures/ggprec-fig-1.pdf")
 ```
 
+Typically, classification algorithms are evaluated using metrics such as Recall, Precision, or F-score. Many metrics more specific to certain speech processing tasks have been developed, some of which can be easily be calculated in python using the pyannote-metrics package [@pyannote_metrics].
+Agreement coefficients commonly used in Psychology and Natural Language Processing (Krippendorff' Alpha, Fleiss' Kappa, etc.) can also be used to evaluate the reliability of automated annotations. All of these are available in the Child Project package, Introduced in \@ref(childproject).
+
 ## Additional concepts
 
 We often hear that "LENA has been validated" -- we think that what people mean by that is that there have been efforts to check its accuracy, but in some cases people do mean that its "validity" has been checked. 
 
-In psychometrics, validity and reliability are actually technical concepts, which are often discussed together. In this context, the reliability of a measure captures the extent to which you can repeat that measure on the same individual and get a similar result. Precision and recall are informative of relibility, where the "repetition" comes from drawing the measure using human annotation versus automated annotation. So in a way, it is the "same" measure. 
+In psychometrics, validity and reliability are actually technical concepts, which are often discussed together. In this context, the reliability of a measure captures the extent to which you can repeat that measure on the same individual and get a similar result. Precision and recall are informative of reliability, where the "repetition" comes from drawing the measure using human annotation versus automated annotation. So in a way, it is the "same" measure. 
 
 Validity can be used contrastively to indicate that the measure of individual variation (variation across participants) has been checked against some other benchmark. For instance, the LENA Foundation did several studies to establish validity by testing the same children they collected long-form recordings from with a battery of speech and language tests. 
 
