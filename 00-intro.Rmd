@@ -19,11 +19,8 @@ We have tried to distill nearly 10 years of using the technique, and literally h
 
 
 
-<<<<<<< Updated upstream
-```{r key-decisions-flowchart, fig.align = 'center', fig.cap = "Flowchart of key decisions for those considering a study with LFSE recordings. Those researchers whose path ends with an “X” should instead consider non-LFSE approaches.", echo = FALSE}
-=======
 ```{r pearson-length, fig.width= 10, fig.align = 'center', fig.cap = "Flowchart of key decisions for those considering a study with LFSE recordings. Those researchers whose path ends with an “X” should instead consider non-LFSE approaches.", echo = FALSE}
->>>>>>> Stashed changes
+
 knitr::include_graphics("figures/flowchart.png")
 ```
 
