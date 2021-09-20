@@ -26,7 +26,7 @@ We can also recommend the work of the INTERGROWTH project, which was done multin
 
 We are going to distinguish between instruments that rely solely or primarily on parental report from those that are primarily based on direct observation. There are pros and cons to both of these: Parental report is great if you want to have an idea of how the child acts in general, in their natural environment. However, if the "right" response is obvious to the parent, they may provide responses that over-estimate the child's development. Alternatively, if the parent doesn't actually spend much time with the child or doesn't really understand what is being asked, then you may end up with an underestimate of the child's abilities. To give a specific example, if you are evaluating an intervention aimed at increasing parents' sensitivity to the child, then parents may report improvements in vocabulary not because they happened, but because you did manage to change parents' behavior and now they pay more attention to the child's vocabulary. Direct observations, for their part, can avoid some biases (particularly if the people administering them do not know whether a child is part of a treatment or control group, or their prior test scores, etc.) However, one should be very careful to interpret results if children seem to be uncomfortable with the tasks. Additionally, these tests have been developed in specific settings, and so one should be careful to compare results across groups for whom the activities represented in the tests (e.g., picture pointing) may be more versus less relevant.
 
-Another global comment is 
+
 
 ### Children 0-3 years
 
