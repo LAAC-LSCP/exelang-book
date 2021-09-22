@@ -6,6 +6,7 @@ fig:energy-sampler-n
 fig:energy-sampler-time
 fig:sampling-strategies
 fig:pearson-length
+fig:precision-recall-length
 hardware
 lena-hardware
 non-lena-hardware
