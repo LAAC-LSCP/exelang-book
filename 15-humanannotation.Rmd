@@ -150,7 +150,11 @@ knitr::include_graphics("figures/pearson_clip_length.png")
 
 We can observe a clear increase in the correlation coefficients as the length of the clips increases. This means Pearson correlation coefficients for these metrics are not robust to the length of the clips used to evaluate the algorithms, and actually benefit from longer clips. But we know longer clips have issues: they can have greater estimation errors (as we saw above).
 
-In contrast, Recall and Precision remain stable for varying clip lengths.
+In contrast, Recall and Precision remain stable for varying clip lengths, as shown below:
+
+```{r precision-recall-length, fig.align = 'center', fig.cap = "VTC vs LENA key child recall/precision as a function of clips length. (500 recordings; periodic sampling; constant annotation budget of 60 minutes per recording.)", echo = FALSE}
+knitr::include_graphics("figures/precision_recall_length.png")
+```
 
 
 Our conclusion is that perhaps the field should turn to these other metrics, but in the meantime, you should be really careful when thinking about why you are doing annotation, what you are going to use them for, and how they may be suboptimal for other goals.
