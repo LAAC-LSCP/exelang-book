@@ -64,10 +64,7 @@ kable(tab, "html", "pipe", col.name=c("Repository name", "Project file Formattin
 A License is an official permission granted by the owner of some Work (the “Licensor”) to other people (the “Licensee”) and governing how the Licensee is allowed to use the Licensor’s Work. 
 This option allows you to make the effort of establishing rules for potential collaborators/citations once, and then re-use this license with others.
  
-When you create your license, you make the rules, so you can specify whatever you feel is best. You probably want to look at some examples:
-
-- https://www.ldc.upenn.edu/data-management/using/licensing
-- [License for BabyTrain Corpus](https://docs.google.com/document/d/1RdR3c-LPkhBSqRoH1Wapf_G26v82LkOr47puQhTQqYU/edit)
+When you create your license, you make the rules, so you can specify whatever you feel is best. See the resources section for some examples.
 
 
 You can also use open source licences, but you need to know that they allow for re-distribution (i.e., the people who get hands on your corpus can re-distribute it). Just in case, we made a list of the most commonly used ones:
@@ -86,6 +83,15 @@ These parts of the CC license terms can be combined. The most restrictive licens
  
 ### None of the above mentioned options works well for you
 
-In this case, we are back to the bilateral agreement. This is ideal if we want to agree on something very specific (e.g., we want to make an exchange -- for instance, we fund your re-consenting the families who participated, in exchange for the possibility of re-using the data). Please note that in the agreement, you'll always keep ownership over the data; and that we'll agree on an appropriate scope for intellectual property. At ExELang, we are specifically interested in relating children's experiences with how they talk, so we will ask for the ability to analyze and publish about this one point. If that covers your own research goals, we will discuss how to frame intellectual property so that it is ideal for both.
+In this case, we are back to the bilateral agreement. This is ideal if we want to agree on something very specific (e.g., we want to make an exchange -- for instance, we fund your re-consenting the families who participated, in exchange for the possibility of re-using the data). Please note that in the agreement, you'll always keep ownership over the data; and that we'll agree on an appropriate scope for intellectual property. At ExELang, we are specifically interested in relating children's experiences with how they talk, so we will ask for the ability to analyze and publish about this one point. If that covers your own research goals, we will discuss how to frame intellectual property so that it is ideal for both. See the resources for an example of a Data Transfer Agreement.
 
-Here is an example: https://docs.google.com/file/d/1_IoMlTIP1cB63d5ojEGf_j21uN5Mg5cV/edit?usp=docslist_api&filetype=msword
+
+## Resources
+- Examples of licenses
+    - https://www.ldc.upenn.edu/data-management/using/licensing
+    - [License for BabyTrain Corpus](https://docs.google.com/document/d/1RdR3c-LPkhBSqRoH1Wapf_G26v82LkOr47puQhTQqYU/edit)
+
+- [Example of a Data Transfer agreement](https://www.dropbox.com/s/wnaxe7shmovhk80/20210629_collaboration%20agreement_final%20EN.docx?dl=0)
+
+- Casillas, M. & Cristia, A. (2019). A step-by-step guide to collecting and analyzing long-format speech environment (LFSE) recordings, Collabra. See [Appendix B: Further information on archiving
+"](https://ucp.silverchair-cdn.com/ucp/content_public/journal/collabra/5/1/10.1525_collabra.209/3/collabra-5-209-s1.pdf?Expires=1633594641&Signature=qXacU15L3LUAaJ6CQKPyRT-EsW-UqBjJChdbm7fV~3XL6AKuqoqHHQmCTgW4kq84BwU1qqp-aAifxumuROnCH8lKVpQs9k4IbtRqDwt0ztu5Z2eMYifvwCgLypw94Vt13D3wcnvvRI7CcskqWBWuRP0CwSpN9BTsCpheUfk0wBAoherLQvhQbaRzVvn6TDQhAFNfDa7Azyvnw8kBaX2JQx1EkigRgDtCJ54B36-0wD7JscvrVkWJ3GJXni-AuxuXihf4ezjSdsTg8xYOCcTcf4JJBrQjFL-2LSLiRfo2OgMFxw6w~96F~NoLhWeT9P7~KhLpOJ6aC0tTr-QuYsIB3Q__&Key-Pair-Id=APKAIE5G5CRDK6RD3PGA)

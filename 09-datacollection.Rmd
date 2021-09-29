@@ -67,7 +67,7 @@ That means that at the "peak" of data collection, 15 families are recording the 
 
 ## Resources
 
-- [ExELang cost analyses](https://docs.google.com/document/d/1qzY871lnUbD1nGsBcUoFoipwBgbXRCcUeaNI0sfIBWw/edit)
+- Cost analyses for the ExELang project and partners, and note on benefits [link](https://docs.google.com/document/d/1qzY871lnUbD1nGsBcUoFoipwBgbXRCcUeaNI0sfIBWw/edit#)
 - [Example information for parents (French)](https://osf.io/4grsn/)
 
 

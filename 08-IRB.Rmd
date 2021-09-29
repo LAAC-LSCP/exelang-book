@@ -61,7 +61,7 @@ Therefore, before uploading these audio sections, trained personnel will listen 
 
 ## Closing thoughts
 
-This is a very short introduction to this important topic because there are already excellent resources available on this. Check out the resource section for links to consent forms and IRB request language.
+This is a very short introduction to this important topic because there are already excellent resources available on this. Check out the resource section for links to consent forms examples, an example of a Data Protection Impact Assessment, and more information.
 
 <!-- IRB (ethics) → see IRB doc on email/ step-by-step -->
 <!-- IRB-basic (automated annotation, collection only in the home) -->
@@ -74,6 +74,13 @@ This is a very short introduction to this important topic because there are alre
 ## Resources
 
 - You will find sample consent forms from several labs on https://osf.io/d4tcu/
+    - In particular, if the reuse for ExELang would be after you archive the data in a scientific archive, you can simply have a section where you ask whether they want to opt out of data donation - https://osf.io/5e3vz/ has an example of an opt-out check-box under point 2
+   - If you're uncertain about archiving, you can instead use the language under point 11 of the same consent form, the option is "Checking this box indicates my permission to store, use, and share my information from this study in research databases or registries for future research conducted by the current investigators and their research partners."
 
-- In particular, if the reuse for ExELang would be after you archive the data in a scientific archive, you can simply have a section where you ask whether they want to opt out of data donation - https://osf.io/5e3vz/ has an example of an opt-out check-box under point 2
-- If you're uncertain about archiving, you can instead use the language under point 11 of the same consent form, the option is "Checking this box indicates my permission to store, use, and share my information from this study in research databases or registries for future research conducted by the current investigators and their research partners."
+- Data Protection Impact Assessment (DPIA) for ExELang Project [link](https://docs.google.com/document/d/1uUclyh7XCp7UiaI2_kW5f9hMWuMwI1HpYb2lcK6y6gI/edit)
+
+- For more in-depth information on this topic, see:
+    - Cychosz, M., Romeo, R., Soderstrom, M., Scaff, C., Ganek, H., Cristia, A., ... & Weisleder, A. (2020). Longform recordings of everyday life: Ethics for best practices. Behavior research methods, 52(5), 1951-1969. [pdf](https://psyarxiv.com/ah37c/download?format=pdf)
+    - Casillas, M. & Cristia, A. (2019). A step-by-step guide to collecting and analyzing long-format speech environment (LFSE) recordings, Collabra. See [Appendix A "Further considerations for ethics and permissions in sensitive contexts
+"](https://ucp.silverchair-cdn.com/ucp/content_public/journal/collabra/5/1/10.1525_collabra.209/3/collabra-5-209-s1.pdf?Expires=1633594641&Signature=qXacU15L3LUAaJ6CQKPyRT-EsW-UqBjJChdbm7fV~3XL6AKuqoqHHQmCTgW4kq84BwU1qqp-aAifxumuROnCH8lKVpQs9k4IbtRqDwt0ztu5Z2eMYifvwCgLypw94Vt13D3wcnvvRI7CcskqWBWuRP0CwSpN9BTsCpheUfk0wBAoherLQvhQbaRzVvn6TDQhAFNfDa7Azyvnw8kBaX2JQx1EkigRgDtCJ54B36-0wD7JscvrVkWJ3GJXni-AuxuXihf4ezjSdsTg8xYOCcTcf4JJBrQjFL-2LSLiRfo2OgMFxw6w~96F~NoLhWeT9P7~KhLpOJ6aC0tTr-QuYsIB3Q__&Key-Pair-Id=APKAIE5G5CRDK6RD3PGA)
+

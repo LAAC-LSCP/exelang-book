@@ -7,9 +7,9 @@ They are often made using a wearable device, for instance, a recorder that is cl
 
 Since each recording lasts several hours (often 10 or more) you will have many hours of audio for each child, and often hundreds or thousands across all children in your sample. So you cannot analyze this audio manually, by listening to it and transcribing what you hear, but instead you will need to use some kind of automated system, at least as a first pass. 
 
-Longform recordings are good if you want to look for broad phenomena that happen frequently, for example how frequently the child vocalizes or cries; you can get estimates and reasons why. 
+Longform recordings are most appropriate if you want to look for broad phenomena that happen frequently, for example how frequently the child vocalizes or cries; you can get estimates and reasons why. 
 
-They are not very good if you want to look for narrower phenomena that are rare or don’t have very clear acoustic cues. Imagine you are interested in knowing whether the child makes systematic errors when they talk, for example if they make systematic errors in the past simple form. This is difficult to study because at present we don’t have an automated system that transcribes what the child precisely says (e.g. walk vs walked).
+They are not ideal if you want to look for narrower phenomena that are rare or don’t have very clear acoustic cues. Imagine you are interested in knowing whether the child makes systematic errors when they talk, for example if they make systematic errors in the past simple form. This is difficult to study because at present we don’t have an automated system that transcribes what the child precisely says (e.g. walk vs walked).
 
 
 *What will this series cover then?* 
@@ -17,12 +17,18 @@ They are not very good if you want to look for narrower phenomena that are rare 
 If you are interested in using longform recordings, we are going to help you with everything you need to know, from how you decide to collect data, to hardware and software, clothing, how to ask permission to your IRB, human annotation, piloting, how to share data. 
 We have tried to distill nearly 10 years of using the technique, and literally hundreds of hours collecting, analyzing, discussing the technique, and teaching it to others. Our hope is that this series will serve as a reference: You can quickly get an idea of what are the things you need to think about and do, and you can go back to the videos of different steps as you progress in your project. Each video will end with a series of references and links where you can get more in depth information. We are also making the script of this video available as a book - the link is at the end too. You can ask questions and make comments as issues to the book or in the discussion section of each video. 
 
+We particularly want to draw your attention to a flowchart we created with Marisa Casillas, which can help you decide 
 
-
-```{r key-decisions-flowchart, fig.width= 10, fig.align = 'center', fig.cap = "Flowchart of key decisions for those considering a study with LFSE recordings. Those researchers whose path ends with an “X” should instead consider non-LFSE approaches.", echo = FALSE}
+```{r key-decisions-flowchart,  fig.align = 'center', fig.cap = "Flowchart of key decisions for those considering a study with LFSE recordings. Those researchers whose path ends with an “X” should instead consider non-LFSE approaches.", echo = FALSE}
 
 knitr::include_graphics("figures/flowchart.png")
 ```
 
 
 We hope this is useful to you! 
+
+## Resources
+
+- [This book](https://bookdown.org/alecristia/exelang-book/)
+- Casillas, M. & Cristia, A. (2019). A step-by-step guide to collecting and analyzing long-format speech environment (LFSE) recordings, Collabra. [link](https://online.ucpress.edu/collabra/article-abstract/5/1/24/113018) 
+

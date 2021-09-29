@@ -194,12 +194,10 @@ kable(tab, "html", "pipe", col.name=c("Software", "Key strenght", "System", "Inp
 
 ## Resources
 
-Cristia, A., Lavechin, M., Scaff, C., Soderstrom, M., Rowland, C., Räsänen, O., Bunce, J., & Bergelson, E. (2020) A thorough evaluation of the Language Environment Analysis (LENA) system. Behavior Research Methods. [preprint](https://osf.io/mxr8s) [online resource](https://osf.io/zdg6s/)
-
-Cristia, A., Bulgarelli, F., & Bergelson, E. (2020). Accuracy of the Language Environment Analysis (LENATM) system segmentation and metrics: A systematic review. Journal of Speech, Language, and Hearing Research. [online resources, including pdf](https://osf.io/4nhms/)
-
-Cychosz, M., Villanueva, A., & Weisleder, A. (2020). Efficient estimation of children's language exposure in two bilingual communities. [pdf](https://psyarxiv.com/dy6v2/download?format=pdf)
-
-Mendoza, J. K., & Fausey, C. M. (2021). Quantifying everyday ecologies: Principles for manual annotation of many hours of infants' lives. [pdf](https://psyarxiv.com/79vwe/download?format=pdf)
-
-Soderstrom, M., Casillas, M., Bergelson, E., Rosemberg, C., Alam, F., Warlaumont, A. S., & Bunce, J. (2021). Developing A Cross-Cultural Annotation System and MetaCorpus for Studying Infants’ Real World Language Experience. Collabra: Psychology, 7(1), 23445. [pdf](https://psyarxiv.com/bf63y/download?format=pdf)
+- Cristia, A., Lavechin, M., Scaff, C., Soderstrom, M., Rowland, C., Räsänen, O., Bunce, J., & Bergelson, E. (2020) A thorough evaluation of the Language Environment Analysis (LENA) system. Behavior Research Methods. [preprint](https://osf.io/mxr8s) [online resource](https://osf.io/zdg6s/)
+- Cristia, A., Bulgarelli, F., & Bergelson, E. (2020). Accuracy of the Language Environment Analysis (LENATM) system segmentation and metrics: A systematic review. Journal of Speech, Language, and Hearing Research. [online resources, including pdf](https://osf.io/4nhms/)
+- Cychosz, M., Villanueva, A., & Weisleder, A. (2020). Efficient estimation of children's language exposure in two bilingual communities. [pdf](https://psyarxiv.com/dy6v2/download?format=pdf)
+- Mendoza, J. K., & Fausey, C. M. (2021). Quantifying everyday ecologies: Principles for manual annotation of many hours of infants' lives. [pdf](https://psyarxiv.com/79vwe/download?format=pdf)
+- Soderstrom, M., Casillas, M., Bergelson, E., Rosemberg, C., Alam, F., Warlaumont, A. S., & Bunce, J. (2021). Developing A Cross-Cultural Annotation System and MetaCorpus for Studying Infants’ Real World Language Experience. Collabra: Psychology, 7(1), 23445. [pdf](https://psyarxiv.com/bf63y/download?format=pdf)
+- Casillas, M. & Cristia, A. (2019). A step-by-step guide to collecting and analyzing long-format speech environment (LFSE) recordings, Collabra. See [Appendix F: Annotation software overview
+"](https://ucp.silverchair-cdn.com/ucp/content_public/journal/collabra/5/1/10.1525_collabra.209/3/collabra-5-209-s1.pdf?Expires=1633594641&Signature=qXacU15L3LUAaJ6CQKPyRT-EsW-UqBjJChdbm7fV~3XL6AKuqoqHHQmCTgW4kq84BwU1qqp-aAifxumuROnCH8lKVpQs9k4IbtRqDwt0ztu5Z2eMYifvwCgLypw94Vt13D3wcnvvRI7CcskqWBWuRP0CwSpN9BTsCpheUfk0wBAoherLQvhQbaRzVvn6TDQhAFNfDa7Azyvnw8kBaX2JQx1EkigRgDtCJ54B36-0wD7JscvrVkWJ3GJXni-AuxuXihf4ezjSdsTg8xYOCcTcf4JJBrQjFL-2LSLiRfo2OgMFxw6w~96F~NoLhWeT9P7~KhLpOJ6aC0tTr-QuYsIB3Q__&Key-Pair-Id=APKAIE5G5CRDK6RD3PGA)

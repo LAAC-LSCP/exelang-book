@@ -74,6 +74,5 @@ It is important to bear in mind also that this relates LENA measures to child la
 
 ## Resources
 
-Ganek, H. V., & Eriks-Brophy, A. (2018). A concise protocol for the validation of Language ENvironment Analysis (LENA) conversational turn counts in Vietnamese. Communication Disorders Quarterly, 39(2), 371–380. https://doi.org/10.1177/ 1525740117705094
-
-Pae, S., Yoon, H., Seol, A., Gilkerson, J., Richards, J. A., Ma, L., & Topping, K. (2016). Effects of feedback on parent–child language with infants and toddlers in Korea. First Language, 36(6), 549–569. https://doi.org/10.1177/0142723716649273
+- Ganek, H. V., & Eriks-Brophy, A. (2018). A concise protocol for the validation of Language ENvironment Analysis (LENA) conversational turn counts in Vietnamese. Communication Disorders Quarterly, 39(2), 371–380. https://doi.org/10.1177/ 1525740117705094
+- Pae, S., Yoon, H., Seol, A., Gilkerson, J., Richards, J. A., Ma, L., & Topping, K. (2016). Effects of feedback on parent–child language with infants and toddlers in Korea. First Language, 36(6), 549–569. https://doi.org/10.1177/0142723716649273
