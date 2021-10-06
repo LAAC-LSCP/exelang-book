@@ -13,5 +13,5 @@ Both of these tools have been benchmarked  against LENA and both of them are com
 
 ## Resources
 
-- Räsänen, O., Seshadri, S., Lavechin, M., Cristia, A., & Casillas, M. (2020). ALICE: An open-source tool for automatic measurement of phoneme, syllable, and word counts from child-centered daylong recordings. Behavior Research Methods. [pdf](https://psyarxiv.com/p95dz/download?format=pdf) [code](https://github.com/orasanen/ALICE)
 - Lavechin, M., Bousbib, R., Bredin, H., Dupoux, E., & Cristia, A. (2020). An open-source voice type classifier for child-centered daylong recordings. Interspeech. [pdf](https://arxiv.org/pdf/2005.12656) [code](https://github.com/MarvinLvn/voice-type-classifier)
+- Räsänen, O., Seshadri, S., Lavechin, M., Cristia, A., & Casillas, M. (2020). ALICE: An open-source tool for automatic measurement of phoneme, syllable, and word counts from child-centered daylong recordings. Behavior Research Methods. [pdf](https://psyarxiv.com/p95dz/download?format=pdf) [code](https://github.com/orasanen/ALICE)
