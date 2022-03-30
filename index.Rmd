@@ -4,7 +4,7 @@ author:
   - name          : "Sara Pisani"
   - name          : "Lucas Gautheron"
   - name          : "Alejandrina Cristia"
-    affiliation   : "Ecole Normale Supérieure, PSL Research University, Departement d'etudes cognitives, Laboratoire de Sciences Cognitives et Psycholinguistique (ENS, EHESS, CNRS)"
+    affiliation   : "Ecole Normale Supérieure, PSL Research University, Département d'ztudes cognitives, Laboratoire de Sciences Cognitives et Psycholinguistique (ENS, EHESS, CNRS)"
     corresponding : yes    # Define only one corresponding author
     address       : "LSCP 29 rue d'Ulm, Paris, France "
     email         : "alejandrina.cristia@ens.fr"
@@ -27,6 +27,7 @@ Alejandrina Cristia is grateful for the funding and institutional support from A
 
 Alejandrina Cristia assumes full responsibility for the contents. Nonetheless, we are  grateful to people who contributed to the contents more or less directly:
 
+- Nicolas Gérard, for video editing and graphics
 - Camila Scaff, on whose EMLAR class some of the visuals and content organization are based
 - Emmanuel Dupoux, Xuan Nga Cao, and Manel Khentout for their expertise on the babyloggers
 - Marvin Lavechin, for contributions on the explanation of the automated analysis software
@@ -34,10 +35,10 @@ Alejandrina Cristia assumes full responsibility for the contents. Nonetheless, w
 - Clementine Fourrier, for contacts with the ENS Audiovisual department
 - Catherine Urban, for administrative support
 - and particularly, to our collaborators in related projects, from whom we have learned tremendously: 
-- Elika Bergelson and Marisa Casillas, for frequent discussions ranging from data collection to analyses and beyond
-- Marisa Casillas, Jonathan Stieglitz, Gandhi Yetish, and Camila Scaff, for insights regarding the use of long-form recordings in field conditions, and mentoring before, during, and after fieldwork
-- Florencia Lopez Boo and Maria de la Paz Ferro, for irreplaceable discussions about the use of long-form recordings in the context of large randomized control trials evaluating at scale social programs
-- Fiona Burns, Pauline Grosjean, and Fiona Burns, for invaluable discussions about application to large randomized control trials in field conditions
+    - Elika Bergelson and Marisa Casillas, for frequent discussions ranging from data collection to analyses and beyond
+    - Marisa Casillas, Jonathan Stieglitz, Gandhi Yetish, and Camila Scaff, for insights regarding the use of long-form recordings in field conditions, and mentoring before, during, and after fieldwork
+    - Florencia Lopez Boo and Maria de la Paz Ferro, for irreplaceable discussions about the use of long-form recordings in the context of large randomized control trials evaluating at scale social programs
+    - Fiona Burns, Pauline Grosjean, and Fiona Burns, for invaluable conversations about application to large randomized control trials in field conditions
 
 
 
