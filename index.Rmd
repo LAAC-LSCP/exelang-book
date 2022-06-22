@@ -9,7 +9,8 @@ author:
     address       : "LSCP 29 rue d'Ulm, Paris, France "
     email         : "alejandrina.cristia@ens.fr"
 date: "`r Sys.Date()`"
-output: word_document
+site: bookdown::bookdown_site
+output: bookdown::gitbook
 description: "This bookdown contains the scripts of instructional videos created in the context of the ExELang Project (exelang.fr)."
 
 ---
