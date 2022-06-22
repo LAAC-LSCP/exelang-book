@@ -21,12 +21,14 @@ description: "This bookdown contains the scripts of instructional videos created
 
 # Preface {-}
 
-This bookdown contains the scripts of instructional videos created in the context of the ExELang Project (exelang.fr). 
+This bookdown contains the scripts of instructional videos created in the context of the ExELang Project (exelang.fr). It is available from [![DOI](https://zenodo.org/badge/381143153.svg)](https://zenodo.org/badge/latestdoi/381143153).
 
 Alejandrina Cristia is grateful for the funding and institutional support from Agence Nationale de la Recherche (ANR-17-CE28-0007 LangAge, ANR-16-DATA-0004 ACLEW, ANR-14-CE30-0003 MechELex, ANR-17-EURE-0017);  a J. S. McDonnell Foundation Understanding Human Cognition Scholar Award; and an ERC Consolidator grant (ExELang, 2021-2026). The funders had no role in the production of this bookdown or the associated videos. 
 
-Alejandrina Cristia assumes full responsibility for the contents. Nonetheless, we are  grateful to people who contributed to the contents more or less directly:
+Alejandrina Cristia and Sara Pisani co-wrote the scripts, with input from Lucas Gautheron; Sara Pisani prepared the visual contents. Alejandrina Cristia assumes full responsibility for the contents. We are  grateful to people who contributed to the contents more or less directly:
 
+- Nicolas Gérard, for audio and video editing, designing, and graphics in chapters 2, 3, 5,19
+- Philippe Dauli, creation of the other videos
 - Camila Scaff, on whose EMLAR class some of the visuals and content organization are based
 - Emmanuel Dupoux, Xuan Nga Cao, and Manel Khentout for their expertise on the babyloggers
 - Marvin Lavechin, for contributions on the explanation of the automated analysis software
@@ -34,10 +36,10 @@ Alejandrina Cristia assumes full responsibility for the contents. Nonetheless, w
 - Clementine Fourrier, for contacts with the ENS Audiovisual department
 - Catherine Urban, for administrative support
 - and particularly, to our collaborators in related projects, from whom we have learned tremendously: 
-- Elika Bergelson and Marisa Casillas, for frequent discussions ranging from data collection to analyses and beyond
-- Marisa Casillas, Jonathan Stieglitz, Gandhi Yetish, and Camila Scaff, for insights regarding the use of long-form recordings in field conditions, and mentoring before, during, and after fieldwork
-- Florencia Lopez Boo and Maria de la Paz Ferro, for irreplaceable discussions about the use of long-form recordings in the context of large randomized control trials evaluating at scale social programs
-- Fiona Burns, Pauline Grosjean, and Fiona Burns, for invaluable discussions about application to large randomized control trials in field conditions
+    - Elika Bergelson and Marisa Casillas, for frequent discussions ranging from data collection to analyses and beyond
+    - Marisa Casillas, Jonathan Stieglitz, Gandhi Yetish, and Camila Scaff, for insights regarding the use of long-form recordings in field conditions, and mentoring before, during, and after fieldwork
+    - Florencia Lopez Boo and Maria de la Paz Ferro, for irreplaceable discussions about the use of long-form recordings in the context of large randomized control trials evaluating at scale social programs
+    - Fiona Burns, Pauline Grosjean, and Fiona Burns, for invaluable discussions about application to large randomized control trials in field conditions
 
 
 
