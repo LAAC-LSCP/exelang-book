@@ -1,17 +1,22 @@
 --- 
 title: "Long-form recordings: From A to Z"
-author: 
-  - name          : "Sara Pisani"
-  - name          : "Lucas Gautheron"
-  - name          : "Alejandrina Cristia"
-    affiliation   : "Ecole Normale Supérieure, PSL Research University, Département d'ztudes cognitives, Laboratoire de Sciences Cognitives et Psycholinguistique (ENS, EHESS, CNRS)"
-    corresponding : yes    # Define only one corresponding author
-    address       : "LSCP 29 rue d'Ulm, Paris, France "
-    email         : "alejandrina.cristia@ens.fr"
+author:
+- name: Sara Pisani
+- name: Lucas Gautheron
+- name: Alejandrina Cristia
+  affiliation: Ecole Normale Supérieure, PSL Research University, Département d'ztudes
+    cognitives, Laboratoire de Sciences Cognitives et Psycholinguistique (ENS, EHESS,
+    CNRS)
+  corresponding: yes
+  address: 'LSCP 29 rue d''Ulm, Paris, France '
+  email: alejandrina.cristia@ens.fr
 date: "`r Sys.Date()`"
-output: word_document
-description: "This bookdown contains the scripts of instructional videos created in the context of the ExELang Project (exelang.fr)."
-
+output:
+  pdf_document: default
+  word_document: default
+description: This bookdown contains the scripts of instructional videos created in
+  the context of the ExELang Project (exelang.fr).
+always_allow_html: true
 ---
 
 # Preface {-}
